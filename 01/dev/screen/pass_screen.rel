@@ -1,0 +1,443 @@
+;!FILE pass_screen.asm
+XL3
+H 9 areas 129 global symbols
+M pass_screen
+O -mz80
+S _riff_counts Ref000000
+S _engine_graphics_manager_level_stats Ref000000
+S _devkit_PSGSFXGetStatus Ref000000
+S _engine_player_manager_draw Ref000000
+S _engine_graphics_manager_level_texts Ref000000
+S _engine_random_manager_next Ref000000
+S _engine_player_manager_pass Ref000000
+S _global_player_object Ref000000
+S _engine_player_manager_get_deltaX Ref000000
+S _engine_player_manager_finish Ref000000
+S .__.ABS. Def000000
+S _global_game_object Ref000000
+S _engine_game_manager_set_level_data Ref000000
+S _global_command_object Ref000000
+S _engine_riff_manager_init Ref000000
+S _engine_riff_manager_play Ref000000
+S _engine_sound_manager_play Ref000000
+S _engine_player_manager_head Ref000000
+S _riff_indexs Ref000000
+S _engine_music_manager_stop Ref000000
+S _engine_player_manager_pass_frame Ref000000
+S _engine_sound_manager_stop Ref000000
+S _devkit_SMS_mapROMBank Ref000000
+A _CODE size 181 flags 0 addr 0
+S A$pass_screen$476 Def00016C
+S A$pass_screen$449 Def000150
+S A$pass_screen$377 Def0000FF
+S A$pass_screen$287 Def0000AA
+S A$pass_screen$278 Def0000A8
+S A$pass_screen$188 Def000061
+S A$pass_screen$179 Def000054
+S C$pass_screen.c$71$2_0$157 Def000095
+S C$pass_screen.c$64$1_0$156 Def000083
+S C$pass_screen.c$55$1_0$156 Def000059
+S C$pass_screen.c$46$1_0$156 Def00002D
+S A$pass_screen$477 Def00016F
+S A$pass_screen$387 Def00010A
+S A$pass_screen$378 Def000100
+S A$pass_screen$297 Def0000AB
+S A$pass_screen$279 Def0000A9
+S A$pass_screen$189 Def000062
+S C$pass_screen.c$72$2_0$157 Def000096
+S C$pass_screen.c$56$1_0$156 Def000066
+S C$pass_screen.c$38$1_0$156 Def000000
+S A$pass_screen$487 Def000175
+S A$pass_screen$397 Def000112
+S A$pass_screen$379 Def000101
+S A$pass_screen$298 Def0000AD
+S A$pass_screen$199 Def00006B
+S XG$screen_pass_screen_update$0$0 Def000180
+S C$pass_screen.c$48$1_0$156 Def000030
+S C$pass_screen.c$39$1_0$156 Def000013
+S A$pass_screen$398 Def000115
+S A$pass_screen$299 Def0000B1
+S C$pass_screen.c$67$1_0$156 Def00008E
+S C$pass_screen.c$58$1_0$156 Def00006B
+S A$pass_screen$498 Def00017C
+S A$pass_screen$399 Def000117
+S C$pass_screen.c$68$1_0$156 Def00008F
+S C$pass_screen.c$59$1_0$156 Def000070
+S A$pass_screen$499 Def00017E
+S C$pass_screen.c$74$3_0$158 Def000097
+S C$pass_screen.c$79$1_0$156 Def0000A1
+S C$pass_screen.c$75$3_0$158 Def00009C
+S C$pass_screen.c$89$1_0$156 Def0000AA
+S G$screen_pass_screen_load$0$0 Def000000
+S _screen_pass_screen_load Def000000
+S XG$screen_pass_screen_load$0$0 Def0000AA
+S C$pass_screen.c$130$2_0$161 Def0000C7
+S C$pass_screen.c$141$1_0$160 Def0000B4
+S G$screen_pass_screen_update$0$0 Def0000AB
+S C$pass_screen.c$170$2_0$161 Def00012D
+S C$pass_screen.c$133$3_0$162 Def0000D2
+S C$pass_screen.c$128$1_0$160 Def0000C0
+S C$pass_screen.c$141$4_0$163 Def0000E4
+S C$pass_screen.c$193$1_0$160 Def000175
+S C$pass_screen.c$142$4_0$163 Def0000EA
+S C$pass_screen.c$194$1_0$160 Def000178
+S C$pass_screen.c$181$4_0$170 Def000158
+S C$pass_screen.c$195$1_0$160 Def000180
+S C$pass_screen.c$135$4_0$163 Def0000D9
+S A$pass_screen$200 Def00006E
+S A$pass_screen$110 Def000003
+S C$pass_screen.c$161$3_0$166 Def000112
+S C$pass_screen.c$153$4_0$164 Def0000FC
+S A$pass_screen$300 Def0000B3
+S A$pass_screen$210 Def000077
+S A$pass_screen$111 Def000006
+S C$pass_screen.c$154$4_0$164 Def00010A
+S A$pass_screen$310 Def0000BD
+S A$pass_screen$220 Def00007D
+S A$pass_screen$130 Def00001E
+S A$pass_screen$112 Def000007
+S C$pass_screen.c$155$4_0$164 Def00010D
+S C$pass_screen.c$146$4_0$164 Def0000ED
+S C$pass_screen.c$138$4_0$163 Def0000DC
+S A$pass_screen$410 Def000126
+S A$pass_screen$320 Def0000C7
+S A$pass_screen$230 Def000086
+S A$pass_screen$221 Def00007E
+S A$pass_screen$131 Def00001F
+S A$pass_screen$113 Def000008
+S C$pass_screen.c$187$2_0$171 Def000162
+S A$pass_screen$330 Def0000D5
+S A$pass_screen$321 Def0000CA
+S A$pass_screen$231 Def000087
+S A$pass_screen$222 Def000081
+S A$pass_screen$204 Def000070
+S A$pass_screen$123 Def000013
+S A$pass_screen$114 Def000009
+S C$pass_screen.c$188$2_0$171 Def000170
+S C$pass_screen.c$172$3_0$168 Def000133
+S C$pass_screen.c$163$4_0$167 Def000119
+S A$pass_screen$430 Def000133
+S A$pass_screen$403 Def000119
+S A$pass_screen$340 Def0000DC
+S A$pass_screen$331 Def0000D6
+S A$pass_screen$322 Def0000CB
+S A$pass_screen$232 Def000088
+S A$pass_screen$223 Def000082
+S A$pass_screen$214 Def000078
+S A$pass_screen$205 Def000073
+S A$pass_screen$124 Def000016
+S A$pass_screen$115 Def00000A
+S C$pass_screen.c$179$4_0$170 Def000153
+S C$pass_screen.c$166$3_0$166 Def000127
+S _screen_pass_screen_update Def0000AB
+S A$pass_screen$440 Def000146
+S A$pass_screen$431 Def000136
+S A$pass_screen$404 Def00011C
+S A$pass_screen$350 Def0000E6
+S A$pass_screen$341 Def0000DE
+S A$pass_screen$332 Def0000D7
+S A$pass_screen$323 Def0000CD
+S A$pass_screen$314 Def0000C0
+S A$pass_screen$233 Def00008B
+S A$pass_screen$215 Def00007B
+S A$pass_screen$170 Def000044
+S A$pass_screen$161 Def000038
+S A$pass_screen$152 Def000030
+S A$pass_screen$143 Def000028
+S A$pass_screen$125 Def000018
+S A$pass_screen$116 Def00000B
+S C$pass_screen.c$167$3_0$166 Def00012A
+S C$pass_screen.c$148$5_0$165 Def0000F4
+S A$pass_screen$504 Def000180
+S A$pass_screen$450 Def000151
+S A$pass_screen$441 Def000147
+S A$pass_screen$432 Def00013A
+S A$pass_screen$405 Def00011D
+S A$pass_screen$360 Def0000ED
+S A$pass_screen$351 Def0000E9
+S A$pass_screen$342 Def0000DF
+S A$pass_screen$324 Def0000CE
+S A$pass_screen$315 Def0000C3
+S A$pass_screen$261 Def000097
+S A$pass_screen$243 Def00008F
+S A$pass_screen$234 Def00008C
+S A$pass_screen$180 Def000055
+S A$pass_screen$171 Def000047
+S A$pass_screen$162 Def00003B
+S A$pass_screen$144 Def00002B
+S A$pass_screen$135 Def000022
+S A$pass_screen$117 Def00000E
+S C$pass_screen.c$149$5_0$165 Def0000F7
+S A$pass_screen$460 Def000158
+S A$pass_screen$442 Def000148
+S A$pass_screen$433 Def00013D
+S A$pass_screen$424 Def00012D
+S A$pass_screen$415 Def000127
+S A$pass_screen$406 Def00011E
+S A$pass_screen$370 Def0000F7
+S A$pass_screen$361 Def0000F0
+S A$pass_screen$343 Def0000E0
+S A$pass_screen$325 Def0000D0
+S A$pass_screen$316 Def0000C4
+S A$pass_screen$307 Def0000B4
+S A$pass_screen$262 Def000099
+S A$pass_screen$253 Def000095
+S A$pass_screen$235 Def00008D
+S A$pass_screen$190 Def000063
+S A$pass_screen$181 Def000056
+S A$pass_screen$172 Def000049
+S A$pass_screen$163 Def00003C
+S A$pass_screen$118 Def00000F
+S A$pass_screen$109 Def000000
+S C$pass_screen.c$174$4_0$169 Def000140
+S C$pass_screen.c$30$1_0$156 Def000000
+S A$pass_screen$470 Def000162
+S A$pass_screen$461 Def00015A
+S A$pass_screen$443 Def000149
+S A$pass_screen$434 Def00013E
+S A$pass_screen$425 Def000130
+S A$pass_screen$407 Def000121
+S A$pass_screen$380 Def000104
+S A$pass_screen$371 Def0000FA
+S A$pass_screen$362 Def0000F2
+S A$pass_screen$344 Def0000E3
+S A$pass_screen$308 Def0000B7
+S A$pass_screen$263 Def00009B
+S A$pass_screen$227 Def000083
+S A$pass_screen$209 Def000074
+S A$pass_screen$164 Def00003F
+S A$pass_screen$119 Def000010
+S C$pass_screen.c$175$4_0$169 Def00014D
+S C$pass_screen.c$40$1_0$156 Def00001B
+S A$pass_screen$471 Def000165
+S A$pass_screen$462 Def00015B
+S A$pass_screen$444 Def00014C
+S A$pass_screen$426 Def000131
+S A$pass_screen$408 Def000122
+S A$pass_screen$381 Def000105
+S A$pass_screen$336 Def0000D9
+S A$pass_screen$309 Def0000BA
+S A$pass_screen$273 Def0000A1
+S A$pass_screen$228 Def000084
+S A$pass_screen$219 Def00007C
+S A$pass_screen$165 Def000040
+S A$pass_screen$156 Def000033
+S A$pass_screen$129 Def00001B
+S C$pass_screen.c$32$1_0$156 Def000000
+S A$pass_screen$481 Def000170
+S A$pass_screen$472 Def000166
+S A$pass_screen$463 Def00015C
+S A$pass_screen$409 Def000123
+S A$pass_screen$391 Def00010D
+S A$pass_screen$382 Def000106
+S A$pass_screen$355 Def0000EA
+S A$pass_screen$274 Def0000A2
+S A$pass_screen$247 Def000090
+S A$pass_screen$229 Def000085
+S A$pass_screen$166 Def000041
+S A$pass_screen$157 Def000036
+S A$pass_screen$148 Def00002D
+S A$pass_screen$139 Def000025
+S C$pass_screen.c$92$1_0$160 Def0000AB
+S C$pass_screen.c$60$1_0$156 Def000074
+S C$pass_screen.c$51$1_0$156 Def000033
+S C$pass_screen.c$42$1_0$156 Def000022
+S C$pass_screen.c$33$1_0$156 Def000000
+S A$pass_screen$491 Def000178
+S A$pass_screen$482 Def000173
+S A$pass_screen$473 Def000167
+S A$pass_screen$464 Def00015F
+S A$pass_screen$455 Def000153
+S A$pass_screen$419 Def00012A
+S A$pass_screen$392 Def000110
+S A$pass_screen$383 Def000109
+S A$pass_screen$329 Def0000D2
+S A$pass_screen$275 Def0000A3
+S A$pass_screen$257 Def000096
+S A$pass_screen$248 Def000092
+S A$pass_screen$239 Def00008E
+S A$pass_screen$194 Def000066
+S A$pass_screen$185 Def000059
+S A$pass_screen$176 Def00004C
+S C$pass_screen.c$61$1_0$156 Def000078
+S C$pass_screen.c$52$1_0$156 Def000038
+S C$pass_screen.c$43$1_0$156 Def000025
+S A$pass_screen$492 Def000179
+S A$pass_screen$474 Def00016A
+S A$pass_screen$465 Def000160
+S A$pass_screen$456 Def000156
+S A$pass_screen$438 Def000140
+S A$pass_screen$366 Def0000F4
+S A$pass_screen$348 Def0000E4
+S A$pass_screen$276 Def0000A4
+S A$pass_screen$267 Def00009C
+S A$pass_screen$249 Def000094
+S A$pass_screen$195 Def000069
+S A$pass_screen$186 Def00005C
+S A$pass_screen$177 Def00004F
+S C$pass_screen.c$94$1_0$160 Def0000B4
+S C$pass_screen.c$53$1_0$156 Def000044
+S C$pass_screen.c$44$1_0$156 Def000028
+S A$pass_screen$493 Def00017A
+S A$pass_screen$475 Def00016B
+S A$pass_screen$448 Def00014D
+S A$pass_screen$439 Def000143
+S A$pass_screen$376 Def0000FC
+S A$pass_screen$349 Def0000E5
+S A$pass_screen$277 Def0000A5
+S A$pass_screen$268 Def00009F
+S A$pass_screen$187 Def00005F
+S A$pass_screen$178 Def000052
+S C$pass_screen.c$70$2_0$157 Def000090
+S C$pass_screen.c$63$1_0$156 Def00007C
+S C$pass_screen.c$54$1_0$156 Def00004C
+S C$pass_screen.c$28$0_0$156 Def000000
+A _DATA size 9 flags 0 addr 0
+S Fpass_screen$value$0_0$0 Def000004
+S Fpass_screen$next_screen$0_0$0 Def000006
+S Fpass_screen$count$0_0$0 Def000003
+S Lpass_screen.screen_pass_screen_load$index$1_0$156 Def000007
+S Fpass_screen$loops$0_0$0 Def000005
+S Lpass_screen.screen_pass_screen_load$maxim$1_0$156 Def000008
+S Fpass_screen$swap$0_0$0 Def000002
+S Fpass_screen$player_passX$0_0$0 Def000000
+S Fpass_screen$player_endY$0_0$0 Def000001
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 01 00
+T 00 00 00
+R 00 00 01 00
+T 01 00 00
+R 00 00 01 00
+T 01 00 00
+R 00 00 01 00
+T 02 00 00
+R 00 00 01 00
+T 02 00 00
+R 00 00 01 00
+T 03 00 00
+R 00 00 01 00
+T 03 00 00
+R 00 00 01 00
+T 04 00 00
+R 00 00 01 00
+T 04 00 00
+R 00 00 01 00
+T 05 00 00
+R 00 00 01 00
+T 05 00 00
+R 00 00 01 00
+T 06 00 00
+R 00 00 01 00
+T 06 00 00
+R 00 00 01 00
+T 07 00 00
+R 00 00 01 00
+T 07 00 00
+R 00 00 01 00
+T 08 00 00
+R 00 00 01 00
+T 08 00 00
+R 00 00 01 00
+T 00 00 00
+R 00 00 00 00
+T 00 00 00 3A 03 00 21 0C 00 46 F5 33 C5 33 CD
+R 00 00 00 00 02 04 0D 00 02 07 07 00
+T 0C 00 00 00 00 F1 7D 32 00 00 3A 00 00 CB 3F 32
+R 00 00 00 00 02 03 08 00 00 08 01 00 00 0B 01 00
+T 19 00 00 00 00 CD 00 00 7D 32 01 00 CD
+R 00 00 00 00 00 03 01 00 02 06 09 00 00 0A 01 00
+T 23 00 00 00 00 CD 00 00 21 02 00 36 00 CD
+R 00 00 00 00 02 03 03 00 02 06 11 00 00 09 01 00
+T 2E 00 00 00 00 CD 00 00 21 08 00 36 03 21 03 00
+R 00 00 00 00 02 03 0E 00 02 06 13 00 00 09 01 00
+T 3B 00 00 E5 CD 00 00 F1 7D 32 07 00 3A 07 00 C6
+R 00 00 00 00 02 05 05 00 00 0A 01 00 00 0D 01 00
+T 48 00 00 11 32 07 00 01 00 00 2A 07 00 26 00 09
+R 00 00 00 00 00 05 01 00 02 08 12 00 00 0B 01 00
+T 55 00 00 7E 32 04 00 01 00 00 2A 07 00 26 00 09
+R 00 00 00 00 00 05 01 00 02 08 00 00 00 0B 01 00
+T 62 00 00 7E 32 03 00 21 05 00 36 00 21 06 00 36
+R 00 00 00 00 00 05 01 00 00 08 01 00 00 0D 01 00
+T 6F 00 00 09 21 01 00 4E 21 02 00 46 21 04 00 5E
+R 00 00 00 00 02 05 0B 00 02 09 0B 00 02 0D 0B 00
+T 7C 00 00 C5 D5 CD 00 00 D1 C1 C5 7B F5 33 C5 CD
+R 00 00 00 00 02 06 04 00
+T 89 00 00 00 00 F1 33 C1 04 78 D6 02 20 0D 47 0C
+R 00 00 00 00 02 03 01 00
+T 96 00 00 79 D6 05 20 06 4F 21 06 00 36 12
+R 00 00 00 00 00 0A 01 00
+T A1 00 00
+R 00 00 00 00
+T A1 00 00 AF F5 33 C5 CD 00 00 F1 33 C9
+R 00 00 00 00 02 08 0C 00
+T AB 00 00
+R 00 00 00 00
+T AB 00 00 DD E5 DD 21 00 00 DD 39 F5 DD 7E 04 DD
+R 00 00 00 00
+T B8 00 00 77 FE DD 7E 05 DD 77 FF 3A 02 00 B7 CA
+R 00 00 00 00 00 0C 01 00
+T C5 00 00 62 01 2A 01 00 7D D6 F0 7C DE 00 38 40
+R 00 00 00 00 00 03 00 00 02 06 07 00
+T D2 00 00 CD 00 00 7D B7 20 14 CD 00 00 3E 02 F5
+R 00 00 00 00 02 04 02 00 02 0B 15 00
+T DF 00 00 33 CD 00 00 33 E1 E5 3A 06 00 77 C3
+R 00 00 00 00 02 05 16 00 00 0B 01 00
+T EB 00 00 7C 01
+R 00 00 00 00 00 03 00 00
+T ED 00 00
+R 00 00 00 00
+T ED 00 00 3A 02 00 D6 02 20 08 CD 00 00 21 02 00
+R 00 00 00 00 00 04 01 00 02 0B 14 00 00 0E 01 00
+T FA 00 00 36 03
+R 00 00 00 00
+T FC 00 00
+R 00 00 00 00
+T FC 00 00 3A 01 00 F5 33 3A 00 00 F5 33 CD 00 00
+R 00 00 00 00 00 04 01 00 00 09 01 00 02 0E 06 00
+T 09 01 00 F1 CD 00 00 CD 00 00 18 1B
+R 00 00 00 00 02 05 03 00 02 08 11 00
+T 12 01 00
+R 00 00 00 00
+T 12 01 00 3A 02 00 D6 02 20 0E 3A 01 00 F5 33 3A
+R 00 00 00 00 00 04 01 00 00 0B 01 00
+T 1F 01 00 00 00 F5 33 CD 00 00 F1
+R 00 00 00 00 00 03 01 00 02 08 06 00
+T 27 01 00
+R 00 00 00 00
+T 27 01 00 CD 00 00 CD 00 00
+R 00 00 00 00 02 04 03 00 02 07 11 00
+T 2D 01 00
+R 00 00 00 00
+T 2D 01 00 3A 02 00 3D 20 42 21 03 00 FD 21 05 00
+R 00 00 00 00 00 04 01 00 00 0A 01 00 00 0E 01 00
+T 3A 01 00 FD 7E 00 96 30 13 21 04 00 FD 7E 00 86
+R 00 00 00 00 00 0A 01 00
+T 47 01 00 F5 33 CD 00 00 33 21 05 00 34 18 22
+R 00 00 00 00 02 06 0F 00 00 0A 01 00
+T 53 01 00
+R 00 00 00 00
+T 53 01 00 21 02 00 36 02 3E 01 F5 33 CD 00 00 33
+R 00 00 00 00 00 04 01 00 02 0D 10 00
+T 60 01 00 18 13
+R 00 00 00 00
+T 62 01 00
+R 00 00 00 00
+T 62 01 00 3A 01 00 F5 33 3A 00 00 F5 33 CD 00 00
+R 00 00 00 00 00 04 01 00 00 09 01 00 02 0E 06 00
+T 6F 01 00 F1 21 02 00 36 01
+R 00 00 00 00 00 05 01 00
+T 75 01 00
+R 00 00 00 00
+T 75 01 00 CD 00 00 E1 E5 36 0D
+R 00 00 00 00 02 04 11 00
+T 7C 01 00
+R 00 00 00 00
+T 7C 01 00 DD F9 DD E1 C9
+R 00 00 00 00

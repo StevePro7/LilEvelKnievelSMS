@@ -1,0 +1,399 @@
+XL3
+H A areas 89 global symbols
+M fixedbank
+O -mz80
+S _Riff_Death_Licence_02_wav_pcmenc Ref000000
+S _mastertracker_psg Ref000000
+S _mus_death_psg Ref000000
+S _animeopening_psg Ref000000
+S _Riff_Sound_Austin01_01_wav_pcmenc Ref000000
+S _Riff_Sound_Austin02_01_wav_pcmenc Ref000000
+S _Riff_Intro_Hulk_01_wav_pcmenc Ref000000
+S _Riff_Sound_Austin03_01_wav_pcmenc Ref000000
+S _Riff_Sound_Austin02_02_wav_pcmenc Ref000000
+S _Riff_Intro_Hulk_02_wav_pcmenc Ref000000
+S _Riff_Sound_Austin03_02_wav_pcmenc Ref000000
+S _Riff_Intro_Hulk_03_wav_pcmenc Ref000000
+S _Riff_Intro_Hulk_04_wav_pcmenc Ref000000
+S _Riff_Sound_Eminem_01_wav_pcmenc Ref000000
+S _Riff_Sound_Over_01_wav_pcmenc Ref000000
+S _Riff_Sound_Over_02_wav_pcmenc Ref000000
+S _Riff__Splash__Screen__01_wav_pcmenc Ref000000
+S _Riff__Splash__Screen__02_wav_pcmenc Ref000000
+S _Riff__Splash__Screen__03_wav_pcmenc Ref000000
+S _Riff__Splash__Screen__04_wav_pcmenc Ref000000
+S _Riff__Splash__Screen__05_wav_pcmenc Ref000000
+S _Riff__Splash__Screen__06_wav_pcmenc Ref000000
+S _Riff_Sound_VHshriek_01_wav_pcmenc Ref000000
+S _Riff__Splash__Screen__07_wav_pcmenc Ref000000
+S _mus_level_psg Ref000000
+S _Riff__Splash__Screen__08_wav_pcmenc Ref000000
+S _level_0001_txt Ref000000
+S _Riff__Splash__Screen__09_wav_pcmenc Ref000000
+S _level_0002_txt Ref000000
+S _level_0101_txt Ref000000
+S _level_0003_txt Ref000000
+S _level_0201_txt Ref000000
+S _level_0102_txt Ref000000
+S _Riff_Sound_VHdoctor_01_wav_pcmenc Ref000000
+S _mus_beat_psg Ref000000
+S _level_3001_txt Ref000000
+S _level_0004_txt Ref000000
+S _level_0202_txt Ref000000
+S _level_0103_txt Ref000000
+S _Riff_Sound_VHdoctor_02_wav_pcmenc Ref000000
+S _level_0005_txt Ref000000
+S _level_0401_txt Ref000000
+S _level_0203_txt Ref000000
+S _Riff_Sound_VHdoctor_03_wav_pcmenc Ref000000
+S _level_0501_txt Ref000000
+S _level_0402_txt Ref000000
+S _sfx_reset_psg Ref000000
+S _level_0502_txt Ref000000
+S _Riff_Sound_Commando_01_wav_pcmenc Ref000000
+S _Riff_Sound_Commando_02_wav_pcmenc Ref000000
+S .__.ABS. Def000000
+S _Riff_Sound_Silicon01_01_wav_pcmenc Ref000000
+S _Riff_Sound_Silicon02_01_wav_pcmenc Ref000000
+S _Riff_Sound_Silicon03_01_wav_pcmenc Ref000000
+S _Riff__Title__Screen__01_wav_pcmenc Ref000000
+S _sfx_power_psg Ref000000
+S _Riff__Title__Screen__02_wav_pcmenc Ref000000
+S _Riff__Title__Screen__03_wav_pcmenc Ref000000
+S _Riff__Title__Screen__04_wav_pcmenc Ref000000
+S _sfx_accept_psg Ref000000
+S _Riff__Title__Screen__05_wav_pcmenc Ref000000
+S _Riff__Title__Screen__06_wav_pcmenc Ref000000
+S _Riff_Sound_SimpsonsSucked_01_wav_pcmenc Ref000000
+S _Riff__Title__Screen__07_wav_pcmenc Ref000000
+S _Riff_Sound_VHjump02_01_wav_pcmenc Ref000000
+S _Riff_Sound_Youza40_01_wav_pcmenc Ref000000
+S _Riff__Title__Screen__08_wav_pcmenc Ref000000
+S _Riff_Sound_VHjump02_02_wav_pcmenc Ref000000
+S _Riff__Title__Screen__09_wav_pcmenc Ref000000
+S _mus_cont_psg Ref000000
+S _Riff_Sound_Wayne_01_wav_pcmenc Ref000000
+S _Riff_Sound_Excellent10_01_wav_pcmenc Ref000000
+S _level_8888_txt Ref000000
+S _Riff_Sound_Excellent20_01_wav_pcmenc Ref000000
+S _Riff_Sound_Excellent30_01_wav_pcmenc Ref000000
+S _usas_jubaruins_psg Ref000000
+S _Riff_Intro_Ultimate_01_wav_pcmenc Ref000000
+S _Riff_Sound_Excellent40_01_wav_pcmenc Ref000000
+S _Riff_Intro_Ultimate_02_wav_pcmenc Ref000000
+S _Riff_Sound_Excellent50_01_wav_pcmenc Ref000000
+S _mus_over_psg Ref000000
+S _level_9999_txt Ref000000
+S _Riff_Intro_Ultimate_03_wav_pcmenc Ref000000
+S _mohenjodaro_usas_psg Ref000000
+S _Riff_Intro_Ultimate_04_wav_pcmenc Ref000000
+S _Riff_Intro_ACDC_01_wav_pcmenc Ref000000
+S _Riff_Intro_ACDC_02_wav_pcmenc Ref000000
+S _Riff_Death_Licence_01_wav_pcmenc Ref000000
+A _CODE size 0 flags 0 addr 0
+S Ffixedbank$__str_1$0_0$0 Def000000
+S Ffixedbank$__str_2$0_0$0 Def000000
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 238 flags 0 addr 0
+S _level_object_data Def000210
+S G$level_object_data$0_0$0 Def000210
+S _beat_command_this_command Def000140
+S _music_object_data Def000186
+S G$beat_command_this_command$0_0$0 Def000140
+S G$music_object_data$0_0$0 Def000186
+S _extra_object_data Def000224
+S G$extra_object_data$0_0$0 Def000224
+S _demo_command_this_command Def000080
+S _sound_object_data Def000194
+S _steven_text Def000180
+S G$sound_object_data$0_0$0 Def000194
+S G$demo_command_this_command$0_0$0 Def000080
+S _beat_command_frame_index Def0000C0
+S G$steven_text$0_0$0 Def000180
+S G$beat_command_frame_index$0_0$0 Def0000C0
+S _riff_sample_data Def00019E
+S G$riff_sample_data$0_0$0 Def00019E
+S _demo_command_frame_index Def000000
+S G$demo_command_frame_index$0_0$0 Def000000
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _BANK15 size B2 flags 0 addr 0
+S _level_object_bank Def000069
+S G$level_object_bank$0_0$0 Def000069
+S _music_object_bank Def000010
+S G$music_object_bank$0_0$0 Def000010
+S _extra_object_bank Def000087
+S G$extra_object_bank$0_0$0 Def000087
+S _sound_object_bank Def000017
+S G$sound_object_bank$0_0$0 Def000017
+S _riff_sample_bank Def00001C
+S G$riff_sample_bank$0_0$0 Def00001C
+S _level_object_size Def000055
+S G$level_object_size$0_0$0 Def000055
+S _steven_data Def000000
+S G$steven_data$0_0$0 Def000000
+S Ffixedbank$__str_0$0_0$0 Def000091
+S _extra_object_size Def000073
+S G$extra_object_size$0_0$0 Def000073
+A _INITIALIZER size 238 flags 0 addr 0
+S Ffixedbank$__xinit_beat_command_this_command$0_0$0 Def000140
+S Ffixedbank$__xinit_music_object_data$0_0$0 Def000186
+S Ffixedbank$__xinit_extra_object_data$0_0$0 Def000224
+S Ffixedbank$__xinit_sound_object_data$0_0$0 Def000194
+S Ffixedbank$__xinit_demo_command_this_command$0_0$0 Def000080
+S Ffixedbank$__xinit_steven_text$0_0$0 Def000180
+S Ffixedbank$__xinit_beat_command_frame_index$0_0$0 Def0000C0
+S Ffixedbank$__xinit_riff_sample_data$0_0$0 Def00019E
+S Ffixedbank$__xinit_demo_command_frame_index$0_0$0 Def000000
+S Ffixedbank$__xinit_level_object_data$0_0$0 Def000210
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 02 00
+T 00 00 00
+R 00 00 02 00
+T 80 00 00
+R 00 00 02 00
+T 80 00 00
+R 00 00 02 00
+T C0 00 00
+R 00 00 02 00
+T C0 00 00
+R 00 00 02 00
+T 40 01 00
+R 00 00 02 00
+T 40 01 00
+R 00 00 02 00
+T 80 01 00
+R 00 00 02 00
+T 80 01 00
+R 00 00 02 00
+T 86 01 00
+R 00 00 02 00
+T 86 01 00
+R 00 00 02 00
+T 94 01 00
+R 00 00 02 00
+T 94 01 00
+R 00 00 02 00
+T 9E 01 00
+R 00 00 02 00
+T 9E 01 00
+R 00 00 02 00
+T 10 02 00
+R 00 00 02 00
+T 10 02 00
+R 00 00 02 00
+T 24 02 00
+R 00 00 02 00
+T 24 02 00
+R 00 00 02 00
+T 00 00 00
+R 00 00 07 00
+T 00 00 00 10 20 30 40 50 60 70 80 90 A0 B0 C0 D0
+R 00 00 07 00
+T 0D 00 00 E0 F0 FF
+R 00 00 07 00
+T 10 00 00
+R 00 00 07 00
+T 10 00 00 04 05 06 07 07 07 07
+R 00 00 07 00
+T 17 00 00
+R 00 00 07 00
+T 17 00 00 07 07 06 06 06
+R 00 00 07 00
+T 1C 00 00
+R 00 00 07 00
+T 1C 00 00 18 29 23 24 26 24 25 1E 1F 0E 25 27 27
+R 00 00 07 00
+T 29 00 00 1D 0D 10 28 2A 2B 20 21 22 1C 1B 03 1A
+R 00 00 07 00
+T 36 00 00 26 19 28 15 16 17 23 11 12 13 14 2C 2D
+R 00 00 07 00
+T 43 00 00 2E 2F 30 31 32 33 34 35 36 37 38 39 3A
+R 00 00 07 00
+T 50 00 00 3B 3C 3D 3E 3F
+R 00 00 07 00
+T 55 00 00
+R 00 00 07 00
+T 55 00 00 00 04 00 04 00 04 00 04 00 04 00 04
+R 00 00 07 00
+T 61 00 00 00 04 00 04 00 04 00 04
+R 00 00 07 00
+T 69 00 00
+R 00 00 07 00
+T 69 00 00 08 08 08 08 08 08 0A 0A 0B 0B
+R 00 00 07 00
+T 73 00 00
+R 00 00 07 00
+T 73 00 00 20 00 20 00 20 00 20 00 20 00 00 01
+R 00 00 07 00
+T 7F 00 00 00 01 00 01 00 02 20 00
+R 00 00 07 00
+T 87 00 00
+R 00 00 07 00
+T 87 00 00 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C
+R 00 00 07 00
+T 91 00 00
+R 00 00 07 00
+T 91 00 00 53 54 45 56 45 50 52 4F 30 31 00
+R 00 00 07 00
+T 9C 00 00
+R 00 00 07 00
+T 9C 00 00 53 54 45 56 45 50 52 4F 30 32 00
+R 00 00 07 00
+T A7 00 00
+R 00 00 07 00
+T A7 00 00 53 54 45 56 45 50 52 4F 30 33 00
+R 00 00 07 00
+T 00 00 00
+R 00 00 08 00
+T 00 00 00 00 00 4F 00 99 00 A9 00 E8 00 12 01
+R 00 00 08 00
+T 0C 00 00 13 01 65 01 66 01 70 01 71 01 8D 01
+R 00 00 08 00
+T 18 00 00 8E 01 EA 01 FE 01 FF 01 30 02 8E 02
+R 00 00 08 00
+T 24 00 00 94 02 95 02 A9 02 0C 03 16 03 17 03
+R 00 00 08 00
+T 30 00 00 21 03 73 03 90 03 91 03 B0 03 E2 04
+R 00 00 08 00
+T 3C 00 00 E3 04 FA 04 FB 04 04 05 05 05 0E 05
+R 00 00 08 00
+T 48 00 00 0F 05 16 05 17 05 54 05 71 05 72 05
+R 00 00 08 00
+T 54 00 00 7D 05 88 05 8F 05 90 05 9C 05 9D 05
+R 00 00 08 00
+T 60 00 00 AA 05 AB 05 B7 05 B8 05 BE 05 10 06
+R 00 00 08 00
+T 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 08 00
+T 78 00 00 00 00 00 00 00 00 00 00
+R 00 00 08 00
+T 80 00 00
+R 00 00 08 00
+T 80 00 00 02 04 02 01 02 22 02 22 02 42 02 42 02
+R 00 00 08 00
+T 8D 00 00 04 24 04 02 01 21 01 02 01 21 01 02 04
+R 00 00 08 00
+T 9A 00 00 24 04 02 22 02 82 02 82 02 82 02 82 02
+R 00 00 08 00
+T A7 00 00 04 24 04 02 01 81 01 81 01 81 01 81 01
+R 00 00 08 00
+T B4 00 00 02 04 00 00 00 00 00 00 00 00 00 00
+R 00 00 08 00
+T C0 00 00
+R 00 00 08 00
+T C0 00 00 00 00 02 00 15 00 16 00 21 00 23 00
+R 00 00 08 00
+T CC 00 00 2B 00 2C 00 3E 00 3F 00 4D 00 4E 00
+R 00 00 08 00
+T D8 00 00 5C 00 5D 00 6A 00 6B 00 79 00 7A 00
+R 00 00 08 00
+T E4 00 00 88 00 89 00 97 00 98 00 A0 00 A2 00
+R 00 00 08 00
+T F0 00 00 A9 00 AA 00 BB 00 C4 00 D2 00 D3 00
+R 00 00 08 00
+T FC 00 00 E0 00 E1 00 EF 00 F0 00 FD 00 FE 00
+R 00 00 08 00
+T 08 01 00 0C 01 0D 01 19 01 1A 01 24 01 25 01
+R 00 00 08 00
+T 14 01 00 2D 01 2E 01 3F 01 40 01 4E 01 50 01
+R 00 00 08 00
+T 20 01 00 5B 01 5C 01 6A 01 6B 01 6D 01 7A 01
+R 00 00 08 00
+T 2C 01 00 7B 01 87 01 8D 01 8E 01 99 01 9A 01
+R 00 00 08 00
+T 38 01 00 A1 01 A2 01 AB 01 AC 01
+R 00 00 08 00
+T 40 01 00
+R 00 00 08 00
+T 40 01 00 02 04 2C 04 02 01 81 01 81 01 81 01 81
+R 00 00 08 00
+T 4D 01 00 01 81 01 81 01 81 01 81 01 05 04 2C 04
+R 00 00 08 00
+T 5A 01 00 02 04 84 04 84 04 84 04 84 04 84 04 84
+R 00 00 08 00
+T 67 01 00 04 84 04 84 04 2C 04 02 01 81 01 41 01
+R 00 00 08 00
+T 74 01 00 02 42 02 04 84 04 84 04 84 04 84 04
+R 00 00 08 00
+T 80 01 00
+R 00 00 08 00
+T 80 01 00 91 00 9C 00 A7 00
+R 00 00 08 00 00 03 07 00 00 05 07 00 00 07 07 00
+T 86 01 00
+R 00 00 08 00
+T 86 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 03 00 02 05 4B 00 02 07 53 00
+T 8C 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 01 00 02 05 45 00 02 07 50 00
+T 92 01 00 00 00
+R 00 00 08 00 02 03 22 00
+T 94 01 00
+R 00 00 08 00
+T 94 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 02 00 02 05 18 00 02 07 3B 00
+T 9A 01 00 00 00 00 00
+R 00 00 08 00 02 03 2E 00 02 05 37 00
+T 9E 01 00
+R 00 00 08 00
+T 9E 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 41 00 02 05 16 00 02 07 40 00
+T A4 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 43 00 02 05 47 00 02 07 49 00
+T AA 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 4A 00 02 05 4D 00 02 07 4F 00
+T B0 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 46 00 02 05 33 00 02 07 34 00
+T B6 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 35 00 02 05 3E 00 02 07 0D 00
+T BC 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 57 00 02 05 00 00 02 07 30 00
+T C2 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 31 00 02 05 21 00 02 07 27 00
+T C8 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 2B 00 02 05 04 00 02 07 05 00
+T CE 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 08 00 02 05 07 00 02 07 0A 00
+T D4 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 55 00 02 05 56 00 02 07 06 00
+T DA 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 09 00 02 05 0B 00 02 07 0C 00
+T E0 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 4C 00 02 05 4E 00 02 07 52 00
+T E6 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 54 00 02 05 0E 00 02 07 0F 00
+T EC 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 36 00 02 05 38 00 02 07 39 00
+T F2 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 3A 00 02 05 3C 00 02 07 3D 00
+T F8 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 3F 00 02 05 42 00 02 07 44 00
+T FE 01 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 10 00 02 05 11 00 02 07 12 00
+T 04 02 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 13 00 02 05 14 00 02 07 15 00
+T 0A 02 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 17 00 02 05 19 00 02 07 1B 00
+T 10 02 00
+R 00 00 08 00
+T 10 02 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 1D 00 02 05 20 00 02 07 26 00
+T 16 02 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 1F 00 02 05 2A 00 02 07 25 00
+T 1C 02 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 29 00 02 05 2D 00 02 07 2C 00
+T 22 02 00 00 00
+R 00 00 08 00 02 03 2F 00
+T 24 02 00
+R 00 00 08 00
+T 24 02 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 1A 00 02 05 1C 00 02 07 1E 00
+T 2A 02 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 24 00 02 05 28 00 02 07 23 00
+T 30 02 00 00 00 00 00 00 00
+R 00 00 08 00 02 03 23 00 02 05 23 00 02 07 48 00
+T 36 02 00 00 00
+R 00 00 08 00 02 03 51 00

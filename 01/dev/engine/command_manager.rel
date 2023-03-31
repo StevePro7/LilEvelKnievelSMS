@@ -1,0 +1,380 @@
+;!FILE command_manager.asm
+XL3
+H 9 areas 100 global symbols
+M command_manager
+O -mz80
+S _global_player_object Ref000000
+S _command_this_command Ref000000
+S _global_hack_object Ref000000
+S .__.ABS. Def000000
+S _command_frame_index Ref000000
+A _CODE size 14C flags 0 addr 0
+S A$command_manager$446 Def000143
+S A$command_manager$428 Def000132
+S A$command_manager$419 Def00012E
+S A$command_manager$392 Def000116
+S A$command_manager$383 Def000110
+S A$command_manager$374 Def000104
+S A$command_manager$293 Def0000C2
+S A$command_manager$176 Def000067
+S A$command_manager$167 Def000060
+S A$command_manager$149 Def00004A
+S C$command_manager.c$162$3_0$53 Def000146
+S C$command_manager.c$116$3_0$45 Def000106
+S G$engine_command_manager_load$0$0 Def00002D
+S A$command_manager$465 Def00014B
+S A$command_manager$456 Def000148
+S A$command_manager$447 Def000144
+S A$command_manager$429 Def000135
+S A$command_manager$357 Def0000F6
+S A$command_manager$294 Def0000C6
+S A$command_manager$249 Def0000AF
+S A$command_manager$177 Def000069
+S A$command_manager$168 Def000062
+S C$command_manager.c$123$4_0$47 Def000118
+S A$command_manager$439 Def00013A
+S A$command_manager$367 Def0000FE
+S A$command_manager$358 Def0000F9
+S A$command_manager$187 Def00006F
+S A$command_manager$169 Def000063
+S A$command_manager$359 Def0000FA
+S A$command_manager$197 Def000070
+S C$command_manager.c$129$1_0$37 Def00011A
+S A$command_manager$387 Def000112
+S A$command_manager$378 Def000106
+S A$command_manager$198 Def000072
+S C$command_manager.c$166$1_0$37 Def000148
+S C$command_manager.c$135$2_0$49 Def00012A
+S C$command_manager.c$118$4_0$46 Def000112
+S A$command_manager$397 Def000118
+S A$command_manager$379 Def000109
+S A$command_manager$199 Def000076
+S C$command_manager.c$167$1_0$37 Def00014B
+S C$command_manager.c$158$1_0$37 Def00013A
+S C$command_manager.c$119$4_0$46 Def000114
+S C$command_manager.c$20$1_0$24 Def000000
+S C$command_manager.c$21$1_0$24 Def000006
+S C$command_manager.c$22$1_0$24 Def00000B
+S XG$engine_command_manager_build$0$0 Def00014B
+S C$command_manager.c$139$2_0$49 Def000132
+S C$command_manager.c$50$2_0$33 Def00009F
+S C$command_manager.c$16$0_0$24 Def000000
+S A$command_manager$71 Def000006
+S C$command_manager.c$53$1_0$32 Def0000A8
+S C$command_manager.c$43$2_0$32 Def000070
+S A$command_manager$90 Def000019
+S A$command_manager$81 Def000010
+S A$command_manager$72 Def000009
+S C$command_manager.c$60$1_0$35 Def0000BF
+S C$command_manager.c$54$1_0$32 Def0000B1
+S C$command_manager.c$45$1_0$32 Def000078
+S C$command_manager.c$36$3_0$30 Def000036
+S C$command_manager.c$24$2_0$25 Def000026
+S A$command_manager$91 Def00001A
+S A$command_manager$82 Def000013
+S C$command_manager.c$46$1_0$32 Def000078
+S C$command_manager.c$18$1_0$24 Def000000
+S _engine_command_manager_load Def00002D
+S A$command_manager$92 Def00001B
+S C$command_manager.c$38$3_0$30 Def000038
+S C$command_manager.c$31$2_0$29 Def00002D
+S C$command_manager.c$24$3_0$26 Def000010
+S A$command_manager$93 Def00001C
+S A$command_manager$66 Def000000
+S C$command_manager.c$41$2_0$29 Def00006F
+S C$command_manager.c$39$3_0$30 Def000052
+S A$command_manager$94 Def00001D
+S A$command_manager$76 Def00000B
+S A$command_manager$67 Def000003
+S C$command_manager.c$80$1_0$37 Def0000C8
+S C$command_manager.c$29$2_0$24 Def00002C
+S C$command_manager.c$26$3_0$26 Def000015
+S A$command_manager$77 Def00000E
+S C$command_manager.c$56$1_0$35 Def0000B2
+S C$command_manager.c$48$2_0$33 Def000084
+S C$command_manager.c$27$3_0$26 Def00001E
+S A$command_manager$87 Def000015
+S C$command_manager.c$49$2_0$33 Def000094
+S A$command_manager$88 Def000016
+S C$command_manager.c$96$3_0$40 Def0000DE
+S C$command_manager.c$58$1_0$35 Def0000B2
+S C$command_manager.c$36$2_0$29 Def000065
+S A$command_manager$98 Def00001E
+S A$command_manager$89 Def000018
+S C$command_manager.c$59$1_0$35 Def0000B2
+S A$command_manager$99 Def000021
+S C$command_manager.c$76$1_0$37 Def0000C0
+S G$engine_command_manager_init$0$0 Def000000
+S C$command_manager.c$93$2_0$38 Def0000D8
+S C$command_manager.c$91$3_0$39 Def0000D6
+S C$command_manager.c$98$4_0$41 Def0000EA
+S C$command_manager.c$87$1_0$37 Def0000CA
+S C$command_manager.c$78$1_0$37 Def0000C8
+S C$command_manager.c$79$1_0$37 Def0000C8
+S XG$engine_command_manager_load$0$0 Def00006F
+S C$command_manager.c$89$2_0$38 Def0000D0
+S G$engine_command_manager_record$0$0 Def000070
+S _engine_command_manager_init Def000000
+S G$engine_command_manager_update$0$0 Def0000B2
+S _engine_command_manager_record Def000070
+S XG$engine_command_manager_init$0$0 Def00002C
+S _engine_command_manager_update Def0000B2
+S G$engine_command_manager_build$0$0 Def0000C0
+S A$command_manager$100 Def000023
+S A$command_manager$101 Def000024
+S A$command_manager$210 Def000080
+S A$command_manager$310 Def0000CE
+S A$command_manager$220 Def00008B
+S A$command_manager$211 Def000082
+S A$command_manager$320 Def0000D6
+S A$command_manager$230 Def00009A
+S A$command_manager$221 Def00008E
+S A$command_manager$140 Def00003B
+S XG$engine_command_manager_record$0$0 Def0000B1
+S A$command_manager$411 Def000126
+S A$command_manager$402 Def00011A
+S A$command_manager$231 Def00009B
+S A$command_manager$222 Def00008F
+S A$command_manager$150 Def00004B
+S A$command_manager$141 Def00003C
+S A$command_manager$105 Def000026
+S A$command_manager$430 Def000136
+S A$command_manager$412 Def000128
+S A$command_manager$403 Def00011D
+S A$command_manager$340 Def0000EA
+S A$command_manager$331 Def0000DE
+S A$command_manager$304 Def0000C8
+S A$command_manager$232 Def00009E
+S A$command_manager$223 Def000090
+S A$command_manager$160 Def000052
+S A$command_manager$151 Def00004C
+S A$command_manager$142 Def00003D
+S A$command_manager$133 Def000036
+S A$command_manager$106 Def000027
+S C$command_manager.c$110$3_0$44 Def0000FC
+S C$command_manager.c$102$4_0$42 Def0000EE
+S A$command_manager$440 Def00013D
+S A$command_manager$404 Def00011E
+S A$command_manager$341 Def0000EC
+S A$command_manager$332 Def0000E1
+S A$command_manager$314 Def0000D0
+S A$command_manager$224 Def000093
+S A$command_manager$215 Def000084
+S A$command_manager$206 Def000078
+S A$command_manager$170 Def000064
+S A$command_manager$161 Def000055
+S A$command_manager$152 Def00004D
+S A$command_manager$143 Def00003E
+S A$command_manager$116 Def00002C
+S A$command_manager$107 Def000028
+S C$command_manager.c$113$2_0$43 Def000100
+S C$command_manager.c$111$3_0$44 Def0000FE
+S A$command_manager$441 Def00013E
+S A$command_manager$423 Def000130
+S A$command_manager$405 Def000120
+S A$command_manager$351 Def0000F0
+S A$command_manager$333 Def0000E2
+S A$command_manager$315 Def0000D3
+S A$command_manager$270 Def0000B2
+S A$command_manager$243 Def0000A8
+S A$command_manager$216 Def000087
+S A$command_manager$207 Def00007C
+S A$command_manager$162 Def000057
+S A$command_manager$153 Def00004E
+S A$command_manager$144 Def000041
+S A$command_manager$126 Def00002D
+S A$command_manager$108 Def00002A
+S C$command_manager.c$141$3_0$51 Def000138
+S XG$engine_command_manager_update$0$0 Def0000BF
+S A$command_manager$460 Def000149
+S A$command_manager$451 Def000146
+S A$command_manager$406 Def000123
+S A$command_manager$352 Def0000F3
+S A$command_manager$334 Def0000E4
+S A$command_manager$325 Def0000D8
+S A$command_manager$316 Def0000D4
+S A$command_manager$271 Def0000B5
+S A$command_manager$244 Def0000AB
+S A$command_manager$217 Def000088
+S A$command_manager$208 Def00007D
+S A$command_manager$181 Def00006B
+S A$command_manager$163 Def000058
+S A$command_manager$154 Def00004F
+S A$command_manager$145 Def000042
+S A$command_manager$127 Def00002F
+S C$command_manager.c$160$2_0$52 Def000140
+S _engine_command_manager_build Def0000C0
+S A$command_manager$434 Def000138
+S A$command_manager$407 Def000124
+S A$command_manager$380 Def00010A
+S A$command_manager$353 Def0000F4
+S A$command_manager$335 Def0000E7
+S A$command_manager$326 Def0000DB
+S A$command_manager$308 Def0000CA
+S A$command_manager$272 Def0000B9
+S A$command_manager$254 Def0000B1
+S A$command_manager$245 Def0000AE
+S A$command_manager$236 Def00009F
+S A$command_manager$218 Def000089
+S A$command_manager$209 Def00007F
+S A$command_manager$182 Def00006D
+S A$command_manager$164 Def00005B
+S A$command_manager$155 Def000050
+S A$command_manager$146 Def000043
+S A$command_manager$128 Def000033
+S A$command_manager$417 Def00012A
+S A$command_manager$381 Def00010C
+S A$command_manager$372 Def000100
+S A$command_manager$363 Def0000FC
+S A$command_manager$336 Def0000E8
+S A$command_manager$327 Def0000DC
+S A$command_manager$309 Def0000CD
+S A$command_manager$282 Def0000BF
+S A$command_manager$273 Def0000BB
+S A$command_manager$237 Def0000A3
+S A$command_manager$228 Def000094
+S A$command_manager$219 Def00008A
+S A$command_manager$174 Def000065
+S A$command_manager$165 Def00005C
+S A$command_manager$156 Def000051
+S A$command_manager$147 Def000046
+S A$command_manager$138 Def000038
+S A$command_manager$129 Def000035
+S C$command_manager.c$108$2_0$43 Def0000F6
+S C$command_manager.c$106$1_0$37 Def0000F0
+S A$command_manager$445 Def000140
+S A$command_manager$418 Def00012D
+S A$command_manager$391 Def000114
+S A$command_manager$382 Def00010F
+S A$command_manager$373 Def000103
+S A$command_manager$346 Def0000EE
+S A$command_manager$292 Def0000C0
+S A$command_manager$274 Def0000BE
+S A$command_manager$238 Def0000A4
+S A$command_manager$229 Def000097
+S A$command_manager$175 Def000066
+S A$command_manager$166 Def00005D
+S A$command_manager$148 Def000049
+S A$command_manager$139 Def000039
+S C$command_manager.c$137$3_0$50 Def000130
+S C$command_manager.c$131$2_0$48 Def000126
+A _DATA size 4 flags 0 addr 0
+S _global_command_object Def000000
+S G$global_command_object$0_0$0 Def000000
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 01 00
+T 00 00 00
+R 00 00 01 00
+T 00 00 00
+R 00 00 00 00
+T 00 00 00 21 00 00 22 00 00 21 02 00 36 00 21
+R 00 00 00 00 00 07 01 00 00 0A 01 00
+T 0C 00 00 03 00 36 00 01 00 00 1E 00
+R 00 00 00 00 00 03 01 00 02 08 04 00
+T 15 00 00
+R 00 00 00 00
+T 15 00 00 6B 26 00 29 09 AF 77 23 77 21 00 00 16
+R 00 00 00 00 02 0D 01 00
+T 22 00 00 00 19 36 00 1C 7B D6 40 38 E9 C9
+R 00 00 00 00
+T 2D 00 00
+R 00 00 00 00
+T 2D 00 00 DD E5 DD 21 00 00 DD 39 F5 0E 00
+R 00 00 00 00
+T 38 00 00
+R 00 00 00 00
+T 38 00 00 59 16 00 EB 29 EB 21 00 00 19 E3 DD 6E
+R 00 00 00 00 02 0A 04 00
+T 45 00 00 04 DD 66 05 19 46 23 5E E1 E5 70 23 73
+R 00 00 00 00
+T 52 00 00 21 00 00 06 00 09 DD 7E 06 81 5F DD 7E
+R 00 00 00 00 02 04 01 00
+T 5F 00 00 07 CE 00 57 1A 77 0C 79 D6 40 38 CD DD
+R 00 00 00 00
+T 6C 00 00 F9 DD E1 C9
+R 00 00 00 00
+T 70 00 00
+R 00 00 00 00
+T 70 00 00 DD E5 DD 21 00 00 DD 39 ED 4B 00 00 79
+R 00 00 00 00 00 0D 01 00
+T 7D 00 00 D6 40 78 DE 00 30 24 11 00 00 69 60 29
+R 00 00 00 00 02 0B 04 00
+T 8A 00 00 19 DD 7E 04 77 23 DD 7E 05 77 01 00 00
+R 00 00 00 00 02 0E 01 00
+T 97 00 00 2A 00 00 09 DD 7E 06 77 ED 4B 00 00 03
+R 00 00 00 00 00 04 01 00 00 0D 01 00
+T A4 00 00 ED 43 00 00
+R 00 00 00 00 00 05 01 00
+T A8 00 00
+R 00 00 00 00
+T A8 00 00 21 03 00 DD 7E 06 77 DD E1 C9
+R 00 00 00 00 00 04 01 00
+T B2 00 00
+R 00 00 00 00
+T B2 00 00 21 03 00 FD 21 02 00 FD 39 FD 7E 00 77
+R 00 00 00 00 00 04 01 00
+T BF 00 00 C9
+R 00 00 00 00
+T C0 00 00
+R 00 00 00 00
+T C0 00 00 DD E5 DD 21 00 00 DD 39 0E 00 DD 7E 09
+R 00 00 00 00
+T CD 00 00 B7 28 20 DD 7E 04 B7 20 02 0E 20
+R 00 00 00 00
+T D8 00 00
+R 00 00 00 00
+T D8 00 00 DD 7E 04 3D 20 12 3A 02 00 B7 28 0A 3A
+R 00 00 00 00 02 0A 02 00
+T E5 00 00 0D 00 B7 20 04 CB E9 18 02
+R 00 00 00 00 02 03 00 00
+T EE 00 00
+R 00 00 00 00
+T EE 00 00 CB F1
+R 00 00 00 00
+T F0 00 00
+R 00 00 00 00
+T F0 00 00 DD 7E 0A B7 28 24 DD 7E 04 B7 20 04 CB
+R 00 00 00 00
+T FD 00 00 E9 CB D9
+R 00 00 00 00
+T 00 01 00
+R 00 00 00 00
+T 00 01 00 DD 7E 04 3D 20 14 3A 02 00 B7 28 0C 3A
+R 00 00 00 00 02 0A 02 00
+T 0D 01 00 0D 00 B7 20 06 CB E9 CB D9 18 02
+R 00 00 00 00 02 03 00 00
+T 18 01 00
+R 00 00 00 00
+T 18 01 00 CB F9
+R 00 00 00 00
+T 1A 01 00
+R 00 00 00 00
+T 1A 01 00 DD 7E 05 B7 20 0A DD 7E 06 B7 20 04 CB
+R 00 00 00 00
+T 27 01 00 C9 18 10
+R 00 00 00 00
+T 2A 01 00
+R 00 00 00 00
+T 2A 01 00 DD 7E 05 B7 28 02 CB C1
+R 00 00 00 00
+T 32 01 00
+R 00 00 00 00
+T 32 01 00 DD 7E 06 B7 28 02 CB D1
+R 00 00 00 00
+T 3A 01 00
+R 00 00 00 00
+T 3A 01 00 DD 7E 08 B7 28 08 DD 7E 04 3D 20 02 CB
+R 00 00 00 00
+T 47 01 00 E1
+R 00 00 00 00
+T 48 01 00
+R 00 00 00 00
+T 48 01 00 69 DD E1 C9
+R 00 00 00 00

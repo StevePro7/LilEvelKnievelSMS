@@ -1,0 +1,9 @@
+M:bank11
+S:G$level_0501_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0502_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0503_txt$0_0$0({2048}DA2048d,SC:U),D,0,0
+S:G$level_0504_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0505_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0506_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0507_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0508_txt$0_0$0({256}DA256d,SC:U),D,0,0
