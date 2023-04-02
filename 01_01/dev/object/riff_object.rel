@@ -1,0 +1,30 @@
+XL3
+H 9 areas 5 global symbols
+M riff_object
+O -mz80
+S .__.ABS. Def000000
+A _CODE size 34 flags 0 addr 0
+S _riff_counts Def00001A
+S G$riff_counts$0_0$0 Def00001A
+S _riff_indexs Def000000
+S G$riff_indexs$0_0$0 Def000000
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 00
+T 00 00 00 00 01 02 04 05 06 07 08 09 0A 0B 0C 0D
+R 00 00 00 00
+T 0D 00 00 0E 0F 11 13 16 17 19 1B 1D 21 25 27 30
+R 00 00 00 00
+T 1A 00 00
+R 00 00 00 00
+T 1A 00 00 01 01 02 01 01 01 01 01 01 01 01 01 01
+R 00 00 00 00
+T 27 00 00 01 02 02 03 01 02 02 02 04 04 02 09 09
+R 00 00 00 00

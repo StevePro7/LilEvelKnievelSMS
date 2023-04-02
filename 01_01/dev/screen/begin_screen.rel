@@ -1,0 +1,61 @@
+;!FILE begin_screen.asm
+XL3
+H 9 areas 25 global symbols
+M begin_screen
+O -mz80
+S _engine_random_manager_next Ref000000
+S .__.ABS. Def000000
+S _engine_debug_manager_initgame Ref000000
+S _engine_graphics_manager_common Ref000000
+S _engine_game_manager_set_cloud_form Ref000000
+A _CODE size 1C flags 0 addr 0
+S A$begin_screen$111 Def00001B
+S A$begin_screen$102 Def000018
+S A$begin_screen$103 Def000019
+S C$begin_screen.c$26$1_0$101 Def000012
+S C$begin_screen.c$27$1_0$101 Def000012
+S C$begin_screen.c$18$1_0$101 Def000000
+S _screen_begin_screen_update Def000015
+S C$begin_screen.c$45$1_0$103 Def000015
+S C$begin_screen.c$46$1_0$103 Def00001B
+S C$begin_screen.c$29$1_0$103 Def000015
+S XG$screen_begin_screen_update$0$0 Def00001B
+S A$begin_screen$60 Def000000
+S G$screen_begin_screen_load$0$0 Def000000
+S A$begin_screen$72 Def00000C
+S A$begin_screen$73 Def00000D
+S A$begin_screen$64 Def000003
+S A$begin_screen$74 Def00000E
+S A$begin_screen$65 Def000006
+S A$begin_screen$75 Def000011
+S A$begin_screen$66 Def000007
+S A$begin_screen$67 Def00000A
+S A$begin_screen$86 Def000012
+S A$begin_screen$68 Def00000B
+S A$begin_screen$99 Def000015
+S _screen_begin_screen_load Def000000
+S XG$screen_begin_screen_load$0$0 Def000012
+S G$screen_begin_screen_update$0$0 Def000015
+S C$begin_screen.c$13$0_0$101 Def000000
+S A$begin_screen$100 Def000016
+S C$begin_screen.c$22$1_0$101 Def000003
+S A$begin_screen$101 Def000017
+S C$begin_screen.c$23$1_0$101 Def00000C
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 00
+T 00 00 00 CD 00 00 21 00 01 E5 CD 00 00 F1 7D F5
+R 00 00 00 00 02 04 02 00 02 0B 00 00
+T 0D 00 00 33 CD 00 00 33 C3 00 00
+R 00 00 00 00 02 05 04 00 02 09 03 00
+T 15 00 00
+R 00 00 00 00
+T 15 00 00 C1 E1 E5 C5 36 08 C9
+R 00 00 00 00

@@ -1,0 +1,59 @@
+;!FILE func_screen.asm
+XL3
+H 9 areas 1F global symbols
+M func_screen
+O -mz80
+S _engine_font_manager_text Ref000000
+S .__.ABS. Def000000
+A _CODE size 22 flags 0 addr 0
+S A$func_screen$93 Def00001E
+S A$func_screen$57 Def000000
+S A$func_screen$94 Def00001F
+S A$func_screen$58 Def000001
+S A$func_screen$59 Def000002
+S _screen_func_screen_load Def000000
+S C$func_screen.c$11$1_0$8 Def00001B
+S C$func_screen.c$13$1_0$8 Def00001B
+S C$func_screen.c$14$1_0$8 Def000021
+S Ffunc_screen$__str_0$0_0$0 Def00000F
+S XG$screen_func_screen_load$0$0 Def00000E
+S C$func_screen.c$6$0_0$6 Def000000
+S C$func_screen.c$8$1_0$6 Def000000
+S C$func_screen.c$9$1_0$6 Def00000E
+S G$screen_func_screen_update$0$0 Def00001B
+S A$func_screen$102 Def000021
+S _screen_func_screen_update Def00001B
+S XG$screen_func_screen_update$0$0 Def000021
+S A$func_screen$60 Def000004
+S A$func_screen$61 Def000005
+S A$func_screen$62 Def000008
+S G$screen_func_screen_load$0$0 Def000000
+S A$func_screen$90 Def00001B
+S A$func_screen$63 Def000009
+S A$func_screen$91 Def00001C
+S A$func_screen$73 Def00000E
+S A$func_screen$64 Def00000C
+S A$func_screen$92 Def00001D
+S A$func_screen$65 Def00000D
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 00
+T 00 00 00 AF 57 1E 0A D5 21 0F 00 E5 CD 00 00 F1
+R 00 00 00 00 00 09 00 00 02 0D 00 00
+T 0D 00 00 F1 C9
+R 00 00 00 00
+T 0F 00 00
+R 00 00 00 00
+T 0F 00 00 46 55 4E 43 20 53 43 52 45 45 4E 00
+R 00 00 00 00
+T 1B 00 00
+R 00 00 00 00
+T 1B 00 00 C1 E1 E5 C5 36 17 C9
+R 00 00 00 00

@@ -1,0 +1,2 @@
+M:storage_object
+T:Fstorage_object$tag_struct_storage_object[({0}S:S$Magic$0_0$0({4}SL:U),Z,0,0)({4}S:S$storage_difficulty$0_0$0({1}SC:U),Z,0,0)({5}S:S$storage_world$0_0$0({1}SC:U),Z,0,0)({6}S:S$storage_round$0_0$0({1}SC:U),Z,0,0)({7}S:S$storage_level$0_0$0({1}SC:U),Z,0,0)({8}S:S$storage_point$0_0$0({1}SC:U),Z,0,0)({9}S:S$storage_saved$0_0$0({1}SC:U),Z,0,0)({10}S:S$storage_padding$0_0$0({6}DA6d,SC:U),Z,0,0)({16}S:S$storage_frame_index$0_0$0({128}DA64d,SI:U),Z,0,0)({144}S:S$storage_this_command$0_0$0({64}DA64d,SC:U),Z,0,0)({208}S:S$terminal$0_0$0({1}SC:U),Z,0,0)]

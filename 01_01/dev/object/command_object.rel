@@ -1,0 +1,64 @@
+XL3
+H 9 areas 7 global symbols
+M command_object
+O -mz80
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size C0 flags 0 addr 0
+S _command_this_command Def000080
+S G$command_this_command$0_0$0 Def000080
+S _command_frame_index Def000000
+S G$command_frame_index$0_0$0 Def000000
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size C0 flags 0 addr 0
+S Fcommand_object$__xinit_command_this_command$0_0$0 Def000080
+S Fcommand_object$__xinit_command_frame_index$0_0$0 Def000000
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 02 00
+T 00 00 00
+R 00 00 02 00
+T 80 00 00
+R 00 00 02 00
+T 80 00 00
+R 00 00 02 00
+T 00 00 00
+R 00 00 07 00
+T 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 0C 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 24 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 30 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 3C 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 48 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 54 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 60 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 78 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 80 00 00
+R 00 00 07 00
+T 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 8D 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T 9A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T A7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00
+T B4 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+R 00 00 07 00

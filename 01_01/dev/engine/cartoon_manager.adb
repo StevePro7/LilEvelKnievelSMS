@@ -1,0 +1,12 @@
+M:cartoon_manager
+F:G$engine_cartoon_manager_wave$0_0$0({2}DF,SC:U),Z,0,0,0,0,0
+S:Lcartoon_manager.engine_cartoon_manager_wave$frame$1_0$8({1}SC:U),B,1,4
+F:G$engine_cartoon_manager_swap$0_0$0({2}DF,SC:U),Z,0,0,0,0,0
+S:Lcartoon_manager.engine_cartoon_manager_swap$frame$1_0$14({1}SC:U),B,1,4
+F:G$engine_cartoon_manager_flip$0_0$0({2}DF,SC:U),Z,0,0,0,0,0
+S:Lcartoon_manager.engine_cartoon_manager_flip$frame$1_0$20({1}SC:U),B,1,4
+S:Lcartoon_manager.engine_cartoon_manager_flip$command$1_0$20({1}SC:U),B,1,5
+S:G$engine_font_manager_char$0_0$0({2}DF,SV:S),C,0,0
+S:G$engine_font_manager_text$0_0$0({2}DF,SV:S),C,0,0
+S:G$engine_font_manager_data$0_0$0({2}DF,SV:S),C,0,0
+S:G$engine_font_manager_valu$0_0$0({2}DF,SV:S),C,0,0

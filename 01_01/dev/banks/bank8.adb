@@ -1,0 +1,17 @@
+M:bank8
+S:G$level_0101_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0102_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0103_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0104_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0105_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0106_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0107_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0108_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0201_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0202_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0203_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0204_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0205_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0206_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0207_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0208_txt$0_0$0({256}DA256d,SC:U),D,0,0

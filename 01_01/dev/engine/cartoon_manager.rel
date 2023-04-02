@@ -1,0 +1,310 @@
+;!FILE cartoon_manager.asm
+XL3
+H 9 areas B6 global symbols
+M cartoon_manager
+O -mz80
+S .__.ABS. Def000000
+A _CODE size 117 flags 0 addr 0
+S XG$engine_cartoon_manager_wave$0$0 Def00003A
+S A$cartoon_manager$100 Def000033
+S XG$engine_cartoon_manager_swap$0$0 Def000083
+S A$cartoon_manager$110 Def000038
+S A$cartoon_manager$300 Def0000EB
+S A$cartoon_manager$210 Def00008C
+S A$cartoon_manager$310 Def0000F4
+S A$cartoon_manager$211 Def00008F
+S A$cartoon_manager$311 Def0000F6
+S A$cartoon_manager$212 Def000090
+S A$cartoon_manager$140 Def000050
+S A$cartoon_manager$131 Def000043
+S C$cartoon_manager.c$115$1_0$21 Def000111
+S A$cartoon_manager$330 Def000109
+S A$cartoon_manager$240 Def0000A9
+S A$cartoon_manager$222 Def000097
+S A$cartoon_manager$204 Def000084
+S A$cartoon_manager$150 Def00005D
+S A$cartoon_manager$141 Def000053
+S A$cartoon_manager$132 Def000046
+S A$cartoon_manager$105 Def000035
+S C$cartoon_manager.c$116$1_0$21 Def000116
+S A$cartoon_manager$304 Def0000ED
+S A$cartoon_manager$250 Def0000B7
+S A$cartoon_manager$241 Def0000AC
+S A$cartoon_manager$223 Def00009A
+S A$cartoon_manager$205 Def000086
+S A$cartoon_manager$151 Def00005E
+S A$cartoon_manager$142 Def000055
+S A$cartoon_manager$133 Def000048
+S A$cartoon_manager$115 Def00003A
+S A$cartoon_manager$323 Def0000FE
+S A$cartoon_manager$305 Def0000F0
+S A$cartoon_manager$251 Def0000B9
+S A$cartoon_manager$242 Def0000AE
+S A$cartoon_manager$224 Def00009C
+S A$cartoon_manager$206 Def00008A
+S A$cartoon_manager$170 Def00006F
+S A$cartoon_manager$125 Def00003B
+S A$cartoon_manager$342 Def000111
+S A$cartoon_manager$324 Def000101
+S A$cartoon_manager$306 Def0000F2
+S A$cartoon_manager$270 Def0000CA
+S A$cartoon_manager$261 Def0000BF
+S A$cartoon_manager$243 Def0000B0
+S A$cartoon_manager$234 Def0000A2
+S A$cartoon_manager$216 Def000092
+S A$cartoon_manager$171 Def000072
+S A$cartoon_manager$162 Def000067
+S A$cartoon_manager$126 Def00003D
+S A$cartoon_manager$352 Def000116
+S A$cartoon_manager$325 Def000103
+S A$cartoon_manager$316 Def0000F8
+S A$cartoon_manager$280 Def0000D2
+S A$cartoon_manager$262 Def0000C2
+S A$cartoon_manager$244 Def0000B1
+S A$cartoon_manager$235 Def0000A5
+S A$cartoon_manager$217 Def000094
+S A$cartoon_manager$172 Def000074
+S A$cartoon_manager$163 Def00006A
+S A$cartoon_manager$127 Def000041
+S C$cartoon_manager.c$110$4_0$37 Def00010B
+S C$cartoon_manager.c$104$3_0$35 Def0000FE
+S A$cartoon_manager$335 Def00010B
+S A$cartoon_manager$317 Def0000FB
+S A$cartoon_manager$281 Def0000D5
+S A$cartoon_manager$263 Def0000C3
+S A$cartoon_manager$245 Def0000B2
+S A$cartoon_manager$236 Def0000A7
+S A$cartoon_manager$164 Def00006C
+S A$cartoon_manager$137 Def00004A
+S A$cartoon_manager$336 Def00010E
+S A$cartoon_manager$318 Def0000FC
+S A$cartoon_manager$282 Def0000D6
+S A$cartoon_manager$255 Def0000BB
+S A$cartoon_manager$228 Def00009E
+S A$cartoon_manager$165 Def00006D
+S A$cartoon_manager$156 Def000060
+S A$cartoon_manager$147 Def000057
+S A$cartoon_manager$138 Def00004D
+S A$cartoon_manager$337 Def00010F
+S A$cartoon_manager$274 Def0000CC
+S A$cartoon_manager$256 Def0000BD
+S A$cartoon_manager$229 Def0000A0
+S A$cartoon_manager$184 Def00007E
+S A$cartoon_manager$157 Def000063
+S A$cartoon_manager$148 Def00005A
+S A$cartoon_manager$139 Def00004E
+S A$cartoon_manager$347 Def000114
+S A$cartoon_manager$329 Def000105
+S A$cartoon_manager$293 Def0000DF
+S A$cartoon_manager$275 Def0000D0
+S A$cartoon_manager$194 Def000083
+S A$cartoon_manager$176 Def000076
+S A$cartoon_manager$158 Def000065
+S A$cartoon_manager$149 Def00005C
+S C$cartoon_manager.c$106$4_0$36 Def000105
+S A$cartoon_manager$294 Def0000E2
+S A$cartoon_manager$249 Def0000B4
+S A$cartoon_manager$177 Def000079
+S A$cartoon_manager$295 Def0000E4
+S A$cartoon_manager$268 Def0000C5
+S A$cartoon_manager$178 Def00007B
+S C$cartoon_manager.c$20$2_0$11 Def00001F
+S A$cartoon_manager$296 Def0000E5
+S A$cartoon_manager$287 Def0000D8
+S A$cartoon_manager$269 Def0000C8
+S A$cartoon_manager$179 Def00007C
+S A$cartoon_manager$297 Def0000E7
+S A$cartoon_manager$288 Def0000DB
+S A$cartoon_manager$189 Def000081
+S A$cartoon_manager$298 Def0000E8
+S A$cartoon_manager$289 Def0000DD
+S C$cartoon_manager.c$15$2_0$10 Def00000F
+S A$cartoon_manager$299 Def0000EA
+S C$cartoon_manager.c$60$1_0$21 Def000097
+S C$cartoon_manager.c$24$2_0$11 Def00002A
+S C$cartoon_manager.c$22$3_0$12 Def000026
+S A$cartoon_manager$60 Def000008
+S A$cartoon_manager$70 Def000016
+S A$cartoon_manager$61 Def00000B
+S C$cartoon_manager.c$54$1_0$21 Def000084
+S C$cartoon_manager.c$51$1_0$15 Def00007E
+S C$cartoon_manager.c$42$1_0$15 Def000060
+S C$cartoon_manager.c$33$1_0$15 Def00003B
+S A$cartoon_manager$62 Def00000D
+S C$cartoon_manager.c$64$1_0$21 Def0000A2
+S C$cartoon_manager.c$52$1_0$15 Def000083
+S A$cartoon_manager$81 Def00001F
+S A$cartoon_manager$54 Def000000
+S C$cartoon_manager.c$62$2_0$23 Def00009E
+S C$cartoon_manager.c$56$1_0$21 Def00008C
+S G$engine_cartoon_manager_flip$0$0 Def000084
+S C$cartoon_manager.c$35$1_0$15 Def000043
+S C$cartoon_manager.c$26$3_0$13 Def000031
+S A$cartoon_manager$82 Def000022
+S A$cartoon_manager$55 Def000002
+S C$cartoon_manager.c$91$2_0$31 Def0000DF
+S A$cartoon_manager$83 Def000024
+S A$cartoon_manager$56 Def000006
+S C$cartoon_manager.c$46$1_0$15 Def00006F
+S A$cartoon_manager$93 Def00002A
+S A$cartoon_manager$75 Def000018
+S A$cartoon_manager$66 Def00000F
+S A$cartoon_manager$94 Def00002D
+S A$cartoon_manager$76 Def00001B
+S A$cartoon_manager$67 Def000012
+S C$cartoon_manager.c$70$4_0$26 Def0000BB
+S C$cartoon_manager.c$58$2_0$22 Def000092
+S C$cartoon_manager.c$44$2_0$18 Def000067
+S C$cartoon_manager.c$37$2_0$16 Def00004A
+S A$cartoon_manager$95 Def00002F
+S A$cartoon_manager$77 Def00001D
+S A$cartoon_manager$68 Def000014
+S C$cartoon_manager.c$93$3_0$32 Def0000ED
+S C$cartoon_manager.c$85$4_0$30 Def0000D2
+S C$cartoon_manager.c$66$2_0$24 Def0000A9
+S A$cartoon_manager$87 Def000026
+S A$cartoon_manager$69 Def000015
+S C$cartoon_manager.c$89$1_0$21 Def0000D8
+S A$cartoon_manager$88 Def000028
+S C$cartoon_manager.c$39$3_0$17 Def000057
+S G$engine_cartoon_manager_wave$0$0 Def000000
+S A$cartoon_manager$99 Def000031
+S C$cartoon_manager.c$95$4_0$33 Def0000F4
+S C$cartoon_manager.c$81$4_0$29 Def0000CC
+S C$cartoon_manager.c$74$4_0$27 Def0000BF
+S C$cartoon_manager.c$68$3_0$25 Def0000B4
+S C$cartoon_manager.c$48$2_0$19 Def000076
+S C$cartoon_manager.c$11$0_0$9 Def000000
+S _engine_cartoon_manager_flip Def000084
+S C$cartoon_manager.c$99$4_0$34 Def0000F8
+S C$cartoon_manager.c$79$3_0$28 Def0000C5
+S C$cartoon_manager.c$30$1_0$9 Def000035
+S C$cartoon_manager.c$31$1_0$9 Def00003A
+S C$cartoon_manager.c$13$1_0$9 Def000008
+S G$engine_cartoon_manager_swap$0$0 Def00003B
+S C$cartoon_manager.c$18$1_0$9 Def000018
+S _engine_cartoon_manager_wave Def000000
+S XG$engine_cartoon_manager_flip$0$0 Def000116
+S _engine_cartoon_manager_swap Def00003B
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 00
+T 00 00 00 DD E5 DD 21 00 00 DD 39 DD 7E 04 D6 02
+R 00 00 00 00
+T 0D 00 00 30 09 DD 4E 04 3E 01 91 6F 18 20
+R 00 00 00 00
+T 18 00 00
+R 00 00 00 00
+T 18 00 00 DD 7E 04 D6 04 30 16 DD 7E 04 D6 02 20
+R 00 00 00 00
+T 25 00 00 04 2E 03 18 0E
+R 00 00 00 00
+T 2A 00 00
+R 00 00 00 00
+T 2A 00 00 DD 7E 04 D6 03 20 04 2E 02 18 03
+R 00 00 00 00
+T 35 00 00
+R 00 00 00 00
+T 35 00 00 DD 6E 04
+R 00 00 00 00
+T 38 00 00
+R 00 00 00 00
+T 38 00 00 DD E1 C9
+R 00 00 00 00
+T 3B 00 00
+R 00 00 00 00
+T 3B 00 00 DD E5 DD 21 00 00 DD 39 DD 7E 04 D6 04
+R 00 00 00 00
+T 48 00 00 30 16 DD 7E 04 B7 28 07 DD 7E 04 D6 02
+R 00 00 00 00
+T 55 00 00 20 27
+R 00 00 00 00
+T 57 00 00
+R 00 00 00 00
+T 57 00 00 DD 4E 04 3E 02 91 6F 18 21
+R 00 00 00 00
+T 60 00 00
+R 00 00 00 00
+T 60 00 00 DD 7E 04 D6 08 30 08 DD 7E 04 C6 04 6F
+R 00 00 00 00
+T 6D 00 00 18 12
+R 00 00 00 00
+T 6F 00 00
+R 00 00 00 00
+T 6F 00 00 DD 7E 04 D6 0C 30 08 DD 7E 04 C6 FC 6F
+R 00 00 00 00
+T 7C 00 00 18 03
+R 00 00 00 00
+T 7E 00 00
+R 00 00 00 00
+T 7E 00 00 DD 6E 04
+R 00 00 00 00
+T 81 00 00
+R 00 00 00 00
+T 81 00 00 DD E1 C9
+R 00 00 00 00
+T 84 00 00
+R 00 00 00 00
+T 84 00 00 DD E5 DD 21 00 00 DD 39 DD 7E 04 B7 20
+R 00 00 00 00
+T 91 00 00 05 2E 04 C3 14 01
+R 00 00 00 00 00 07 00 00
+T 97 00 00
+R 00 00 00 00
+T 97 00 00 DD 7E 04 D6 02 20 04 2E 08 18 72
+R 00 00 00 00
+T A2 00 00
+R 00 00 00 00
+T A2 00 00 DD 7E 04 D6 08 30 2F DD 7E 05 E6 01 0E
+R 00 00 00 00
+T AF 00 00 00 3D B1 20 11 DD 7E 04 D6 04 20 04 2E
+R 00 00 00 00
+T BC 00 00 07 18 55
+R 00 00 00 00
+T BF 00 00
+R 00 00 00 00
+T BF 00 00 DD 6E 04 2D 18 4F
+R 00 00 00 00
+T C5 00 00
+R 00 00 00 00
+T C5 00 00 DD 7E 04 D6 07 20 06 DD 36 04 04 18 3F
+R 00 00 00 00
+T D2 00 00
+R 00 00 00 00
+T D2 00 00 DD 6E 04 2C 18 3C
+R 00 00 00 00
+T D8 00 00
+R 00 00 00 00
+T D8 00 00 DD 7E 04 D6 0C 30 32 DD 7E 05 E6 04 47
+R 00 00 00 00
+T E5 00 00 0E 00 78 D6 04 B1 20 11 DD 7E 04 D6 0B
+R 00 00 00 00
+T F2 00 00 20 04 2E 08 18 1C
+R 00 00 00 00
+T F8 00 00
+R 00 00 00 00
+T F8 00 00 DD 6E 04 2C 18 16
+R 00 00 00 00
+T FE 00 00
+R 00 00 00 00
+T FE 00 00 DD 7E 04 D6 08 20 06 DD 36 04 0B 18 06
+R 00 00 00 00
+T 0B 01 00
+R 00 00 00 00
+T 0B 01 00 DD 6E 04 2D 18 03
+R 00 00 00 00
+T 11 01 00
+R 00 00 00 00
+T 11 01 00 DD 6E 04
+R 00 00 00 00
+T 14 01 00
+R 00 00 00 00
+T 14 01 00 DD E1 C9
+R 00 00 00 00
