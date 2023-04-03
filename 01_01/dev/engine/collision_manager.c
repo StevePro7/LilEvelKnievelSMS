@@ -94,7 +94,6 @@ signed char engine_collision_manager_player( unsigned char lookX, unsigned char 
 	return INVALID_INDEX;
 }
 
-
 void engine_collision_manager_finish( unsigned char lookX, unsigned char tileY, unsigned char posnY, unsigned char *player_begY, unsigned char *player_endY )
 {
 	// Short algorithm to compare player finishing level:

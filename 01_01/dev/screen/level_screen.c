@@ -81,7 +81,7 @@ void screen_level_screen_load()
 	engine_player_manager_draw();
 
 	devkit_SMS_displayOn();
-	check = 0;
+	check = stage_mode_inc0;
 }
 
 void screen_level_screen_update( unsigned char *screen_type )
@@ -91,7 +91,7 @@ void screen_level_screen_update( unsigned char *screen_type )
 	unsigned char input;
 	bool updateLevel = false;
 
-	if( 1 == check )
+	if( stage_mode_inc1 == check )
 	{
 		engine_player_manager_draw();
 		if( !devkit_PSGSFXGetStatus() )
@@ -224,9 +224,9 @@ void screen_level_screen_update( unsigned char *screen_type )
 		engine_game_manager_set_level_data( game_world, game_round, game_point );
 		engine_storage_manager_save();
 
-		engine_sound_manager_play( 2 );
+		engine_sound_manager_play( sound_type_accept );
 		engine_player_manager_draw();
-		check = 1;
+		check = stage_mode_inc1;
 		return;
 	}
 
@@ -262,7 +262,6 @@ static void printStats()
 	unsigned char delta;
 	delta = 1;
 
-	// TODO delete - used for debugging / testing only - print level + screen
 	engine_font_manager_text( "GAME-LEVEL: ", 5, SHARE_TEXT_ROW + 3 );
 	engine_font_manager_text( "NO.SCREENS: ", 5, SHARE_TEXT_ROW + 4 );
 	engine_font_manager_text( "SCREEN-NO.: ", 5, SHARE_TEXT_ROW + 5 );
@@ -270,5 +269,4 @@ static void printStats()
 	engine_font_manager_data( game_level + delta, 20, SHARE_TEXT_ROW + 3 );
 	engine_font_manager_data( numb_screen, 20, SHARE_TEXT_ROW + 4 );
 	engine_font_manager_data( game_screen + delta, 20, SHARE_TEXT_ROW + 5 );
-	// TODO delete - used for debugging / testing only - print level + screen
 }

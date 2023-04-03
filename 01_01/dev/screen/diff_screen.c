@@ -1,6 +1,5 @@
 #include "diff_screen.h"
 #include "../engine/audio_manager.h"
-#include "../engine/debug_manager.h"
 #include "../engine/enum_manager.h"
 #include "../engine/font_manager.h"
 #include "../engine/game_manager.h"
@@ -8,9 +7,7 @@
 #include "../engine/input_manager.h"
 #include "../engine/level_manager.h"
 #include "../engine/player_manager.h"
-#include "../engine/scroll_manager.h"
 #include "../engine/storage_manager.h"
-#include "../engine/tile_manager.h"
 #include "../engine/util_manager.h"
 #include "../devkit/_sms_manager.h"
 #include "../devkit/_snd_manager.h"
@@ -52,16 +49,13 @@ void screen_diff_screen_load()
 	engine_level_manager_init( go->game_level );
 	checkScreen = lo->check_width * go->game_point;
 	engine_level_manager_draw_screen( checkScreen );
-	//engine_level_manager_draw_point( go->game_point );
-	//engine_scroll_manager_load( go->game_point, lo->level_size );
-
 
 	setupPlayer();
 	printCursor();
 	devkit_SMS_displayOn();
-//	printTexts();
+
 	engine_player_manager_draw();
-	check = 0;
+	check = stage_mode_inc0;
 }
 
 void screen_diff_screen_update( unsigned char *screen_type )
@@ -70,7 +64,7 @@ void screen_diff_screen_update( unsigned char *screen_type )
 	unsigned char input1, input2;
 	bool updateDiff = false;
 
-	if( 1 == check )
+	if( stage_mode_inc1 == check )
 	{
 		engine_player_manager_draw();
 		if( !devkit_PSGSFXGetStatus() )
@@ -82,9 +76,8 @@ void screen_diff_screen_update( unsigned char *screen_type )
 		}
 	}
 
-	//input1 = engine_input_manager_hold( input_type_up );
 	input2 = engine_input_manager_hold( input_type_left );
-	if( /*input1 ||*/ input2 )
+	if( input2 )
 	{
 		updateDiff = true;
 		if( 0 == game_difficulty )
@@ -98,8 +91,7 @@ void screen_diff_screen_update( unsigned char *screen_type )
 	}
 
 	input1 = engine_input_manager_hold( input_type_right );
-	//input2 = engine_input_manager_hold( input_type_down );
-	if( input1 /*|| input2*/ )
+	if( input1 )
 	{
 		updateDiff = true;
 		if( ( MAX_DIFFICULTY - 1 ) == game_difficulty )
@@ -121,18 +113,14 @@ void screen_diff_screen_update( unsigned char *screen_type )
 	input1 = engine_input_manager_hold( input_type_fire1 );
 	if( input1 )
 	{
-		// TODO sfx
-		//engine_player_manager_draw();
 		engine_game_manager_set_difficulty( game_difficulty );
 		engine_player_manager_lives( game_difficulty );
 		engine_storage_manager_save();
 
-		engine_sound_manager_play( 2 );
+		engine_sound_manager_play( sound_type_accept );
 		engine_player_manager_draw();
-		check = 1;
+		check = stage_mode_inc1;
 		return;
-		//*screen_type = screen_type_level;
-		//return;
 	}
 
 	input1 = engine_input_manager_hold( input_type_fire2 );
@@ -159,7 +147,6 @@ static void setupPlayer()
 	engine_player_manager_loadX( go->game_point );
 	player_loadY = level_platforms[ po->lookX ];
 	engine_player_manager_loadY( player_loadY );
-	//engine_player_manager_draw();
 }
 
 static void printCursor()

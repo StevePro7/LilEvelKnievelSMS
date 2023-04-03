@@ -3,7 +3,6 @@
 #include "../engine/content_manager.h"
 #include "../engine/debug_manager.h"
 #include "../engine/enum_manager.h"
-//#include "../engine/font_manager.h"
 #include "../engine/game_manager.h"
 #include "../engine/global_manager.h"
 #include "../engine/graphics_manager.h"
@@ -28,13 +27,13 @@ void screen_begin_screen_load()
 
 void screen_begin_screen_update( unsigned char *screen_type )
 {
-	*screen_type = screen_type_over;
+	//*screen_type = screen_type_over;
 	//*screen_type = screen_type_intro;
 	//*screen_type = screen_type_init;
 	//*screen_type = screen_type_level;			// level select world by round
-	//*screen_type = screen_type_option;
+	*screen_type = screen_type_option;
 	//*screen_type = screen_type_diff;
-	*screen_type = screen_type_beat;
+	//*screen_type = screen_type_beat;
 	//*screen_type = screen_type_boss;
 	//*screen_type = screen_type_demo;
 //	*screen_type = screen_type_cont;

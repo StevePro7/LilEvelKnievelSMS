@@ -1,10 +1,6 @@
 #include "repeat_screen.h"
-//#include "../engine/asm_manager.h"
-//#include "../engine/audio_manager.h"
 #include "../engine/collision_manager.h"
-//#include "../engine/content_manager.h"
 #include "../engine/command_manager.h"
-//#include "../engine/debug_manager.h"
 #include "../engine/enum_manager.h"
 #include "../engine/font_manager.h"
 #include "../engine/game_manager.h"
@@ -27,7 +23,6 @@
 #endif
 
 static bool complete;
-static signed int deltaY;
 static unsigned char frame_counter;
 static unsigned char available;
 static unsigned char local_prev_command;
@@ -55,39 +50,25 @@ void screen_repeat_screen_load()
 	checkScreen = lo->check_width * go->game_point;
 	engine_scroll_manager_load( checkScreen, lo->level_check, lo->level_size );
 	engine_level_manager_draw_screen( checkScreen );
-	//engine_level_manager_draw_point( go->game_point );
 
 	engine_player_manager_initX( go->game_difficulty, go->game_world );
 	engine_player_manager_loadX( checkScreen );
 	player_loadY = level_platforms[ po->lookX ];
 	engine_player_manager_loadY( player_loadY );
 	engine_player_manager_draw();
-	//TODO delete - dup below
-	//engine_command_manager_init();
-	//engine_command_manager_load();
-	//TODO delete - dup below
 
 	engine_graphics_manager_sea();
 	engine_graphics_manager_clouds( go->game_cloud );
 	engine_level_manager_draw_screen( checkScreen );		// Weird - must draw this twice otherwise clouds + sea don't draw??
 	devkit_SMS_displayOn();
 
-	//engine_scroll_manager_load( go->game_point, lo->level_check, lo->level_size );
-	//engine_scroll_manager_update( 0 );
-
-
-	// test_screen
 	engine_font_manager_text( "NEW REPEAT SCREEN", 10, 2 );
 
 	engine_frame_manager_load();
 	//engine_frame_manager_draw();
 	engine_command_manager_init();
-	//engine_command_manager_load();
-	//engine_storage_manager_load();
 
-	//engine_scroll_manager_update( 0 );		// TODO delete
 	complete = false;
-	deltaY = 0;
 	frame_counter = 0;
 	local_prev_command = COMMAND_NONE_MASK;
 
@@ -100,9 +81,7 @@ void screen_repeat_screen_load()
 
 void screen_repeat_screen_update( unsigned char *screen_type )
 {
-	// TODO delete
 	struct_frame_object *fo = &global_frame_object;
-
 	struct_scroll_object *so = &global_scroll_object;
 	struct_player_object *po = &global_player_object;
 	struct_level_object *lo = &global_level_object;
@@ -112,7 +91,7 @@ void screen_repeat_screen_update( unsigned char *screen_type )
 	unsigned char input1;// input2, input3, input4, input5, input6;
 	unsigned char input2;
 	unsigned char deltaX;
-	//signed int deltaY;
+	signed int deltaY;
 	unsigned char loops;
 	//signed char collision;
 	enum_scroll_state scroll_state;
@@ -138,10 +117,6 @@ void screen_repeat_screen_update( unsigned char *screen_type )
 			if( command_frame_index[ frame_counter ] == fo->frame_count )
 			{
 				command = command_this_command[ frame_counter ];
-
-				//engine_font_manager_data( frame_counter, 30, 03 );
-				//engine_font_manager_data( command, 30, 04 );
-
 				local_prev_command = command;
 				frame_counter++;
 			}
@@ -158,23 +133,13 @@ void screen_repeat_screen_update( unsigned char *screen_type )
 		{
 			// Get horizontal movement.
 			deltaX = engine_player_manager_get_deltaX( po->player_state, command );
-			//deltaX = 0;
 
 			// Get button action.
 			engine_player_manager_set_action( po->player_frame, command );
 
-			// No scroll.
-			//if( 0 == deltaX )
-			//{
-			//	engine_scroll_manager_update( 0 );
-			//}
-			//else
-			//{
-			//if( !complete ) {}
 			for( loops = 0; loops < deltaX; loops++ )
 			{
-				//scroll_state = engine_scroll_manager_update( 1 );
-				scroll_state = engine_scroll_manager_update( 0 );
+				scroll_state = engine_scroll_manager_update( 1 );
 				if( scroll_state_tile == scroll_state )
 				{
 					engine_level_manager_draw_column( so->scrollColumn );
@@ -183,8 +148,6 @@ void screen_repeat_screen_update( unsigned char *screen_type )
 				//else if( scroll_state_line == scroll_state )
 				//{
 				//	engine_game_manager_inc_checkpoint();
-				//	//TODO used for debugging - remove
-				//	//engine_font_manager_data( go->game_point, 20, go->game_point );
 				//}
 				else if( scroll_state_comp == scroll_state )
 				{
@@ -234,24 +197,11 @@ void screen_repeat_screen_update( unsigned char *screen_type )
 			}
 		}
 
-			// Store command for future use.
-			//engine_command_manager_update( command );
-		//}
-		//else
-		//{
-		//	engine_scroll_manager_update( 0 );
-		//}
-
 		engine_player_manager_draw();
-		//engine_debug_manager_printout();
-		//	engine_font_manager_data( deltaY, 30, 2 );
-		//	engine_font_manager_data( po->posnY, 30, 3 );
 
 		// Check to see if player completes level.
 		if( complete )
 		{
-			//engine_scroll_manager_update( 0 );		// TODO delete
-			//*screen_type = screen_type_pass;
 			*screen_type = screen_type_option;
 			return;
 		}
@@ -259,8 +209,6 @@ void screen_repeat_screen_update( unsigned char *screen_type )
 		// Check if moving on to the dying sequence.
 		if( player_state_isnowdying == player_state )
 		{
-			//engine_scroll_manager_update( 0 );		// TODO delete
-			//*screen_type = screen_type_dead;
 			*screen_type = screen_type_option;
 			return;
 		}

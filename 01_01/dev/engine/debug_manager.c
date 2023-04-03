@@ -54,32 +54,3 @@ void engine_debug_manager_initgame()
 	//go->game_cloud = 88;		// TODO will be random
 }
 
-// TODO - delete this!!
-//void engine_debug_manager_printout()
-//{
-//	struct_player_object *po = &global_player_object;
-//	struct_level_object *lo = &global_level_object;
-//	//unsigned char idx, tmp;
-//
-//	//devkit_SMS_mapROMBank( bggame_tiles__tiles__psgcompr_bank );
-//	//for( idx = 0; idx < 16; idx++ )
-//	//{
-//	//	engine_font_manager_data( idx, 14, idx );
-//	//	engine_font_manager_data( level_platforms[ idx ], 18, idx );
-//
-//	//	tmp = idx + 16;
-//	//	engine_font_manager_data( tmp, 25, idx );
-//	//	engine_font_manager_data( level_platforms[ tmp ], 30, idx );
-//	//}
-//
-//	engine_font_manager_data( po->posnX, 8, 0 );
-//	engine_font_manager_data( po->tileX, 8, 1 );
-//	engine_font_manager_data( po->lookX, 8, 2 );
-//
-//	engine_font_manager_data( po->posnY, 8, 3 );
-//	engine_font_manager_data( po->tileY, 8, 4 );
-//	engine_font_manager_data( po->drawY, 8, 5 );
-//	engine_font_manager_data( po->player_state, 20, 3 );
-//	engine_font_manager_data( po->jumper_index, 20, 4 );
-//	engine_font_manager_data( po->deltaY_index, 20, 5 );
-//}

@@ -7,7 +7,7 @@ S:Lrepeat_screen.screen_repeat_screen_load$player_loadY$1_0$142({1}SC:U),R,0,0,[
 S:Lrepeat_screen.screen_repeat_screen_load$checkScreen$1_0$142({1}SC:U),B,1,-1
 S:Lrepeat_screen.screen_repeat_screen_load$cloud_formation$1_0$142({1}SC:U),R,0,0,[]
 S:Lrepeat_screen.screen_repeat_screen_load$sloc0$0_1$0({1}SC:U),B,1,-1
-F:G$screen_repeat_screen_update$0_0$0({2}DF,SV:S),Z,0,-13,0,0,0
+F:G$screen_repeat_screen_update$0_0$0({2}DF,SV:S),Z,0,-15,0,0,0
 S:Lrepeat_screen.screen_repeat_screen_update$screen_type$1_0$144({2}DG,SC:U),B,1,4
 S:Lrepeat_screen.screen_repeat_screen_update$fo$1_0$145({2}DG,STtag_struct_frame_object:S),R,0,0,[]
 S:Lrepeat_screen.screen_repeat_screen_update$so$1_0$145({2}DG,STtag_struct_scroll_object:S),R,0,0,[]
@@ -17,7 +17,8 @@ S:Lrepeat_screen.screen_repeat_screen_update$go$1_0$145({2}DG,STtag_struct_game_
 S:Lrepeat_screen.screen_repeat_screen_update$co$1_0$145({2}DG,STtag_struct_command_object:S),R,0,0,[]
 S:Lrepeat_screen.screen_repeat_screen_update$input1$1_0$145({1}SC:U),B,1,-2
 S:Lrepeat_screen.screen_repeat_screen_update$input2$1_0$145({1}SC:U),B,1,-1
-S:Lrepeat_screen.screen_repeat_screen_update$deltaX$1_0$145({1}SC:U),R,0,0,[b]
+S:Lrepeat_screen.screen_repeat_screen_update$deltaX$1_0$145({1}SC:U),B,1,-1
+S:Lrepeat_screen.screen_repeat_screen_update$deltaY$1_0$145({2}SI:S),R,0,0,[c,b]
 S:Lrepeat_screen.screen_repeat_screen_update$loops$1_0$145({1}SC:U),R,0,0,[c]
 S:Lrepeat_screen.screen_repeat_screen_update$scroll_state$1_0$145({1}SC:U),R,0,0,[a]
 S:Lrepeat_screen.screen_repeat_screen_update$player_state$1_0$145({1}SC:U),B,1,-3
@@ -34,6 +35,8 @@ S:Lrepeat_screen.screen_repeat_screen_update$sloc8$0_1$0({2}SI:U),B,1,-5
 S:Lrepeat_screen.screen_repeat_screen_update$sloc9$0_1$0({2}SI:U),B,1,-2
 S:Lrepeat_screen.screen_repeat_screen_update$sloc10$0_1$0({2}DD,SC:U),B,1,-2
 S:Lrepeat_screen.screen_repeat_screen_update$sloc11$0_1$0({1}SC:U),B,1,-1
+S:Lrepeat_screen.screen_repeat_screen_update$sloc12$0_1$0({1}SC:U),B,1,-1
+S:Lrepeat_screen.screen_repeat_screen_update$sloc13$0_1$0({1}SC:U),B,1,-1
 T:Frepeat_screen$tag_struct_player_object[({0}S:S$initX$0_0$0({1}SC:U),Z,0,0)({1}S:S$posnX$0_0$0({2}SI:U),Z,0,0)({3}S:S$tileX$0_0$0({2}SI:U),Z,0,0)({5}S:S$lookX$0_0$0({1}SC:U),Z,0,0)({6}S:S$posnY$0_0$0({1}SC:U),Z,0,0)({7}S:S$tileY$0_0$0({1}SC:U),Z,0,0)({8}S:S$leapY$0_0$0({2}SI:U),Z,0,0)({10}S:S$drawX$0_0$0({1}SC:U),Z,0,0)({11}S:S$drawY$0_0$0({1}SC:U),Z,0,0)({12}S:S$player_state$0_0$0({1}SC:U),Z,0,0)({13}S:S$jumper_index$0_0$0({1}SC:U),Z,0,0)({14}S:S$deltaY_index$0_0$0({1}SC:U),Z,0,0)({15}S:S$player_frame$0_0$0({1}SC:U),Z,0,0)({16}S:S$player_lives$0_0$0({1}SC:U),Z,0,0)({17}S:S$motion_count$0_0$0({1}SC:U),Z,0,0)]
 T:Frepeat_screen$tag_struct_scroll_object[({0}S:S$scrollLeftX$0_0$0({1}SC:U),Z,0,0)({1}S:S$scrollRight$0_0$0({1}SC:U),Z,0,0)({2}S:S$scrollColumn$0_0$0({2}SI:U),Z,0,0)({4}S:S$scrollChecks$0_0$0({2}SI:U),Z,0,0)({6}S:S$scrollPoints$0_0$0({2}SI:U),Z,0,0)({8}S:S$scrollFinish$0_0$0({2}SI:U),Z,0,0)({10}S:S$scrollLeftX0$0_0$0({1}SC:U),Z,0,0)({11}S:S$scrollLeftX1$0_0$0({1}SC:U),Z,0,0)({12}S:S$scrollLeftX2$0_0$0({1}SC:U),Z,0,0)({13}S:S$scrollLeftX3$0_0$0({1}SC:U),Z,0,0)({14}S:S$scrollLeftX4$0_0$0({1}SC:U),Z,0,0)({15}S:S$scrollLeftX5$0_0$0({1}SC:U),Z,0,0)({16}S:S$scroll_half$0_0$0({1}SC:U),Z,0,0)({17}S:S$lineCnt$0_0$0({1}SC:U),Z,0,0)]
 T:Frepeat_screen$tag_struct_game_object[({0}S:S$game_difficulty$0_0$0({1}SC:U),Z,0,0)({1}S:S$game_world$0_0$0({1}SC:U),Z,0,0)({2}S:S$game_round$0_0$0({1}SC:U),Z,0,0)({3}S:S$game_level$0_0$0({1}SC:U),Z,0,0)({4}S:S$game_point$0_0$0({1}SC:U),Z,0,0)({5}S:S$game_saved$0_0$0({1}SC:U),Z,0,0)({6}S:S$game_start$0_0$0({1}SC:U),Z,0,0)({7}S:S$game_music$0_0$0({1}SC:U),Z,0,0)({8}S:S$game_cloud$0_0$0({1}SC:U),Z,0,0)({9}S:S$game_isgod$0_0$0({1}SC:U),Z,0,0)({10}S:S$game_sheet$0_0$0({1}SC:U),Z,0,0)]
@@ -58,7 +61,6 @@ S:G$global_delay_object$0_0$0({4}STtag_struct_delay_object:S),E,0,0
 S:G$global_frame_object$0_0$0({2}STtag_struct_frame_object:S),E,0,0
 S:G$global_reset_object$0_0$0({4}STtag_struct_reset_object:S),E,0,0
 S:Frepeat_screen$complete$0_0$0({1}:S),E,0,0
-S:Frepeat_screen$deltaY$0_0$0({2}SI:S),E,0,0
 S:Frepeat_screen$frame_counter$0_0$0({1}SC:U),E,0,0
 S:Frepeat_screen$available$0_0$0({1}SC:U),E,0,0
 S:Frepeat_screen$local_prev_command$0_0$0({1}SC:U),E,0,0

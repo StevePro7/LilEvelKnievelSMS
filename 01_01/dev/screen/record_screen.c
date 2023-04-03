@@ -48,14 +48,12 @@ void screen_record_screen_load()
 	checkScreen = lo->check_width * go->game_point;
 	engine_scroll_manager_load( checkScreen, lo->level_check, lo->level_size );
 	engine_level_manager_draw_screen( checkScreen );
-	//engine_level_manager_draw_point( go->game_point );
 
 	engine_player_manager_initX( go->game_difficulty, go->game_world );
 	engine_player_manager_loadX( checkScreen );
 	player_loadY = level_platforms[ po->lookX ];
 	engine_player_manager_loadY( player_loadY );
 	engine_player_manager_draw();
-	//engine_command_manager_init();		TODO delete - dup
 
 	engine_graphics_manager_sea();
 	engine_graphics_manager_clouds( go->game_cloud );
@@ -67,20 +65,14 @@ void screen_record_screen_load()
 	engine_frame_manager_load();
 	//engine_frame_manager_draw();
 	engine_command_manager_init();
-	//engine_command_manager_draw();
 	engine_font_manager_text( "NEW RECORD SCREEN", 10, 2 );
 
 	complete = false;
-
-	//engine_font_manager_text( "CHECK SCREEN FUNC", 10, 0 );
-	//engine_font_manager_data( checkScreen, 10, 1 );
 }
 
 void screen_record_screen_update( unsigned char *screen_type )
 {
-	// TODO delete
 	struct_frame_object *fo = &global_frame_object;
-
 	struct_scroll_object *so = &global_scroll_object;
 	struct_player_object *po = &global_player_object;
 	struct_command_object *co = &global_command_object;
@@ -109,26 +101,18 @@ void screen_record_screen_update( unsigned char *screen_type )
 	input6 = engine_input_manager_hold( input_type_fire2 );
 
 	command = engine_command_manager_build( po->player_state, input1, input2, input3, input4, input5, input6 );
-	//engine_font_manager_data( po->player_state, 31, 1 );
-	//engine_font_manager_data( command, 31, 2 );
-
 	if( command != co->prev_command )
 	{
 		engine_command_manager_record( fo->frame_count, command );
-		//engine_font_manager_data( fo->frame_count, 30, 4 );
-		//engine_font_manager_data( command, 30, 5 );
-		//	engine_command_manager_draw();
 	}
 
 	engine_frame_manager_update();
 	//engine_frame_manager_draw();
 
-
 	if( COMMAND_NONE_MASK != command )
 	{
 		// Get horizontal movement.
 		deltaX = engine_player_manager_get_deltaX( po->player_state, command );
-		//deltaX = 0;		// TODO testing.
 
 		// Get button action.
 		engine_player_manager_set_action( po->player_frame, command );
@@ -136,8 +120,7 @@ void screen_record_screen_update( unsigned char *screen_type )
 		// Implement scrolling.
 		for( loops = 0; loops < deltaX; loops++ )
 		{
-			//scroll_state = engine_scroll_manager_update( 1 );
-			scroll_state = engine_scroll_manager_update( 0 );
+			scroll_state = engine_scroll_manager_update( 1 );
 			if( scroll_state_tile == scroll_state )
 			{
 				engine_level_manager_draw_column( so->scrollColumn );
@@ -146,8 +129,6 @@ void screen_record_screen_update( unsigned char *screen_type )
 			//else if( scroll_state_line == scroll_state )
 			//{
 			//	engine_game_manager_inc_checkpoint();
-			//	//TODO used for debugging - remove
-			//	//engine_font_manager_data( go->game_point, 20, go->game_point );
 			//}
 			else if( scroll_state_comp == scroll_state )
 			{
@@ -197,15 +178,10 @@ void screen_record_screen_update( unsigned char *screen_type )
 	}
 
 	engine_player_manager_draw();
-	//engine_player_manager_head();
-	//engine_debug_manager_printout();
-	//	engine_font_manager_data( deltaY, 30, 2 );
-	//	engine_font_manager_data( po->posnY, 30, 3 );
 
 	// Check to see if player completes level.
 	if( complete )
 	{
-		//engine_scroll_manager_update( 0 );		// TODO delete
 		engine_storage_manager_save();
 		*screen_type = screen_type_option;
 		return;
@@ -214,12 +190,9 @@ void screen_record_screen_update( unsigned char *screen_type )
 	// Check if moving on to the dying sequence.
 	if( player_state_isnowdying == player_state )
 	{
-		//engine_scroll_manager_update( 0 );	// TODO delete
 		engine_storage_manager_save();
 		*screen_type = screen_type_option;
 		return;
-		//*screen_type = screen_type_dead;
-		//return;
 	}
 
 	engine_player_manager_draw();

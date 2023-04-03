@@ -2,7 +2,7 @@
 #include "../engine/asm_manager.h"
 #include "../engine/command_manager.h"
 #include "../engine/content_manager.h"
-#include "../engine/debug_manager.h"
+//#include "../engine/debug_manager.h"
 #include "../engine/enum_manager.h"
 #include "../engine/font_manager.h"
 #include "../engine/game_manager.h"
@@ -56,18 +56,15 @@ void screen_load_screen_load()
 	engine_graphics_manager_clouds( go->game_cloud );
 	engine_level_manager_draw_screen( checkScreen );		// Weird - must draw this twice otherwise clouds + sea don't draw??
 
-	//if( go->game_start )
-	//{
-		engine_graphics_manager_level_stats( go->game_world, go->game_round, go->game_point );
-		engine_graphics_manager_level_texts();
-	//}
+	engine_graphics_manager_level_stats( go->game_world, go->game_round, go->game_point );
+	engine_graphics_manager_level_texts();
 	devkit_SMS_displayOn();
 
 	engine_riff_manager_init();
 	engine_command_manager_init();
 	engine_delay_manager_load( NORMAL_DELAY * 2 );
-	check = 0;
 	delay = 0;
+	check = stage_mode_inc0;
 }
 
 void screen_load_screen_update( unsigned char *screen_type )
@@ -79,8 +76,7 @@ void screen_load_screen_update( unsigned char *screen_type )
 
 	if( !check )
 	{
-		//engine_player_manager_draw();		// TODO - makes blink [I think] so leave out
-		check = 1;
+		check = stage_mode_inc1;
 		*screen_type = screen_type_load;
 		return;
 	}
@@ -95,7 +91,6 @@ void screen_load_screen_update( unsigned char *screen_type )
 			index = engine_random_manager_next( maxim );
 			index += RIFF_START_LOAD;
 
-			// TODO -uncomment
 			engine_riff_manager_loop( index );
 
 			// Clear out the game level statistics.
@@ -110,8 +105,6 @@ void screen_load_screen_update( unsigned char *screen_type )
 				// Clear out the game level statistics.
 				engine_util_manager_locale_blank( 3, 0, 3 );
 
-				// TODO - revert
-				//*screen_type = screen_type_test;
 				*screen_type = screen_type_play;
 				return;
 			}
@@ -122,11 +115,5 @@ void screen_load_screen_update( unsigned char *screen_type )
 	}
 
 	// Resume onto play after load.
-	//*screen_type = screen_type_dead;
-	//*screen_type = screen_type_over;
-	//*screen_type = screen_type_cont;
-	//*screen_type = screen_type_test;
 	*screen_type = screen_type_play;
-
-	//*screen_type = screen_type_load;
 }

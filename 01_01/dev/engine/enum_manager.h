@@ -125,7 +125,17 @@ typedef enum tag_enum_music_type
 	music_type_overs = 5,
 	music_type_beats = 6,
 
-} enum_enum_music_type;
+} enum_music_type;
+
+typedef enum tag_enum_sound_type
+{
+	sound_type_death = 0,
+	sound_type_level = 1,
+	sound_type_accept= 2,
+	sound_type_reset = 3,
+	sound_type_power = 4,
+
+} enum_sound_type;
 
 typedef enum tag_enum_tile_type
 {

@@ -1,5 +1,4 @@
 #include "intro_screen.h"
-#include "../engine/audio_manager.h"
 #include "../engine/enum_manager.h"
 #include "../engine/font_manager.h"
 #include "../engine/game_manager.h"
@@ -8,7 +7,6 @@
 #include "../engine/input_manager.h"
 #include "../engine/scroll_manager.h"
 #include "../engine/timer_manager.h"
-#include "../engine/util_manager.h"
 #include "../devkit/_sms_manager.h"
 #include "../banks/bank2.h"
 
@@ -30,11 +28,9 @@ void screen_intro_screen_load()
 	row += 2;
 	engine_font_manager_text( "[JUMP[CATEGORIES[[ON[GROUND[", col - 0, row + 2 );
 	row += 1;
-	//engine_font_manager_text( "TYPE  DESCRIPTION ACTION", col, row + 0 );
-	//engine_font_manager_text( "                              ", col- 1, row + 1 );
+
 	engine_font_manager_text( "[SKIP[SMALLEST[[[LEFT+FIRE1[", col - 0, row + 2 );
 	engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 3 );
-	//engine_font_manager_text( "[JUMP[STANDARD[[[LEFT+FIRE2[", col - 0, row + 4 );
 	engine_font_manager_text( "[JUMP[STANDARD[[[LEFT+FIRE2[", col - 0, row + 4 );
 	engine_font_manager_text( "[[[[[[[[[[[[[[[[[OR[[[FIRE1[", col - 0, row + 5 );
 	engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 6 );
@@ -46,6 +42,7 @@ void screen_intro_screen_load()
 	engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 11 );
 	engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 12 );
 	engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 13 );
+
 	row += 13;
 	engine_font_manager_text( "[JUMP[ACTIVITIES[[AIRBORNE![", col - 0, row + 0 );
 	engine_font_manager_text( "[SWAP[DIRECTION[[[[[[[FIRE1[", col - 0, row + 1 );
@@ -61,7 +58,7 @@ void screen_intro_screen_load()
 
 void screen_intro_screen_update( unsigned char *screen_type )
 {
-	unsigned char input1;// , input2;
+	unsigned char input1;
 	unsigned char delay;
 
 	input1 = engine_input_manager_hold( input_type_fire1 );
