@@ -11,14 +11,14 @@ S _engine_game_manager_set_cloud_form Ref000000
 A _CODE size 1C flags 0 addr 0
 S A$begin_screen$111 Def00001B
 S A$begin_screen$102 Def000018
+S C$begin_screen.c$40$1_0$103 Def000015
 S A$begin_screen$103 Def000019
 S C$begin_screen.c$26$1_0$101 Def000012
 S C$begin_screen.c$27$1_0$101 Def000012
 S C$begin_screen.c$18$1_0$101 Def000000
 S _screen_begin_screen_update Def000015
-S C$begin_screen.c$37$1_0$103 Def000015
-S C$begin_screen.c$47$1_0$103 Def00001B
 S C$begin_screen.c$29$1_0$103 Def000015
+S C$begin_screen.c$48$1_0$103 Def00001B
 S XG$screen_begin_screen_update$0$0 Def00001B
 S A$begin_screen$60 Def000000
 S G$screen_begin_screen_load$0$0 Def000000
@@ -57,5 +57,5 @@ T 0D 00 00 33 CD 00 00 33 C3 00 00
 R 00 00 00 00 02 05 04 00 02 09 03 00
 T 15 00 00
 R 00 00 00 00
-T 15 00 00 C1 E1 E5 C5 36 12 C9
+T 15 00 00 C1 E1 E5 C5 36 0F C9
 R 00 00 00 00

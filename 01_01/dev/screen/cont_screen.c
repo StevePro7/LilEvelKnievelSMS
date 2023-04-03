@@ -20,18 +20,6 @@ static unsigned char cursorX[] = { 12, 17 };
 static unsigned char cursorIdx;
 static unsigned char check;
 
-// TODO delete
-//static unsigned char offset;
-//static void printStuff( unsigned char offset )
-//{
-//	engine_font_manager_text( "CONTINUE?", offset, 0 );
-//	engine_font_manager_text( ">YES  NO", offset, 1 );
-//	engine_font_manager_text( "  GAME  ", offset, 2 );
-//	engine_font_manager_text( "  OVER  ", offset, 3 );
-//	engine_font_manager_data( offset, 1 + offset, 4 );
-//	//engine_font_manager_text( "-123456789A123456789B123456789C=", 1 + offset, 2 );
-//}
-
 static void printCursor()
 {
 	engine_font_manager_char( ' ', cursorX[ 0 ], CURSOR_Y );
@@ -46,20 +34,16 @@ static void printContinue()
 	x = 4;
 	y = 0;
 	d = 0;
-	//engine_graphics_manager_image( tiles, TILE_TURTLE_FLIP, x + 0, y + 1, 4, 3 );
 	engine_graphics_manager_image( tiles, TILE_TURTLE_FLIP, x + 4, y + 1, 4, 3 );
 	engine_graphics_manager_image( tiles, TILE_TURTLE_FLIP, x + 8, y, 4, 3 );
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 12 + d, y, 4, 3 );
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 16 + d, y + 1, 4, 3 );
-	//engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 20 + d, y + 1, 4, 3 );
 
 	y = 5;
-	//engine_graphics_manager_image( tiles, TILE_TURTLE_FLIP, x + 0, y - 1, 4, 3 );
 	engine_graphics_manager_image( tiles, TILE_TURTLE_FLIP, x + 4, y - 1, 4, 3 );
 	engine_graphics_manager_image( tiles, TILE_TURTLE_FLIP, x + 8, y, 4, 3 );
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 12 + d, y, 4, 3 );
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 16 + d, y - 1, 4, 3 );
-	//engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 20 + d, y - 1, 4, 3 );
 
 	// TODO - localize
 	engine_font_manager_text( "CONTINUE", x + 8, 3 );
@@ -73,6 +57,9 @@ void screen_cont_screen_load()
 	struct_game_object *go = &global_game_object;
 	unsigned char player_loadY;
 	unsigned char checkScreen;
+
+	// TODO adriana - test this
+	engine_level_manager_init( go->game_level );
 
 	devkit_SMS_displayOff();
 	engine_graphics_manager_screen( CLEAR_TILE_BLUE );
@@ -93,7 +80,6 @@ void screen_cont_screen_load()
 
 	printContinue();
 	printCursor();
-
 	devkit_SMS_displayOn();
 
 	//TODO magic number

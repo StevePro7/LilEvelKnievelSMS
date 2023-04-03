@@ -202,6 +202,7 @@ static void printBeatGame()
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 16 + d, y, 4, 3 );
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 20 + d, y - 1, 4, 3 );
 
+	// TODO - localize
 	engine_font_manager_text( "CONGLATURATION", 9, 3 );
 	engine_font_manager_text( "AWINNER IS YOU", 9, 4 );
 }
