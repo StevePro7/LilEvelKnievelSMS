@@ -10968,7 +10968,7 @@ _CODE                               00000200    00007680 =       30336. bytes (R
      00003B89  A$beat_screen$905                  beat_screen
      00003B8A  A$beat_screen$906                  beat_screen
      00003B8B  A$beat_screen$910                  beat_screen
-     00003B8B  C$beat_screen.c$205$1_0$178        beat_screen
+     00003B8B  C$beat_screen.c$206$1_0$178        beat_screen
      00003B8E  A$beat_screen$911                  beat_screen
      00003B8F  A$beat_screen$912                  beat_screen
      00003B92  A$beat_screen$913                  beat_screen
@@ -10976,7 +10976,7 @@ _CODE                               00000200    00007680 =       30336. bytes (R
      00003B96  A$beat_screen$915                  beat_screen
      00003B97  A$beat_screen$916                  beat_screen
      00003B98  A$beat_screen$920                  beat_screen
-     00003B98  C$beat_screen.c$206$1_0$178        beat_screen
+     00003B98  C$beat_screen.c$207$1_0$178        beat_screen
      00003B9B  A$beat_screen$921                  beat_screen
      00003B9C  A$beat_screen$922                  beat_screen
      00003B9F  A$beat_screen$923                  beat_screen
@@ -10984,7 +10984,7 @@ _CODE                               00000200    00007680 =       30336. bytes (R
      00003BA3  A$beat_screen$925                  beat_screen
      00003BA4  A$beat_screen$926                  beat_screen
      00003BA5  A$beat_screen$934                  beat_screen
-     00003BA5  C$beat_screen.c$207$1_0$178        beat_screen
+     00003BA5  C$beat_screen.c$208$1_0$178        beat_screen
      00003BA5  XFbeat_screen$printBeatGame$0$0    beat_screen
      00003BA6  Fbeat_screen$__str_0$0_0$0         beat_screen
      00003BB5  Fbeat_screen$__str_1$0_0$0         beat_screen
@@ -11027,7 +11027,7 @@ _CODE                               00000200    00007680 =       30336. bytes (R
      00003BDC  A$begin_screen$102                 begin_screen
      00003BDD  A$begin_screen$103                 begin_screen
      00003BDF  A$begin_screen$107                 begin_screen
-     00003BDF  C$begin_screen.c$40$1_0$103        begin_screen
+     00003BDF  C$begin_screen.c$37$1_0$103        begin_screen
      00003BE1  A$begin_screen$115                 begin_screen
      00003BE1  C$begin_screen.c$48$1_0$103        begin_screen
      00003BE1  XG$screen_begin_screen_update$0$   begin_screen

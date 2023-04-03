@@ -11931,9 +11931,9 @@ L:C$beat_screen.c$200$1_0$178:3B31
 L:C$beat_screen.c$201$1_0$178:3B48
 L:C$beat_screen.c$202$1_0$178:3B5F
 L:C$beat_screen.c$203$1_0$178:3B76
-L:C$beat_screen.c$205$1_0$178:3B8B
-L:C$beat_screen.c$206$1_0$178:3B98
-L:C$beat_screen.c$207$1_0$178:3BA5
+L:C$beat_screen.c$206$1_0$178:3B8B
+L:C$beat_screen.c$207$1_0$178:3B98
+L:C$beat_screen.c$208$1_0$178:3BA5
 L:XFbeat_screen$printBeatGame$0$0:3BA5
 L:Fbeat_screen$__str_0$0_0$0:3BA6
 L:Fbeat_screen$__str_1$0_0$0:3BB5
@@ -11948,7 +11948,7 @@ L:XG$screen_begin_screen_load$0$0:3BD6
 L:C$begin_screen.c$29$1_0$103:3BD9
 L:C$begin_screen.c$31$1_0$103:3BD9
 L:G$screen_begin_screen_update$0$0:3BD9
-L:C$begin_screen.c$40$1_0$103:3BDF
+L:C$begin_screen.c$37$1_0$103:3BDF
 L:C$begin_screen.c$48$1_0$103:3BE1
 L:XG$screen_begin_screen_update$0$0:3BE1
 L:C$boss_screen.c$14$0_0$112:3BE2

@@ -9311,7 +9311,7 @@ DEF A$beat_screen$904 0x3B86
 DEF A$beat_screen$905 0x3B89
 DEF A$beat_screen$906 0x3B8A
 DEF A$beat_screen$910 0x3B8B
-DEF C$beat_screen.c$205$1_0$178 0x3B8B
+DEF C$beat_screen.c$206$1_0$178 0x3B8B
 DEF A$beat_screen$911 0x3B8E
 DEF A$beat_screen$912 0x3B8F
 DEF A$beat_screen$913 0x3B92
@@ -9319,7 +9319,7 @@ DEF A$beat_screen$914 0x3B93
 DEF A$beat_screen$915 0x3B96
 DEF A$beat_screen$916 0x3B97
 DEF A$beat_screen$920 0x3B98
-DEF C$beat_screen.c$206$1_0$178 0x3B98
+DEF C$beat_screen.c$207$1_0$178 0x3B98
 DEF A$beat_screen$921 0x3B9B
 DEF A$beat_screen$922 0x3B9C
 DEF A$beat_screen$923 0x3B9F
@@ -9327,7 +9327,7 @@ DEF A$beat_screen$924 0x3BA0
 DEF A$beat_screen$925 0x3BA3
 DEF A$beat_screen$926 0x3BA4
 DEF A$beat_screen$934 0x3BA5
-DEF C$beat_screen.c$207$1_0$178 0x3BA5
+DEF C$beat_screen.c$208$1_0$178 0x3BA5
 DEF XFbeat_screen$printBeatGame$0$0 0x3BA5
 DEF Fbeat_screen$__str_0$0_0$0 0x3BA6
 DEF Fbeat_screen$__str_1$0_0$0 0x3BB5
@@ -9361,7 +9361,7 @@ DEF A$begin_screen$101 0x3BDB
 DEF A$begin_screen$102 0x3BDC
 DEF A$begin_screen$103 0x3BDD
 DEF A$begin_screen$107 0x3BDF
-DEF C$begin_screen.c$40$1_0$103 0x3BDF
+DEF C$begin_screen.c$37$1_0$103 0x3BDF
 DEF A$begin_screen$115 0x3BE1
 DEF C$begin_screen.c$48$1_0$103 0x3BE1
 DEF XG$screen_begin_screen_update$0$0 0x3BE1
