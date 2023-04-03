@@ -127,7 +127,7 @@ void screen_beat_screen_update( unsigned char *screen_type )
 	{
 		command = engine_command_manager_build( po->player_state, 1, 0, 0, 0, 0, 1 );		//Jump index = 4.
 	}
-	else if( 10 == fo->frame_count )//|| 8 == fo->frame_count )
+	else if( 10 == fo->frame_count )
 	{
 		command = engine_command_manager_build( po->player_state, 0, 1, 1, 0, 0, 1 );		//Jump index = 4.
 	}
