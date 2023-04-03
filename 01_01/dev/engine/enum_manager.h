@@ -113,7 +113,19 @@ typedef enum tag_enum_switch_mode
 	switch_mode_no = 0,
 	switch_mode_yes = 1,
 
-} enum_switch_mode_type;
+} enum_switch_mode;
+
+typedef enum tag_enum_music_type
+{
+	music_type_tune0 = 0,
+	music_type_tune1 = 1,
+	music_type_tune2 = 2,
+	music_type_tune3 = 3,
+	music_type_conts = 4,
+	music_type_overs = 5,
+	music_type_beats = 6,
+
+} enum_enum_music_type;
 
 typedef enum tag_enum_tile_type
 {

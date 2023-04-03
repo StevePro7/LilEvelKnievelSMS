@@ -49,6 +49,8 @@ void screen_over_screen_load()
 	unsigned char player_loadY;
 	unsigned char checkScreen;
 
+	engine_level_manager_init( go->game_level );
+
 	devkit_SMS_displayOff();
 	engine_graphics_manager_screen( CLEAR_TILE_BLUE );
 
@@ -61,31 +63,28 @@ void screen_over_screen_load()
 	engine_player_manager_loadX( checkScreen );
 	player_loadY = level_platforms[ po->lookX ];
 	engine_player_manager_loadY( player_loadY );
-//	engine_player_manager_draw();							// Don't draw player for game over to differentiate cont screen
+	// Don't draw player for game over to differentiate cont screen
+	//engine_player_manager_draw();
 
 	engine_graphics_manager_sea();
-	//engine_graphics_manager_clouds( go->game_cloud );
 	engine_level_manager_draw_screen( checkScreen );		// Weird - must draw this twice otherwise clouds + sea don't draw??
 
 	printGameOver();
 	devkit_SMS_displayOn();
 
-	check = 0;
+	check = stage_mode_inc0;
 }
 
 void screen_over_screen_update( unsigned char *screen_type )
 {
-	//signed char input1, input2;
-	unsigned char index;// , maxim;
-	if( 1==check )
+	unsigned char index;
+	if( stage_mode_inc1 == check )
 	{
 		if( !devkit_PSGGetStatus() )
 		{
 			devkit_SMS_mapROMBank( bggame_tiles__tiles__psgcompr_bank );
 			engine_music_manager_stop();
 			engine_sound_manager_stop();
-			//engine_font_manager_text( "FINISH", 20, 10 );
-			// Resume from init
 			*screen_type = screen_type_start;
 			return;
 		}
@@ -94,12 +93,9 @@ void screen_over_screen_update( unsigned char *screen_type )
 	{
 		index = RIFF_START_OVER;
 		engine_riff_manager_loop( index );
-		check = 1;
-		// TODO magic number.
-		engine_music_manager_playnorepeat( 5 );
+		check = stage_mode_inc1;
+		engine_music_manager_playnorepeat( music_type_overs );
 	}
 
-	//engine_scroll_manager_update( 0 );
-	//engine_player_manager_draw();
 	*screen_type = screen_type_over;
 }
