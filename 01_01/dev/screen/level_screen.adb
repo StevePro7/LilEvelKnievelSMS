@@ -31,9 +31,10 @@ S:G$flip_array_ptr$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$global_player_object$0_0$0({18}STtag_struct_player_object:S),E,0,0
 S:G$global_scroll_object$0_0$0({18}STtag_struct_scroll_object:S),E,0,0
 S:G$global_storage_object$0_0$0({209}STtag_struct_storage_object:S),E,0,0
-S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:Flevel_screen$cursorIdx$0_0$0({1}SC:U),E,0,0
 S:Flevel_screen$game_world$0_0$0({1}SC:U),E,0,0
 S:Flevel_screen$game_round$0_0$0({1}SC:U),E,0,0

@@ -14,7 +14,7 @@ S:G$jump_array_ptr$0_0$0({0}DA0d,DG,SI:S),E,0,0
 S:G$flip_array_ptr$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$global_player_object$0_0$0({18}STtag_struct_player_object:S),E,0,0
 S:G$engine_collision_manager_init$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_collision_manager_initX$0_0$0({2}DF,SV:S),C,0,0
+S:G$engine_collision_manager_init_org$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_collision_manager_player$0_0$0({2}DF,SC:S),C,0,0
 S:G$engine_collision_manager_finish$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_game_manager_init$0_0$0({2}DF,SV:S),C,0,0

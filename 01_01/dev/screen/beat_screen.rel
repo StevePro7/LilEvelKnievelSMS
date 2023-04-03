@@ -205,6 +205,7 @@ S A$beat_screen$171 Def000038
 S A$beat_screen$162 Def000027
 S A$beat_screen$153 Def00001F
 S A$beat_screen$144 Def000018
+S C$beat_screen.c$338$1_0$178 Def000389
 S C$beat_screen.c$329$1_0$178 Def0002E7
 S C$beat_screen.c$248$3_0$176 Def0001E5
 S C$beat_screen.c$249$1_0$168 Def0001D9
@@ -249,7 +250,6 @@ S A$beat_screen$181 Def000042
 S A$beat_screen$172 Def000039
 S A$beat_screen$163 Def000028
 S A$beat_screen$154 Def000020
-S C$beat_screen.c$339$1_0$178 Def000389
 S C$beat_screen.c$249$3_0$176 Def0001EF
 S A$beat_screen$920 Def000376
 S A$beat_screen$911 Def00036A

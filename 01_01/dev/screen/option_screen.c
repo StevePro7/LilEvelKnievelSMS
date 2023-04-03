@@ -11,7 +11,6 @@
 #include "../devkit/_sms_manager.h"
 
 static unsigned char cursorY;
-//static void printCmds();
 
 void screen_option_screen_load()
 {
@@ -49,27 +48,15 @@ void screen_option_screen_update( unsigned char *screen_type )
 	}
 
 	input3 = engine_input_manager_hold( input_type_fire1 );
-	//input3 = 1;
 	if( input3 )
 	{
 		if( 0 == cursorY )
 		{
-			//cursorY = 1;
-		//	*screen_type = screen_type_intro;
-		//	*screen_type = screen_type_func;
 			*screen_type = screen_type_record;
 			return;
 		}
 		if( 1 == cursorY )
 		{
-			//available = engine_storage_manager_available();
-			//if( available )
-			//{
-			//	engine_storage_manager_load();
-			//	printCmds();
-			//}
-			//engine_font_manager_data( available, 31, 1 );
-			//*screen_type = screen_type_test;
 			*screen_type = screen_type_repeat;
 			return;
 		}
@@ -80,19 +67,11 @@ void screen_option_screen_update( unsigned char *screen_type )
 		if( input3 )
 		{
 			engine_storage_manager_kill();
-			//engine_font_manager_text( "ERASER SCREEN", 10, 2 );
+			engine_font_manager_text( "SRAM KILL", 10, 2 );
 			*screen_type = screen_type_level;
 			return;
 		}
 	}
-//	engine_player_manager_draw();
+
 	*screen_type = screen_type_option;
 }
-
-//static void printCmds()
-//{
-//	engine_font_manager_data( command_frame_index[ 0 ], 21, 1 );
-//	engine_font_manager_data( command_frame_index[ 1 ], 21, 2 );
-//	engine_font_manager_data( command_this_command[ 0 ], 26, 1 );
-//	engine_font_manager_data( command_this_command[ 1 ], 26, 2 );
-//}

@@ -89,7 +89,6 @@ void screen_cont_screen_load()
 	engine_player_manager_draw();
 
 	engine_graphics_manager_sea();
-	//engine_graphics_manager_clouds( go->game_cloud );
 	engine_level_manager_draw_screen( checkScreen );		// Weird - must draw this twice otherwise clouds + sea don't draw??
 
 	printContinue();
@@ -97,9 +96,8 @@ void screen_cont_screen_load()
 
 	devkit_SMS_displayOn();
 
-	//engine_riff_manager_init();
-	//engine_command_manager_init();
-	engine_music_manager_playnorepeat( 4);
+	//TODO magic number
+	engine_music_manager_playnorepeat( 4 );
 	cursorIdx = 0;
 	check = 0;
 }
@@ -115,8 +113,8 @@ void screen_cont_screen_update( unsigned char *screen_type )
 		devkit_SMS_mapROMBank( bggame_tiles__tiles__psgcompr_bank );
 		engine_music_manager_stop();
 		engine_sound_manager_stop();
-//engine_font_manager_text( "FINISH", 20, 10 );
-		// Resume from init
+
+		// Continue music stops => over.
 		*screen_type = screen_type_over;
 		return;
 	}
@@ -145,8 +143,7 @@ void screen_cont_screen_update( unsigned char *screen_type )
 		}
 		else
 		{
-			// todo SOUND FX
-			// Resume from init
+			// Resume from load screen.
 			engine_game_manager_set_game_start( switch_mode_yes );
 			engine_player_manager_lives( go->game_difficulty );
 			*screen_type = screen_type_load;
@@ -158,26 +155,3 @@ void screen_cont_screen_update( unsigned char *screen_type )
 	engine_player_manager_draw();
 	*screen_type = screen_type_cont;
 }
-
-
-//void screen_cont_screen_loadX()
-//{
-//	struct_scroll_object *so = &global_scroll_object;
-//	unsigned char scroll = so->scrollLeftX;
-//
-//	unsigned char valueX = 256 - scroll;
-//	unsigned char tester = valueX >> 3;
-//	//unsigned char lookup1;
-//	//lookup1 = so->scrollLeftX  & SCREEN_LESS_ONE;
-//
-//	//unsigned char scroll = 0;
-//	//offset = scroll >> 3;
-//	//devkit_SMS_setBGScrollX( 0 );
-//
-////	devkit_SMS_displayOff();
-////	engine_graphics_manager_screen( CLEAR_TILE_BLUE );
-//
-////	engine_player_manager_draw();
-//
-////	devkit_SMS_displayOn();
-//}

@@ -89,15 +89,6 @@ void screen_title_screen_update( unsigned char *screen_type )
 			return;
 		}
 
-		//engine_input_manager_update();
-		//input = engine_input_manager_move( input_type_fire1 );
-		//if( input )
-		//{
-		//	// TODO - put timer and move on
-		//	*screen_type = screen_type_begin;
-		//	return;
-		//}
-
 		x = flip_posX[ index ];
 		y = flip_posY[ index ];
 		f = flip_ptr[ index ];
@@ -105,25 +96,19 @@ void screen_title_screen_update( unsigned char *screen_type )
 		return;
 	}
 
-	// TODO this MUST be wrong..!!
-	// RIFF_START_TITLE
-	
 	engine_riff_manager_play( index + value );
-	// TODO this MUST be wrong..!!
 
 	x = flip_posX[ index ];
 	y = flip_posY[ index ];
 	f = flip_ptr[ index ];
 	draw_sprite( f + 2, sprite_mode_zoomed, x, y );
-	//engine_font_manager_draw_data( f, 30, 0 );
+
 
 	engine_input_manager_update();
-
 	input = engine_input_manager_move( input_type_fire1 );
 	if( input || index + 1 >= MAX_SPOTS )
 	{
 		check = 1;
-		//*screen_type = screen_type_begin;
 		return;
 	}
 

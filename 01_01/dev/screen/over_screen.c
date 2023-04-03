@@ -109,38 +109,3 @@ void screen_over_screen_update( unsigned char *screen_type )
 	//engine_player_manager_draw();
 	*screen_type = screen_type_over;
 }
-
-
-//void screen_over_screen_loadX()
-//{
-	//struct_player_object *po = &global_player_object;
-	//struct_level_object *lo = &global_level_object;
-	struct_game_object *go = &global_game_object;
-	//unsigned char player_loadY;
-	//unsigned char checkScreen;
-
-	//devkit_SMS_displayOff();
-	//engine_graphics_manager_screen( CLEAR_TILE_BLUE );
-
-
-	//// Work in terms of screens.
-	//checkScreen = lo->check_width * go->game_point;
-	//engine_scroll_manager_load( checkScreen, lo->level_check, lo->level_size );
-	//engine_level_manager_draw_screen( checkScreen );
-
-
-	//engine_player_manager_initX( go->game_difficulty, go->game_world );
-	//engine_player_manager_loadX( checkScreen );
-	//player_loadY = level_platforms[ po->lookX ];
-	//engine_player_manager_loadY( player_loadY );
-	//engine_player_manager_draw();
-
-	//engine_graphics_manager_sea();
-	//engine_graphics_manager_clouds( go->game_cloud );
-	//engine_level_manager_draw_screen( checkScreen );		// Weird - must draw this twice otherwise clouds + sea don't draw??
-
-	//printStuff();
-	//devkit_SMS_displayOn();
-
-	//struct_game_object *go = &global_game_object;
-//}

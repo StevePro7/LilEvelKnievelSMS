@@ -29,7 +29,6 @@
 static bool complete;
 static signed int deltaY;
 static unsigned char frame_counter;
-static void printCmds();
 static unsigned char available;
 static unsigned char local_prev_command;
 
@@ -93,15 +92,10 @@ void screen_repeat_screen_load()
 	local_prev_command = COMMAND_NONE_MASK;
 
 	available = engine_storage_manager_available();
-	//engine_font_manager_data( available, 31, 1 );
 	if( available )
 	{
 		engine_storage_manager_load();
-		//printCmds();
 	}
-
-	//engine_font_manager_text( "CHECK SCREEN FUNC", 10, 0 );
-	//engine_font_manager_data( checkScreen, 10, 1 );
 }
 
 void screen_repeat_screen_update( unsigned char *screen_type )
@@ -153,7 +147,6 @@ void screen_repeat_screen_update( unsigned char *screen_type )
 			}
 			else
 			{
-				//command = co->prev_command;
 				command = local_prev_command;
 			}
 

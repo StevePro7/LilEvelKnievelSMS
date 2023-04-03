@@ -29,11 +29,8 @@ S:G$global_storage_object$0_0$0({209}STtag_struct_storage_object:S),E,0,0
 S:G$global_delay_object$0_0$0({4}STtag_struct_delay_object:S),E,0,0
 S:G$global_frame_object$0_0$0({2}STtag_struct_frame_object:S),E,0,0
 S:G$global_reset_object$0_0$0({4}STtag_struct_reset_object:S),E,0,0
-S:G$steven_text$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$demo_command_frame_index$0_0$0({0}DA0d,SI:U),E,0,0
 S:G$demo_command_this_command$0_0$0({0}DA0d,SC:U),E,0,0
-S:G$beat_command_frame_index$0_0$0({0}DA0d,SI:U),E,0,0
-S:G$beat_command_this_command$0_0$0({0}DA0d,SC:U),E,0,0
 S:G$music_object_data$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$sound_object_data$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$riff_sample_data$0_0$0({0}DA0d,DG,SC:U),E,0,0

@@ -13,11 +13,7 @@ void screen_init_screen_load()
 	unsigned char game_music;
 	engine_level_manager_init( go->game_level );
 	engine_player_manager_initX( go->game_difficulty, go->game_world );
-
-	// adriana
 	engine_collision_manager_init( go->game_difficulty );
-	//engine_collision_manager_initX( go->game_difficulty );
-	// adriana
 
 	// Set game music for entire level.
 	game_music = engine_random_manager_next( MAX_MUSIC );

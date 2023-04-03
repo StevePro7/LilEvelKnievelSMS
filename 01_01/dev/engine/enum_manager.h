@@ -98,13 +98,22 @@ typedef enum tag_enum_jump_type
 
 } enum_jump_type;
 
+typedef enum tag_enum_stage_mode
+{
+	stage_mode_inc0 = 0,
+	stage_mode_inc1 = 1,
+	stage_mode_inc2 = 2,
+	stage_mode_inc3 = 3,
+	stage_mode_inc4 = 4,
+
+} enum_enum_stage_mode;
+
 typedef enum tag_enum_switch_mode
 {
 	switch_mode_no = 0,
 	switch_mode_yes = 1,
 
 } enum_switch_mode_type;
-
 
 typedef enum tag_enum_tile_type
 {

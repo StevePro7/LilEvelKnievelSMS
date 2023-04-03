@@ -27,9 +27,8 @@
 #endif
 
 static bool complete;
-static signed int deltaY;
 static unsigned char frame_counter;
-//static void printCmds();
+
 static unsigned char available;
 static unsigned char local_prev_command;
 
@@ -115,7 +114,6 @@ void screen_demo_screen_load()
 	//engine_storage_manager_load();
 
 	complete = false;
-	deltaY = 0;
 	frame_counter = 0;
 	local_prev_command = COMMAND_NONE_MASK;
 
@@ -145,7 +143,7 @@ void screen_demo_screen_update( unsigned char *screen_type )
 	unsigned char input1;// input2, input3, input4, input5, input6;
 	unsigned char input2;
 	unsigned char deltaX;
-	//signed int deltaY;
+	signed int deltaY;
 	unsigned char loops;
 	//signed char collision;
 	enum_scroll_state scroll_state;
@@ -336,7 +334,6 @@ void screen_demo_screen_update( unsigned char *screen_type )
 			return;
 		}
 	}
-
 
 	engine_player_manager_draw();
 	*screen_type = screen_type_demo;

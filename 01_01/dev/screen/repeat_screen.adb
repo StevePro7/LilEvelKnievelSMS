@@ -63,7 +63,7 @@ S:Frepeat_screen$frame_counter$0_0$0({1}SC:U),E,0,0
 S:Frepeat_screen$available$0_0$0({1}SC:U),E,0,0
 S:Frepeat_screen$local_prev_command$0_0$0({1}SC:U),E,0,0
 S:G$engine_collision_manager_init$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_collision_manager_initX$0_0$0({2}DF,SV:S),C,0,0
+S:G$engine_collision_manager_init_org$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_collision_manager_player$0_0$0({2}DF,SC:S),C,0,0
 S:G$engine_collision_manager_finish$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_command_manager_init$0_0$0({2}DF,SV:S),C,0,0
@@ -291,4 +291,3 @@ S:G$devkit_SMS_addSprite_bulk8$0_0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_addSprite_bulk12$0_0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setTilePriority$0_0$0({2}DF,SV:S),C,0,0
 S:G$devkit_isCollisionDetected$0_0$0({2}DF,SC:U),C,0,0
-S:Frepeat_screen$printCmds$0_0$0({2}DF,SV:S),C,0,0

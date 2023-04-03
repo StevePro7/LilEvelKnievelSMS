@@ -73,7 +73,7 @@ S:G$engine_sound_manager_play$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_sound_manager_stop$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_audio_manager_update$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_collision_manager_init$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_collision_manager_initX$0_0$0({2}DF,SV:S),C,0,0
+S:G$engine_collision_manager_init_org$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_collision_manager_player$0_0$0({2}DF,SC:S),C,0,0
 S:G$engine_collision_manager_finish$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_command_manager_init$0_0$0({2}DF,SV:S),C,0,0

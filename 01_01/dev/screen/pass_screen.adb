@@ -35,9 +35,10 @@ S:G$global_scroll_object$0_0$0({18}STtag_struct_scroll_object:S),E,0,0
 S:G$global_delay_object$0_0$0({4}STtag_struct_delay_object:S),E,0,0
 S:G$global_frame_object$0_0$0({2}STtag_struct_frame_object:S),E,0,0
 S:G$global_reset_object$0_0$0({4}STtag_struct_reset_object:S),E,0,0
-S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:Fpass_screen$player_passX$0_0$0({1}SC:U),E,0,0
 S:Fpass_screen$player_endY$0_0$0({1}SC:U),E,0,0
 S:Fpass_screen$swap$0_0$0({1}SC:U),E,0,0

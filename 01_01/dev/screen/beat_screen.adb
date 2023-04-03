@@ -53,9 +53,10 @@ S:G$global_scroll_object$0_0$0({18}STtag_struct_scroll_object:S),E,0,0
 S:G$global_delay_object$0_0$0({4}STtag_struct_delay_object:S),E,0,0
 S:G$global_frame_object$0_0$0({2}STtag_struct_frame_object:S),E,0,0
 S:G$global_reset_object$0_0$0({4}STtag_struct_reset_object:S),E,0,0
-S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:Fbeat_screen$complete$0_0$0({1}:S),E,0,0
 S:Fbeat_screen$deltaY$0_0$0({2}SI:S),E,0,0
 S:Fbeat_screen$frame_counter$0_0$0({1}SC:U),E,0,0
@@ -74,7 +75,7 @@ S:G$engine_sound_manager_play$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_sound_manager_stop$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_audio_manager_update$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_collision_manager_init$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_collision_manager_initX$0_0$0({2}DF,SV:S),C,0,0
+S:G$engine_collision_manager_init_org$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_collision_manager_player$0_0$0({2}DF,SC:S),C,0,0
 S:G$engine_collision_manager_finish$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_command_manager_init$0_0$0({2}DF,SV:S),C,0,0

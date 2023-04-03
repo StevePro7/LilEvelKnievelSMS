@@ -12,11 +12,8 @@ S:Lriff_manager.engine_riff_manager_play$data$1_0$92({2}DG,SC:U),R,0,0,[e,d]
 S:Lriff_manager.engine_riff_manager_play$bank$1_0$92({1}SC:U),R,0,0,[a]
 T:Friff_manager$tag_struct_hack_object[({0}S:S$hack_delay$0_0$0({1}SC:U),Z,0,0)({1}S:S$hack_isgod$0_0$0({1}SC:U),Z,0,0)({2}S:S$hack_inair$0_0$0({1}SC:U),Z,0,0)({3}S:S$hack_ultra$0_0$0({1}SC:U),Z,0,0)({4}S:S$hack_music$0_0$0({1}SC:U),Z,0,0)({5}S:S$hack_sound$0_0$0({1}SC:U),Z,0,0)({6}S:S$hack_riffs$0_0$0({1}SC:U),Z,0,0)]
 S:G$global_hack_object$0_0$0({7}STtag_struct_hack_object:S),E,0,0
-S:G$steven_text$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$demo_command_frame_index$0_0$0({0}DA0d,SI:U),E,0,0
 S:G$demo_command_this_command$0_0$0({0}DA0d,SC:U),E,0,0
-S:G$beat_command_frame_index$0_0$0({0}DA0d,SI:U),E,0,0
-S:G$beat_command_this_command$0_0$0({0}DA0d,SC:U),E,0,0
 S:G$music_object_data$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$sound_object_data$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$riff_sample_data$0_0$0({0}DA0d,DG,SC:U),E,0,0

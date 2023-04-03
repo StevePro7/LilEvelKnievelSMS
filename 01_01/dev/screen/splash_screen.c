@@ -24,8 +24,8 @@ void screen_splash_screen_load()
 	engine_content_manager_splash();
 	engine_graphics_manager_image( splash_tiles__tilemap__bin, TILE_IMAGE_SCREEN, 4, 4, 24, 16 );
 	devkit_SMS_displayOn();
-	check = 0;
-	erase = 0;
+	check = stage_mode_inc0;
+	erase = switch_mode_no;
 }
 
 void screen_splash_screen_update( unsigned char *screen_type )
@@ -36,11 +36,10 @@ void screen_splash_screen_update( unsigned char *screen_type )
 	unsigned char count;
 	unsigned char value;
 
-	if( check == 0 )
+	if( stage_mode_inc0 == check )
 	{
-		// TODO - update magic number with enum??
-		check = 1;
-		index = RIFF_START_SPLASH;// 25;
+		check = stage_mode_inc1;
+		index = RIFF_START_SPLASH;
 		value = riff_indexs[ index ];
 		count = riff_counts[ index ];
 		engine_riff_manager_init();
@@ -54,7 +53,7 @@ void screen_splash_screen_update( unsigned char *screen_type )
 			{
 				if( !erase )
 				{
-					erase = 1;
+					erase = switch_mode_yes;
 
 					// Erase SRAM and re-init game vars.
 					engine_storage_manager_kill();

@@ -36,9 +36,10 @@ S:Lfont_manager.print_data$sloc0$0_1$0({2}DD,SC:U),B,1,-5
 S:Lfont_manager.print_data$sloc1$0_1$0({1}SC:U),B,1,-2
 S:Lfont_manager.print_data$sloc2$0_1$0({1}SC:U),B,1,-1
 S:Lfont_manager.print_data$sloc3$0_1$0({1}SC:U),B,1,-3
-S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$devkit_SMS_init$0_0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_VDPturnOnFeature$0_0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_VDPturnOffFeature$0_0$0({2}DF,SV:S),C,0,0
