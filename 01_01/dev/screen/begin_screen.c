@@ -35,6 +35,7 @@ void screen_begin_screen_update( unsigned char *screen_type )
 	//*screen_type = screen_type_option;
 	//*screen_type = screen_type_diff;
 	//*screen_type = screen_type_beat;
+	*screen_type = screen_type_boss;
 	//*screen_type = screen_type_demo;
 	
 	////*screen_type = screen_type_record;
@@ -42,5 +43,5 @@ void screen_begin_screen_update( unsigned char *screen_type )
 	//*screen_type = screen_type_intro;
 	//*screen_type = screen_type_begin;
 
-	*screen_type = screen_type_start;
+	//*screen_type = screen_type_start;
 }

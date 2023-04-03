@@ -1,17 +1,3 @@
-// TODO delete
-const unsigned char *song_object_texts[] =
-{
-	"ANIMEOPENING   ",
-	"USASJUBARUINS  ",
-	"MOHENJODAROUSAS",
-	"MASTERTRACKER  ",
-
-	"DEATH SCREEN   ",		// Shinobi SMS death music
-	"BEAT SCREEN    ",
-	"CONT SCREEN    ",
-	"PASS SCREEN    ",		// Shinobi Mission one finished
-	"OVER SCREEN    ",		// Beat 'em game??
-};
 
 
 const unsigned char *locale_object_texts[] =
@@ -25,25 +11,37 @@ const unsigned char *locale_object_texts[] =
 	"WORLD",
 	"ROUND",
 	"POINT",
-	//"[WORLD[[[[ROUND[[[[POINT[[/[[",		// Level
-	//"12345INSERT COIN(S)12345"
 };
 
 extern const unsigned char *locale_object_blank[] =
 {
-	"              ",		// LOCALE_BLANK14
-	"      ",		// LOCALE_BLANK6
-	"                  ",		// LOCALE_BLANK18
+	"              ",						// LOCALE_BLANK14
+	"      ",								// LOCALE_BLANK6
+	"                  ",					// LOCALE_BLANK18
 	"                                ",		// LOCALE_BLANK32
 };
 
-//const unsigned char *locale_object_difficulty[] =
-//{
-//	"EASIER",
-//	"NORMAL",
-//	"HARDER",
-//	"INSANE",
-//};
+const unsigned char *locale_object_difficulty[] =
+{
+	"EASIER",
+	"NORMAL",
+	"HARDER",
+	"INSANE",
+};
+
+const unsigned char *song_object_texts[] =
+{
+	"ANIMEOPENING   ",
+	"USASJUBARUINS  ",
+	"MOHENJODAROUSAS",
+	"MASTERTRACKER  ",
+
+	"DEATH SCREEN   ",		// Shinobi SMS death music
+	"BEAT SCREEN    ",
+	"CONT SCREEN    ",
+	"PASS SCREEN    ",		// Shinobi Mission one finished
+	"OVER SCREEN    ",		// Beat 'em game??
+};
 
 
 const unsigned char bggame_tiles__palette__bin[] = {

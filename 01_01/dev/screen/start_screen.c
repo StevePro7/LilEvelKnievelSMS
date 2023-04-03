@@ -59,7 +59,6 @@ void screen_start_screen_load()
 	engine_player_manager_initX( game_difficulty, game_world );
 
 	devkit_SMS_displayOff();
-
 	engine_graphics_manager_screen( CLEAR_TILE_BLUE );
 
 	// Work in terms of screens.
@@ -74,12 +73,6 @@ void screen_start_screen_load()
 
 	engine_util_manager_locale_texts( 4, 9, 7 );
 
-
-	// TODO implement properly
-	//engine_font_manager_text( "JUMPS", 27, 3 );
-	//engine_font_manager_text( "   UP", 27, 4 );
-	//engine_font_manager_text( "RIGHT", 27, 5 );
-	//engine_font_manager_text( "FIRE1", 27, 6 );
 
 	// Draw screen specific graphics.
 	engine_graphics_manager_title();

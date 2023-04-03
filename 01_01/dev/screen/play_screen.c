@@ -26,29 +26,13 @@
 #endif
 
 static bool complete;
-//static signed int deltaY;
-
 static void play_checkpoint_riff();
-//static void printScrollInfo()
-//{
-//	struct_scroll_object *so = &global_scroll_object;
-//	unsigned char lookup1;
-//	unsigned char lookup2;
-//	engine_font_manager_data( so->scrollLeftX, 20, 0 );
-//	engine_font_manager_data( so->scrollRight, 20, 1 );
-//
-//	lookup1 = so->scrollLeftX  & SCREEN_LESS_ONE;
-//	engine_font_manager_data( lookup1, 20, 2 );
-//	lookup2 = so->scrollRight  & SCREEN_LESS_ONE;
-//	engine_font_manager_data( lookup2, 20, 3 );
-//}
 
 void screen_play_screen_load()
 {
 	struct_game_object *go = &global_game_object;
 	struct_hack_object *ho = &global_hack_object;
 	engine_frame_manager_load();
-	//engine_frame_manager_draw();
 
 	if( go->game_start )
 	{
@@ -62,8 +46,6 @@ void screen_play_screen_load()
 
 	complete = false;
 
-	// TODO delete this
-	//engine_font_manager_text( "PLAY SCREEN", 10, 2 );
 }
 
 void screen_play_screen_update( unsigned char *screen_type )
@@ -206,17 +188,9 @@ void screen_play_screen_update( unsigned char *screen_type )
 		}
 	}
 
-	// TODO delete as invoked above
-	//// Store command for future use.
-	//engine_command_manager_update( command );
-	// TODO delete as invoked above
-
 	engine_player_manager_draw();
 	engine_player_manager_head();
 
-	//engine_debug_manager_printout();
-//	engine_font_manager_data( deltaY, 30, 2 );
-//	engine_font_manager_data( po->posnY, 30, 3 );
 
 	// Check to see if player completes level.
 	if( complete )
@@ -241,12 +215,11 @@ static void play_checkpoint_riff()
 	struct_hack_object *ho = &global_hack_object;
 	unsigned char index, maxim;
 
+	// TODO magic number
 	maxim = 9;
 	index = engine_random_manager_next( maxim );
 
 	devkit_PSGStop();
-
-	// TODO wrap this in a hack var
 	if( ho->hack_riffs )
 	{
 		engine_graphics_manager_level_stats( go->game_world, go->game_round, go->game_point );
@@ -254,10 +227,7 @@ static void play_checkpoint_riff()
 		engine_riff_manager_loop( index );
 	}
 
-	// TODO wrap this in a hack var
 	// Clear out the game level statistics.
 	engine_util_manager_locale_blank( 3, 0, 3 );
-	// TODO wrap this in a hack var
-
 	engine_music_manager_resume();
 }

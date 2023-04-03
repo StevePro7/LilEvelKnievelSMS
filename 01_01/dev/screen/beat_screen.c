@@ -335,5 +335,4 @@ static void printBeatGame()
 
 	engine_font_manager_text( "CONGLATURATION", 9, 3 );
 	engine_font_manager_text( "AWINNER IS YOU", 9, 4 );
-	//engine_font_manager_text( "-012345678901234567890123456789-", 0, 4 );
 }

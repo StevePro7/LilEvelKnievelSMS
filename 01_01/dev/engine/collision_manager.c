@@ -14,8 +14,26 @@ static unsigned char collisionDelta;
 static unsigned char collisionRange;
 static bool moreForgiving;
 
-// TESTing - original logic
-void engine_collision_manager_initX( unsigned char difficulty )
+void engine_collision_manager_init( unsigned char difficulty )
+{
+	struct_hack_object *ho = &global_hack_object;
+	difficulty += 0;
+
+	// Easier + Normal collision delta = 2px range as is more forgiving.
+	collisionDelta = 2;
+	moreForgiving = true;
+
+	if( ho->hack_ultra )
+	{
+		// Harder + Insane collision delta = 1px range as is less forgiving.
+		collisionDelta = 1;
+		moreForgiving = false;
+	}
+
+	collisionRange = SCREEN_WIDE - collisionDelta;
+}
+
+void engine_collision_manager_init_org( unsigned char difficulty )
 {
 	// Harder + Insane collision delta = 1px range as is less forgiving.
 	difficulty += 0;
@@ -30,31 +48,6 @@ void engine_collision_manager_initX( unsigned char difficulty )
 
 	collisionRange = SCREEN_WIDE - collisionDelta;
 	collisionRange = SCREEN_WIDE;
-}
-
-// ORG
-void engine_collision_manager_init( unsigned char difficulty )
-{
-	struct_hack_object *ho = &global_hack_object;
-	difficulty += 0;
-
-	// Harder + Insane collision delta = 1px range as is less forgiving.
-	//collisionDelta = 1;
-	//moreForgiving = false;
-	//if( difficulty_type_easier == difficulty || difficulty_type_normal == difficulty )
-	//{
-		// Easier + Normal collision delta = 2px range as is more forgiving.
-		collisionDelta = 2;
-		moreForgiving = true;
-	//}
-
-	if( ho->hack_ultra )
-	{
-		collisionDelta = 1;
-		moreForgiving = false;
-	}
-
-	collisionRange = SCREEN_WIDE - collisionDelta;
 }
 
 signed char engine_collision_manager_player( unsigned char lookX, unsigned char tileY )
@@ -102,7 +95,6 @@ signed char engine_collision_manager_player( unsigned char lookX, unsigned char 
 }
 
 
-//unsigned char engine_collision_manager_finish( unsigned char lookX, unsigned char tileY )
 void engine_collision_manager_finish( unsigned char lookX, unsigned char tileY, unsigned char posnY, unsigned char *player_begY, unsigned char *player_endY )
 {
 	// Short algorithm to compare player finishing level:
