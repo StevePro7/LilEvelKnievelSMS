@@ -14,10 +14,7 @@ void engine_game_manager_set_game_saved( unsigned char game_saved );
 void engine_game_manager_set_game_start( unsigned char game_start );
 void engine_game_manager_set_game_music( unsigned char game_music );
 void engine_game_manager_set_game_sheet( unsigned char game_sheet );
-
 void engine_game_manager_inc_checkpoint();
 
-// TODO delete - only used for testing
-void engine_game_manager_set_level_test( unsigned char game_level );
 
 #endif//_GAME_MANAGER_H_

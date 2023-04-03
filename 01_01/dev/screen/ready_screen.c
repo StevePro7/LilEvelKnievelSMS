@@ -1,6 +1,5 @@
 #include "ready_screen.h"
 #include "../engine/audio_manager.h"
-#include "../engine/debug_manager.h"
 #include "../engine/enum_manager.h"
 #include "../engine/font_manager.h"
 #include "../engine/game_manager.h"
@@ -10,7 +9,6 @@
 #include "../engine/level_manager.h"
 #include "../engine/player_manager.h"
 #include "../engine/scroll_manager.h"
-#include "../engine/tile_manager.h"
 #include "../engine/util_manager.h"
 #include "../devkit/_sms_manager.h"
 #include "../devkit/_snd_manager.h"
@@ -29,7 +27,7 @@ static unsigned char check;
 static void printStats();
 static void updateCheck();
 
-// TODO - use for level screen back up
+// Used for level screen backup
 void screen_ready_screen_load()
 {
 	struct_player_object *po = &global_player_object;
@@ -47,7 +45,6 @@ void screen_ready_screen_load()
 	devkit_SMS_displayOff();
 	engine_graphics_manager_screen( CLEAR_TILE_BLUE );
 	engine_graphics_manager_title();
-	//engine_graphics_manager_clouds( go->game_cloud );
 	engine_graphics_manager_sea();
 
 	engine_level_manager_init( game_level );
@@ -58,7 +55,7 @@ void screen_ready_screen_load()
 
 	engine_graphics_manager_level_stats( game_world, game_round, game_point );
 	engine_graphics_manager_level_texts();
-	printStats();		// TODO remove
+	printStats();
 
 	engine_font_manager_char( '>', cursorX[ cursorIdx ], SHARE_TEXT_ROW );
 	engine_player_manager_initX( go->game_difficulty, go->game_world );
@@ -68,11 +65,7 @@ void screen_ready_screen_load()
 	engine_player_manager_draw();
 
 	devkit_SMS_displayOn();
-	check = 0;
-
-	// TODO do not include
-	engine_font_manager_text( "READY-LEVEL", 10, 5 );
-	// TODO do not include
+	check = stage_mode_inc0;
 }
 
 void screen_ready_screen_update( unsigned char *screen_type )
@@ -82,14 +75,13 @@ void screen_ready_screen_update( unsigned char *screen_type )
 	unsigned char input;
 	bool updateLevel = false;
 
-	if( 1 == check )
+	if( stage_mode_inc1 == check )
 	{
 		engine_player_manager_draw();
 		if( !devkit_PSGSFXGetStatus() )
 		{
 			engine_sound_manager_stop();
 			devkit_SMS_mapROMBank( bggame_tiles__tiles__psgcompr_bank );
-			//*screen_type = screen_type_option;		// use for testing!	TODO - remove
 			*screen_type = screen_type_init;
 			return;
 		}
@@ -98,22 +90,9 @@ void screen_ready_screen_update( unsigned char *screen_type )
 	input = engine_input_manager_hold( input_type_left );
 	if( input && 0 != cursorIdx )
 	{
-		// TODO - take out later - used for level design only!!
-		//if( 2 == cursorIdx )
-		//{
-		//	updateLevel = true;
-		//	if( game_screen > 0 )
-		//	{
-		//		game_screen--;
-		//		game_point = game_screen / lo->check_width;
-		//	}
-		//}
-		//else
-		//{
 		engine_font_manager_char( ' ', cursorX[ cursorIdx ], SHARE_TEXT_ROW );
 		cursorIdx--;
 		engine_font_manager_char( '>', cursorX[ cursorIdx ], SHARE_TEXT_ROW );
-		//}
 	}
 
 	input = engine_input_manager_hold( input_type_right );
@@ -207,19 +186,11 @@ void screen_ready_screen_update( unsigned char *screen_type )
 
 	if( updateLevel )
 	{
-		//if( game_level > 0 || game_point > 0 )
-		//{
 		updateCheck();
-		//engine_level_manager_init( game_level );
-		//game_screen = check_width * game_point;
-		//engine_level_manager_draw_screen( game_screen );
-		////engine_level_manager_draw_point( game_point );
 
-		//engine_player_manager_initX( go->game_difficulty, game_world );
 		engine_player_manager_loadX( game_point );
 		player_loadY = level_platforms[ po->lookX ];
 		engine_player_manager_loadY( player_loadY );
-		//}
 
 		engine_graphics_manager_level_stats( game_world, game_round, game_point );
 		printStats();
@@ -229,14 +200,9 @@ void screen_ready_screen_update( unsigned char *screen_type )
 	if( input )
 	{
 		engine_game_manager_set_level_data( game_world, game_round, game_point );
-
-		// TODO  wire this up correctly!!
-		engine_game_manager_set_level_test( game_level );
-		// TODO  wire this up correctly!!
-
-		engine_sound_manager_play( 2 );
+		engine_sound_manager_play( sound_type_accept );
 		engine_player_manager_draw();
-		check = 1;
+		check = stage_mode_inc1;
 		return;
 	}
 
@@ -244,11 +210,6 @@ void screen_ready_screen_update( unsigned char *screen_type )
 	if( input )
 	{
 		engine_game_manager_set_level_data( game_world, game_round, game_point );
-
-		// TODO  wire this up correctly!!
-		engine_game_manager_set_level_test( game_level );
-		// TODO  wire this up correctly!!
-
 		*screen_type = screen_type_diff;
 		return;
 	}
@@ -261,10 +222,8 @@ static void updateCheck()
 {
 	struct_level_object *lo = &global_level_object;
 	engine_level_manager_init( game_level );
-	//check_width = lo->level_check >> 5;	// / SCREEN_WIDE 32px;
 	numb_screen = lo->level_check >> 3;	// / 8 blocks per screen;
 	engine_level_manager_draw_screen( game_screen );
-	//engine_level_manager_draw_point( game_point );
 }
 
 static void printStats()
@@ -272,7 +231,6 @@ static void printStats()
 	unsigned char delta;
 	delta = 1;
 
-	// TODO delete - used for debugging / testing only - print level + screen
 	engine_font_manager_text( "GAME-LEVEL: ", 5, SHARE_TEXT_ROW + 3 );
 	engine_font_manager_text( "NO.SCREENS: ", 5, SHARE_TEXT_ROW + 4 );
 	engine_font_manager_text( "SCREEN-NO.: ", 5, SHARE_TEXT_ROW + 5 );
@@ -280,5 +238,4 @@ static void printStats()
 	engine_font_manager_data( game_level + delta, 20, SHARE_TEXT_ROW + 3 );
 	engine_font_manager_data( numb_screen, 20, SHARE_TEXT_ROW + 4 );
 	engine_font_manager_data( game_screen + delta, 20, SHARE_TEXT_ROW + 5 );
-	// TODO delete - used for debugging / testing only - print level + screen
 }

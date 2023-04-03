@@ -1,8 +1,8 @@
 M:begin_screen
 F:G$screen_begin_screen_load$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lbegin_screen.screen_begin_screen_load$cloud$1_0$101({1}SC:U),R,0,0,[a]
+S:Lbegin_screen.screen_begin_screen_load$cloud$1_0$100({1}SC:U),R,0,0,[a]
 F:G$screen_begin_screen_update$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lbegin_screen.screen_begin_screen_update$screen_type$1_0$102({2}DG,SC:U),B,1,4
+S:Lbegin_screen.screen_begin_screen_update$screen_type$1_0$101({2}DG,SC:U),B,1,4
 T:Fbegin_screen$tag_struct_game_object[({0}S:S$game_difficulty$0_0$0({1}SC:U),Z,0,0)({1}S:S$game_world$0_0$0({1}SC:U),Z,0,0)({2}S:S$game_round$0_0$0({1}SC:U),Z,0,0)({3}S:S$game_level$0_0$0({1}SC:U),Z,0,0)({4}S:S$game_point$0_0$0({1}SC:U),Z,0,0)({5}S:S$game_saved$0_0$0({1}SC:U),Z,0,0)({6}S:S$game_start$0_0$0({1}SC:U),Z,0,0)({7}S:S$game_music$0_0$0({1}SC:U),Z,0,0)({8}S:S$game_cloud$0_0$0({1}SC:U),Z,0,0)({9}S:S$game_isgod$0_0$0({1}SC:U),Z,0,0)({10}S:S$game_sheet$0_0$0({1}SC:U),Z,0,0)]
 S:G$global_game_object$0_0$0({11}STtag_struct_game_object:S),E,0,0
 S:G$engine_asm_manager_clear_VRAM$0_0$0({2}DF,SV:S),C,0,0
@@ -20,7 +20,6 @@ S:G$engine_game_manager_set_game_start$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_game_manager_set_game_music$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_game_manager_set_game_sheet$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_game_manager_inc_checkpoint$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_game_manager_set_level_test$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_graphics_manager_common$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_graphics_manager_screen$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_graphics_manager_sea$0_0$0({2}DF,SV:S),C,0,0

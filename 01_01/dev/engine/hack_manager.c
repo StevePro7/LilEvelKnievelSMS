@@ -11,7 +11,6 @@ struct_hack_object global_hack_object;
 
 #define HACKER_START		0x0050
 
-// TODO delete this - set only during debugging / play testing
 #ifdef _CONSOLE
 #else
 #pragma disable_warning 110
@@ -54,15 +53,15 @@ void engine_hack_manager_load()
 	ho->hack_sound = !ho->hack_sound;
 	ho->hack_riffs = !ho->hack_riffs;
 
-	// TODO delete.
+	// Tester values
 	//ho->hack_delay = 0;
 	//ho->hack_inair = 1;
 	//ho->hack_ultra = 0;		// more aggressive collision detection
 
 	//ho->hack_music = 1;
 	//ho->hack_sound = 1;
-	//ho->hack_riffs = 1;// !ho->hack_riffs;
-	// TODO delete.
+	//ho->hack_riffs = 1;
+	// Tester values
 
 	// TODO - fix this up!
 	go->game_isgod = ho->hack_isgod;

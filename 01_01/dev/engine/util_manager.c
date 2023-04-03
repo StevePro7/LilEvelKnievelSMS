@@ -27,12 +27,6 @@ void engine_util_manager_locale_blank( unsigned char index, unsigned char x, uns
 }
 
 // Maths Manager.
-// TODO delete - is causing issue!	Corrupting game level value in memory
-//unsigned char engine_util_manager_calculate_level( unsigned char world, unsigned char round )
-//{
-//	// TODO test.
-//	return world * MAX_ROUNDS + round;
-//}
 void engine_util_manager_convertByteToNibbles( unsigned char byte, unsigned char *upper_nibble, unsigned char *lower_nibble )
 {
 	*upper_nibble = ( byte >> 4 ) & BYTE_NIBBLE_MASK;

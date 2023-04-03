@@ -21,21 +21,19 @@ void engine_level_manager_init( unsigned char level )
 	lo->column_draw = SCREEN_LESS_ONE;
 
 	devkit_SMS_mapROMBank( FIXED_BANK );
-	
-	// TODO delete
-	if( level >= 40 )
+	if( level >= MAX_LEVELS )
 	{
-		lo->level_data = ( unsigned char* ) extra_object_data[ level - 40 ];
-		lo->level_size = extra_object_size[ level - 40 ];
-		lo->level_bank = extra_object_bank[ level - 40 ];
-	}// TODO delete
+		lo->level_data = ( unsigned char* ) extra_object_data[ level - MAX_LEVELS ];
+		lo->level_size = extra_object_size[ level - MAX_LEVELS ];
+		lo->level_bank = extra_object_bank[ level - MAX_LEVELS ];
+	}
 	else
 	{
 		lo->level_data = ( unsigned char* ) level_object_data[ level ];
 		lo->level_size = level_object_size[ level ];
 		lo->level_bank = level_object_bank[ level ];
 	}
-	//lo->level_check = lo->level_size / MAX_CHECKS;
+
 	lo->level_check = lo->level_size >> 2;			// equivalent to divide by MAX_CHECKS [4].
 	lo->check_width = lo->level_check >> 5;			// equivalent to divide by SCREEN_WIDE 32.
 	// IMPORTANT
@@ -43,8 +41,6 @@ void engine_level_manager_init( unsigned char level )
 	lo->level_size -= 1;
 }
 
-// TODO rename 
-// engine_level_manager_load()
 void engine_level_manager_draw_screen( unsigned char checkScreen )
 {
 	struct_level_object *lo = &global_level_object;
@@ -61,24 +57,6 @@ void engine_level_manager_draw_screen( unsigned char checkScreen )
 	}
 }
 
-//void engine_level_manager_draw_point( unsigned char checkPoint )
-//{
-//	struct_level_object *lo = &global_level_object;
-//	unsigned int scrollColumn;
-//	unsigned char index;
-//
-//	// Reset column draw each full screen render.
-//	lo->column_draw = SCREEN_LESS_ONE;
-//
-//	scrollColumn = checkPoint * SCREEN_WIDE;
-//	for( index = 0; index < SCREEN_WIDE; index++ )
-//	{
-//		engine_level_manager_draw_column( scrollColumn + index );
-//	}
-//}
-
-// TODO rename 
-// engine_level_manager_draw()
 void engine_level_manager_draw_column( unsigned int scrollColumn )
 {
 	struct_level_object *lo = &global_level_object;

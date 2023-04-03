@@ -22,13 +22,6 @@ void engine_game_manager_init()
 	go->game_sheet = switch_mode_no;
 }
 
-//TODO complete this
-//void engine_game_manager_load( unsigned char storage_difficulty )
-//{
-//	struct_game_object *go = &global_game_object;
-//	go->game_difficulty = storage_difficulty;
-//}
-
 void engine_game_manager_set_cloud_form( unsigned char game_cloud )
 {
 	struct_game_object *go = &global_game_object;
@@ -46,9 +39,8 @@ void engine_game_manager_set_level_data( unsigned char game_world, unsigned char
 	go->game_round = game_round;
 	go->game_point = game_point;
 
-	// TODO implement this once all levels set!
+	// Align level.
 	go->game_level = game_world * MAX_ROUNDS + game_round;
-	//go->game_level = engine_util_manager_calculate_level( game_world, game_round );		// TODO delete - do not invoke!
 }
 void engine_game_manager_set_game_saved( unsigned char game_saved )
 {
@@ -78,11 +70,4 @@ void engine_game_manager_inc_checkpoint()
 {
 	struct_game_object *go = &global_game_object;
 	go->game_point++;
-}
-
-// TODO delete - only used for testing
-void engine_game_manager_set_level_test( unsigned char game_level )
-{
-	struct_game_object *go = &global_game_object;
-	go->game_level = game_level;
 }
