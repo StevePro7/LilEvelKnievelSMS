@@ -16,7 +16,6 @@ void engine_tile_manager_init()
 	flippedX = devkit_TILE_FLIPPED_X();
 }
 
-//void engine_tile_manager_draw_columns( unsigned char tile_type, unsigned char x, unsigned char col )
 void engine_tile_manager_draw_column( unsigned char tile_type, unsigned char x, unsigned char col, bool flip )
 {
 	const unsigned char *tiles = bggame_tiles__tilemap__bin;
@@ -33,7 +32,6 @@ void engine_tile_manager_draw_column( unsigned char tile_type, unsigned char x, 
 		val = tiles[ idx ];
 		if( flip )
 		{
-			// TODO - do I want to do this or pass unsigned int??
 			val |= flippedX;
 		}
 
@@ -60,7 +58,6 @@ void engine_tile_manager_draw_cloud( unsigned int tileMap, unsigned char x, unsi
 			val = tiles[ idx ];
 			if( flip )
 			{
-				// TODO - do I want to do this or pass unsigned int??
 				val |= flippedX;
 			}
 

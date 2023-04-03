@@ -86,9 +86,9 @@ S:G$engine_font_manager_char$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_font_manager_text$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_font_manager_data$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_font_manager_valu$0_0$0({2}DF,SV:S),C,0,0
+S:G$engine_tile_manager_init$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_tile_manager_draw_column$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_tile_manager_draw_cloud$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_tile_manager_init$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_util_manager_locale_texts$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_util_manager_locale_blank$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_util_manager_convertByteToNibbles$0_0$0({2}DF,SV:S),C,0,0

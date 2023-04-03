@@ -3,7 +3,7 @@
 void main( void )
 {
 	unsigned char open_screen_type;
-	static bool global_pause;
+	bool global_pause;
 
 	devkit_SMS_init();
 	devkit_SMS_setSpriteMode( devkit_SPRITEMODE_NORMAL() );
@@ -22,13 +22,13 @@ void main( void )
 	engine_input_manager_init();
 	engine_tile_manager_init();
 
-	open_screen_type = screen_type_splash;
-	//open_screen_type = screen_type_title;
-	open_screen_type = screen_type_begin;
+	//open_screen_type = screen_type_splash;
+	open_screen_type = screen_type_title;
+	//open_screen_type = screen_type_begin;
 
 	engine_player_manager_init();
 	engine_screen_manager_init( open_screen_type );
-
+	global_pause = false;
 	for( ;; )
 	{
 		if( devkit_SMS_queryPauseRequested() )
