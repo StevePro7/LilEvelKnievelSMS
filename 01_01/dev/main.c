@@ -15,15 +15,16 @@ void main( void )
 	{
 		engine_storage_manager_load();
 	}
+
 	engine_hack_manager_init();
 	engine_hack_manager_load();
 	engine_audio_manager_init();
 	engine_input_manager_init();
 	engine_tile_manager_init();
 
-	open_screen_type = screen_type_splash;
+	//open_screen_type = screen_type_splash;
 	//open_screen_type = screen_type_title;
-	//open_screen_type = screen_type_begin;
+	open_screen_type = screen_type_begin;
 
 	engine_player_manager_init();
 	engine_screen_manager_init( open_screen_type );

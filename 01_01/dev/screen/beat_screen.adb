@@ -9,7 +9,7 @@ S:Lbeat_screen.screen_beat_screen_load$beat_level$1_0$166({1}SC:U),R,0,0,[]
 S:Lbeat_screen.screen_beat_screen_load$game_difficulty$1_0$166({1}SC:U),R,0,0,[b]
 S:Lbeat_screen.screen_beat_screen_load$game_world$1_0$166({1}SC:U),R,0,0,[]
 S:Lbeat_screen.screen_beat_screen_load$game_point$1_0$166({1}SC:U),R,0,0,[]
-F:G$screen_beat_screen_update$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
+F:G$screen_beat_screen_update$0_0$0({2}DF,SV:S),Z,0,-2,0,0,0
 S:Lbeat_screen.screen_beat_screen_update$screen_type$1_0$167({2}DG,SC:U),B,1,4
 S:Lbeat_screen.screen_beat_screen_update$fo$1_0$168({2}DG,STtag_struct_frame_object:S),R,0,0,[]
 S:Lbeat_screen.screen_beat_screen_update$so$1_0$168({2}DG,STtag_struct_scroll_object:S),R,0,0,[]
@@ -19,11 +19,13 @@ S:Lbeat_screen.screen_beat_screen_update$go$1_0$168({2}DG,STtag_struct_game_obje
 S:Lbeat_screen.screen_beat_screen_update$input1$1_0$168({1}SC:U),R,0,0,[e]
 S:Lbeat_screen.screen_beat_screen_update$input2$1_0$168({1}SC:U),R,0,0,[l]
 S:Lbeat_screen.screen_beat_screen_update$deltaX$1_0$168({1}SC:U),R,0,0,[]
+S:Lbeat_screen.screen_beat_screen_update$deltaY$1_0$168({2}SI:S),B,1,-3
 S:Lbeat_screen.screen_beat_screen_update$player_state$1_0$168({1}SC:U),R,0,0,[]
 S:Lbeat_screen.screen_beat_screen_update$command$1_0$168({1}SC:U),R,0,0,[c]
-S:Lbeat_screen.screen_beat_screen_update$sloc0$0_1$0({2}DG,SC:U),B,1,-3
-S:Lbeat_screen.screen_beat_screen_update$sloc1$0_1$0({2}SI:U),B,1,-5
-S:Lbeat_screen.screen_beat_screen_update$sloc2$0_1$0({1}SC:U),B,1,-1
+S:Lbeat_screen.screen_beat_screen_update$sloc0$0_1$0({2}DG,SC:U),B,1,-5
+S:Lbeat_screen.screen_beat_screen_update$sloc1$0_1$0({2}SI:U),B,1,-2
+S:Lbeat_screen.screen_beat_screen_update$sloc2$0_1$0({2}SI:S),B,1,-3
+S:Lbeat_screen.screen_beat_screen_update$sloc3$0_1$0({1}SC:U),B,1,-1
 F:Fbeat_screen$printBeatGame$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lbeat_screen.printBeatGame$tiles$1_0$178({2}DG,SC:U),R,0,0,[c,b]
 S:Lbeat_screen.printBeatGame$x$1_0$178({1}SC:U),R,0,0,[]
@@ -58,7 +60,6 @@ S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:Fbeat_screen$complete$0_0$0({1}:S),E,0,0
-S:Fbeat_screen$deltaY$0_0$0({2}SI:S),E,0,0
 S:Fbeat_screen$frame_counter$0_0$0({1}SC:U),E,0,0
 S:Fbeat_screen$available$0_0$0({1}SC:U),E,0,0
 S:Fbeat_screen$local_prev_command$0_0$0({1}SC:U),E,0,0
