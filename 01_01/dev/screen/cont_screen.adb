@@ -38,7 +38,6 @@ S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:Fcont_screen$cursorIdx$0_0$0({1}SC:U),E,0,0
-S:Fcont_screen$check$0_0$0({1}SC:U),E,0,0
 S:G$engine_audio_manager_init$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_music_manager_play$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_music_manager_playnorepeat$0_0$0({2}DF,SV:S),C,0,0

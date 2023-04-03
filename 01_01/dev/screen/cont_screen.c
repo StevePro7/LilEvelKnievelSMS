@@ -18,7 +18,6 @@
 
 static unsigned char cursorX[] = { 12, 17 };
 static unsigned char cursorIdx;
-static unsigned char check;
 
 static void printCursor()
 {
@@ -58,7 +57,6 @@ void screen_cont_screen_load()
 	unsigned char player_loadY;
 	unsigned char checkScreen;
 
-	// TODO adriana - test this
 	engine_level_manager_init( go->game_level );
 
 	devkit_SMS_displayOff();
@@ -85,7 +83,6 @@ void screen_cont_screen_load()
 	//TODO magic number
 	engine_music_manager_playnorepeat( 4 );
 	cursorIdx = 0;
-	check = 0;
 }
 
 void screen_cont_screen_update( unsigned char *screen_type )
