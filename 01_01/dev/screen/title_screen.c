@@ -19,7 +19,7 @@
 #include "../banks/bank3.h"
 
 #define MAX_SPOTS	9
-#define MAX_FLIPS	7		// TODO delete
+#define MAX_FLIPS	7
 
 static void draw_sprite( unsigned char idx, unsigned char mode, unsigned char x, unsigned char y );
 
@@ -32,7 +32,6 @@ static unsigned char value;
 static unsigned char check;
 static unsigned char delay;
 
-// TODO - do I want to manually update the X-values i.e. add 8px plus frame + 2..
 void screen_title_screen_load()
 {
 	struct_game_object *go = &global_game_object;
@@ -53,7 +52,7 @@ void screen_title_screen_load()
 	devkit_SMS_setSpriteMode( devkit_SPRITEMODE_ZOOMED() );
 
 	index = 0;
-	check = 0;
+	check = stage_mode_inc0;
 
 	// If we have never saved [played] game before then always play first animation.
 	flips = 0;
@@ -103,12 +102,11 @@ void screen_title_screen_update( unsigned char *screen_type )
 	f = flip_ptr[ index ];
 	draw_sprite( f + 2, sprite_mode_zoomed, x, y );
 
-
 	engine_input_manager_update();
 	input = engine_input_manager_move( input_type_fire1 );
 	if( input || index + 1 >= MAX_SPOTS )
 	{
-		check = 1;
+		check = stage_mode_inc1;
 		return;
 	}
 
