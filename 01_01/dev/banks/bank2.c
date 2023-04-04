@@ -1,5 +1,3 @@
-
-
 const unsigned char *locale_object_texts[] =
 {
 	"(C)1987",				// Splash
@@ -41,6 +39,35 @@ const unsigned char *song_object_texts[] =
 	"BEAT SCREEN    ",
 };
 
+const unsigned char *riff_object_texts[] =
+{
+	"YOUZA ",
+	"SHRIEK",
+	"VHJUMP",
+	"SIMPS1",
+	"SIMPS2",
+	"SIMPS3",
+	"SIMPS4",
+	"SIMPS5",
+	"WWEXCL",
+	"SILID1",
+	"SILID2",
+	"SILID3",
+	"SUCKED",
+	"ENIMEN",
+	"LTODID",
+	"OHLILA",
+	"VHDOCT",
+	"AP YB1",
+	"AP OHB",
+	"APDIMH",
+	"RUREAD",
+	"HULKHO",
+	"UWINTR",
+	"GAOVER",
+	"TITLEX",
+	"SPLASH",
+};
 
 const unsigned char bggame_tiles__palette__bin[] = {
 0x00,0x01,0x30,0x02,0x03,0x14,0x04,0x08,0x19,0x39,0x0b,0x3a,0x2b,0x0f,0x2f,0x3f};
