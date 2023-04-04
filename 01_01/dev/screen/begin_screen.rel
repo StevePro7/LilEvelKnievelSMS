@@ -16,9 +16,8 @@ S A$begin_screen$103 Def000019
 S C$begin_screen.c$26$1_0$100 Def000012
 S C$begin_screen.c$17$1_0$100 Def000000
 S _screen_begin_screen_update Def000015
-S C$begin_screen.c$46$1_0$102 Def000015
 S C$begin_screen.c$28$1_0$102 Def000015
-S C$begin_screen.c$47$1_0$102 Def00001B
+S C$begin_screen.c$48$1_0$102 Def00001B
 S XG$screen_begin_screen_update$0$0 Def00001B
 S A$begin_screen$60 Def000000
 S G$screen_begin_screen_load$0$0 Def000000
@@ -40,6 +39,7 @@ S C$begin_screen.c$12$0_0$100 Def000000
 S C$begin_screen.c$21$1_0$100 Def000003
 S C$begin_screen.c$22$1_0$100 Def00000C
 S A$begin_screen$100 Def000016
+S C$begin_screen.c$30$1_0$102 Def000015
 S A$begin_screen$101 Def000017
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
@@ -57,5 +57,5 @@ T 0D 00 00 33 CD 00 00 33 C3 00 00
 R 00 00 00 00 02 05 04 00 02 09 03 00
 T 15 00 00
 R 00 00 00 00
-T 15 00 00 C1 E1 E5 C5 36 08 C9
+T 15 00 00 C1 E1 E5 C5 36 11 C9
 R 00 00 00 00

@@ -36,11 +36,9 @@ const unsigned char *song_object_texts[] =
 	"MOHENJODAROUSAS",
 	"MASTERTRACKER  ",
 
-	"DEATH SCREEN   ",		// Shinobi SMS death music
-	"BEAT SCREEN    ",
 	"CONT SCREEN    ",
-	"PASS SCREEN    ",		// Shinobi Mission one finished
-	"OVER SCREEN    ",		// Beat 'em game??
+	"OVER SCREEN    ",
+	"BEAT SCREEN    ",
 };
 
 

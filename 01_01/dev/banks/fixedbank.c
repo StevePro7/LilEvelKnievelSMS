@@ -184,7 +184,7 @@ const unsigned char *riff_sample_data[] =
 	Riff_Intro_ACDC_01_wav_pcmenc,
 	Riff_Intro_ACDC_02_wav_pcmenc,
 
-	// Hulk Hogan	bank 21-24
+	// Hulk Hogan
 	Riff_Intro_Hulk_01_wav_pcmenc,
 	Riff_Intro_Hulk_02_wav_pcmenc,
 	Riff_Intro_Hulk_03_wav_pcmenc,
@@ -253,7 +253,7 @@ const unsigned char riff_sample_bank[] =
 	Riff_Sound_Silicon02_01_wav_pcmenc_bank,
 	Riff_Sound_Silicon03_01_wav_pcmenc_bank,
 
-	// Simpsons - move above
+	// Simpsons
 	Riff_Sound_SimpsonsSucked_01_wav_pcmenc_bank,
 
 	// Eminem
@@ -287,7 +287,7 @@ const unsigned char riff_sample_bank[] =
 	Riff_Intro_ACDC_01_wav_pcmenc_bank,
 	Riff_Intro_ACDC_02_wav_pcmenc_bank,
 
-	// Hulk Hogan	bank 21-24
+	// Hulk Hogan
 	Riff_Intro_Hulk_01_wav_pcmenc_bank,
 	Riff_Intro_Hulk_02_wav_pcmenc_bank,
 	Riff_Intro_Hulk_03_wav_pcmenc_bank,
@@ -315,6 +315,7 @@ const unsigned char riff_sample_bank[] =
 	Riff__Title__Screen__07_wav_pcmenc_bank,
 	Riff__Title__Screen__08_wav_pcmenc_bank,
 	Riff__Title__Screen__09_wav_pcmenc_bank,
+
 	// Splash riff	bank 51-59	[x9]
 	Riff__Splash__Screen__01_wav_pcmenc_bank,
 	Riff__Splash__Screen__02_wav_pcmenc_bank,

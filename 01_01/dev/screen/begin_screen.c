@@ -27,6 +27,7 @@ void screen_begin_screen_load()
 
 void screen_begin_screen_update( unsigned char *screen_type )
 {
+	*screen_type = screen_type_boss;
 	//*screen_type = screen_type_over;
 	//*screen_type = screen_type_intro;
 	//*screen_type = screen_type_init;
@@ -43,5 +44,5 @@ void screen_begin_screen_update( unsigned char *screen_type )
 	//*screen_type = screen_type_intro;
 	//*screen_type = screen_type_begin;
 
-	*screen_type = screen_type_start;
+	//*screen_type = screen_type_start;
 }

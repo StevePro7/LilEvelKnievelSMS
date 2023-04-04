@@ -21,19 +21,18 @@
 #define PIXELS_HIGH			192
 #define LEVELS_SIDE			240
 #define PLAYER_DEAD			224
-//#define DEATH_PX_HI			224		// TODO delete
-//#define OCEAN_PX_HI			168		// TODO delete
 
 #define SCREEN_WIDE			32
 #define SCREEN_LESS_ONE		SCREEN_WIDE - 1
 #define SCREEN_HIGH			24
-#define OCEANS_HIGH			3		// TODO - in gfx mgr only?
 
-//#define MAX_JUMPS			1024	// TODO delete
-//#define WAVES_HIGH		21		// TODO delete
-
-
+// Audio.
 #define MAX_MUSIC			4
+#define MAX_RIFFS_CHECK		9
+#define MAX_RIFFS_DEATH		8
+#define MAX_RIFFS_INTRO		3
+#define MAX_RIFFS_PASS		3
+
 #define MAX_TILE_OBJECTS	16
 
 #define INVALID_INDEX		-1

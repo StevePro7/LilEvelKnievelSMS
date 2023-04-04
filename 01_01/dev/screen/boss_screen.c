@@ -9,6 +9,8 @@
 #include "../devkit/_sms_manager.h"
 #include "../banks/bank2.h"
 
+#define MAX_SONG_TEST	6
+
 static unsigned char index;
 
 void screen_boss_screen_load()
@@ -35,7 +37,7 @@ void screen_boss_screen_update( unsigned char *screen_type )
 	}
 
 	input = engine_input_manager_hold( input_type_down );
-	if( input && index < 8 )
+	if( input && index < MAX_SONG_TEST )
 	{
 		index++;
 		engine_font_manager_data( index, 14, 9 );

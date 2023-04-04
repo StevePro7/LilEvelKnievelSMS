@@ -12,6 +12,7 @@
 #define CLOUD_ROW_START		4
 #define CLOUD_COL_START		1
 #define CLOUD_COL_WIDES		8
+#define OCEANS_HIGH			3
 
 #ifdef _CONSOLE
 #else
