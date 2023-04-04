@@ -49,7 +49,6 @@ typedef enum tag_enum_player_state
 
 } enum_player_state;
 
-// TODO - replace these enums for swap / flip.
 typedef enum tag_enum_player_frame
 {
 	player_frame_ground_rght_01 = 0,

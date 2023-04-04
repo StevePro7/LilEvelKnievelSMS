@@ -33,33 +33,29 @@ void screen_dead_screen_load()
 	static unsigned char index, maxim;
 	engine_player_manager_dying();
 
+	// Get previous deltaX and move half pace while dying...
 	player_deadX = engine_player_manager_get_deltaX( po->player_state, co->prev_command );
 	player_deadX >>= 1;
 
 	engine_player_manager_draw();
 	engine_player_manager_head();
 	engine_reset_manager_load( NORMAL_DELAY );
-	swap = 0;
+	swap = stage_mode_inc0;
 
 	engine_riff_manager_init();
 	devkit_PSGStop();
 
-	// TODO - update magic number?
-	maxim = 8;
-	index = engine_random_manager_next( maxim );
+	index = engine_random_manager_next( MAX_RIFFS_DEATH );
 	index += RIFF_START_DEAD;
 	value = riff_indexs[ index ];
 	count = riff_counts[ index ];
 	loops = 0;
 }
 
-// TODO - inject pause before going to next screen...
 void screen_dead_screen_update( unsigned char *screen_type )
 {
 	struct_player_object *po = &global_player_object;
-	unsigned char input1, input2;
-	//unsigned char input;
-	//unsigned char check;
+	//unsigned char input1, input2;
 
 	if( swap )
 	{
@@ -82,18 +78,18 @@ void screen_dead_screen_update( unsigned char *screen_type )
 		}
 		else
 		{
-			input1 = engine_input_manager_hold( input_type_up );
-			input2 = engine_input_manager_move( input_type_down );
-			input1 = 1;		// TODO delete
-			if( input1 || input2 )
-			{
+			//input1 = engine_input_manager_hold( input_type_up );
+			//input2 = engine_input_manager_move( input_type_down );
+			//input1 = 1;		// TODO delete
+			//if( input1 || input2 )
+			//{
 				engine_player_manager_dead( player_deadX );
 				engine_player_manager_draw();
 				engine_player_manager_head();
-			}
+			//}
 		}
 
-		if( 1 == swap )
+		if( stage_mode_inc1 == swap )
 		{
 			if( loops < count )
 			{
@@ -102,9 +98,10 @@ void screen_dead_screen_update( unsigned char *screen_type )
 			}
 			else
 			{
-				swap = 2;
+				swap = stage_mode_inc2;
+
 				// Play SFX
-				engine_sound_manager_play( 0 );
+				engine_sound_manager_play( sound_type_death );
 			}
 		}
 	}
@@ -112,10 +109,10 @@ void screen_dead_screen_update( unsigned char *screen_type )
 	if( !swap )
 	{
 		engine_player_manager_dead( player_deadX );
-		swap = 1;
+		swap = stage_mode_inc1;
 	}
 	
-	// don't draw player here as "blinks"
+	// Don't draw player here as "blinks"
 	//engine_player_manager_draw();
 	engine_player_manager_head();
 	*screen_type = screen_type_dead;

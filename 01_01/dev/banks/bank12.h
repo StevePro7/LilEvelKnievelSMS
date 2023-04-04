@@ -27,7 +27,6 @@ extern const unsigned char level_8888_txt[];
 #define				level_8888_txt_size 512
 #define				level_8888_txt_bank 12
 
-
 extern const unsigned char level_9999_txt[];
 #define				level_9999_txt_size 32
 #define				level_9999_txt_bank 12
@@ -43,7 +42,7 @@ extern const unsigned char level1100_txt[];
 #define				level1100_txt_bank 12
 
 extern const unsigned char	level1101_txt[];
-#define				level1101_txt_size 256	//384
+#define				level1101_txt_size 256
 #define				level1101_txt_bank 12
 
 extern const unsigned char	level1102_txt[];
@@ -73,20 +72,6 @@ extern const unsigned char level1107_txt[];
 extern const unsigned char level1108_txt[];
 #define				level1108_txt_size 128
 #define				level1108_txt_bank 12
-
-//extern const unsigned char level_0000_txt[];
-//#define				level_0000_txt_size 256		// 8x screens
-//#define				level_0000_txt_bank 10
-
-
-//extern const unsigned char level_0101_txt[];
-//#define				level_0101_txt_size 256
-//#define				level_0101_txt_bank 10
-
-
-//extern const unsigned char level_0000_txt[];
-//#define				level_0000_txt_size 512
-//#define				level_0000_txt_bank 10
 
 extern const unsigned char level1109_txt[];
 #define				level1109_txt_size 384
@@ -119,48 +104,3 @@ extern const unsigned char level1115_txt[];
 extern const unsigned char level1118_txt[];
 #define				level1118_txt_size 512
 #define				level1118_txt_bank 12
-
-
-
-//// TODO - wip from bank 10
-//extern const unsigned char level_0000_txt[];
-//#define				level_0000_txt_size 256		// 8x screens
-//#define				level_0000_txt_bank 10
-
-
-//extern const unsigned char level_0101_txt[];
-//#define				level_0101_txt_size 256
-//#define				level_0101_txt_bank 10
-
-
-//extern const unsigned char level_0000_txt[];
-//#define				level_0000_txt_size 512
-//#define				level_0000_txt_bank 10
-
-
-
-// TODO - wip from bank 8
-//extern const unsigned char level_0106_txt[];
-//#define				level_0106_txt_size 1024
-//#define				level_0106_txt_bank 8
-//
-//extern const unsigned char level_0105_txt[];
-//#define				level_0105_txt_size 1024
-//#define				level_0105_txt_bank 8
-//
-//extern const unsigned char level_0104_txt[];
-//#define				level_0104_txt_size 1024
-//#define				level_0104_txt_bank 8
-//
-//extern const unsigned char level_0103_txt[];
-//#define				level_0103_txt_size 1024
-//#define				level_0103_txt_bank 8
-//
-//extern const unsigned char level_0102_txt[];
-//#define				level_0102_txt_size 1024
-//#define				level_0102_txt_bank 8
-//
-//extern const unsigned char level_0101_txt[];
-//#define				level_0101_txt_size 1024
-//#define				level_0101_txt_bank 8
-
