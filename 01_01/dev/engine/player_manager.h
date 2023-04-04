@@ -7,7 +7,6 @@
 // Global variable.
 extern struct_player_object global_player_object;
 
-//void engine_player_manager_starts(unsigned char index);
 void engine_player_manager_init();
 void engine_player_manager_initX( unsigned char difficulty, unsigned char world );
 void engine_player_manager_loadX( unsigned char checkScreen );
@@ -24,10 +23,6 @@ void engine_player_manager_bounds( signed int deltaY, unsigned char posnY, unsig
 void engine_player_manager_animate( unsigned char frame );
 enum_player_state engine_player_manager_collision( unsigned char state, unsigned char lookX, unsigned char tileY, signed int deltaY, unsigned char posnY, unsigned char invincible );
 
-// TODO delete
-void engine_player_manager_right( unsigned char deltaX );
-void engine_player_manager_down( signed char deltaY );
-
 void engine_player_manager_draw();
 void engine_player_manager_head();
 unsigned char engine_player_manager_finish();
@@ -35,6 +30,5 @@ void engine_player_manager_dying();
 void engine_player_manager_pass( unsigned char player_passX, unsigned char player_endY );
 void engine_player_manager_pass_frame();
 void engine_player_manager_dead( unsigned char player_deadX );
-void engine_player_manager_count();
 
 #endif//_PLAYER_MANAGER_H_

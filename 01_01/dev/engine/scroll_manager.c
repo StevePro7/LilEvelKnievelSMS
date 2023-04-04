@@ -23,13 +23,11 @@ static void lineScrollHandler( void );
 
 void engine_scroll_manager_load( unsigned char screen, int scrollPoints, int scrollFinish )
 {
-	//load_method( screen, scrollFinish );
 	engine_scroll_manager_full_load( screen, scrollPoints, scrollFinish );
 }
 
 enum_scroll_state engine_scroll_manager_update( unsigned char delta )
 {
-	//return update_method( delta );
 	return engine_scroll_manager_full_update( delta );
 }
 
@@ -134,10 +132,6 @@ enum_scroll_state engine_scroll_manager_para_update( unsigned char delta )
 			scroll_state = scroll_state_tile;
 			so->scrollColumn++;
 		}
-
-		// Scroll cloud section at half pace.
-		//so->scroll_half = 1 - so->scroll_half;
-		//so->scrollLeftX0 -= so->scroll_half;
 	}
 
 	// Scroll game screen at full pace.

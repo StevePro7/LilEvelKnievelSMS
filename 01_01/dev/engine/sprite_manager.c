@@ -42,7 +42,6 @@ void engine_sprite_manager_head( unsigned char x, unsigned char y )
 	}
 }
 
-// TODO refactor into above...
 void engine_sprite_manager_mode( unsigned char idx, unsigned char mode, unsigned char x, unsigned char y )
 {
 	const unsigned char wide = 4;
@@ -50,8 +49,6 @@ void engine_sprite_manager_mode( unsigned char idx, unsigned char mode, unsigned
 	unsigned char num;
 
 	unsigned char i, j;
-
-	// TODO integrate the different frames.
 	for( j = 0; j < high; j++ )
 	{
 		for( i = 0; i < wide; i++ )

@@ -46,8 +46,6 @@ typedef enum tag_enum_player_state
 	player_state_isonground = 0,
 	player_state_isintheair = 1,
 	player_state_isnowdying = 2,
-	//player_state_completion = 2,
-	player_state_iskilldead = 3,
 
 } enum_player_state;
 

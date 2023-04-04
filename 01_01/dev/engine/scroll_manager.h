@@ -3,7 +3,6 @@
 
 #include "enum_manager.h"
 #include "../object/scroll_object.h"
-//#include <stdbool.h>
 
 // Global variable.
 extern struct_scroll_object global_scroll_object;
