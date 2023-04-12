@@ -207,7 +207,6 @@
     <ClCompile Include="banks\bank8.c" />
     <ClCompile Include="banks\bank9.c" />
     <ClCompile Include="banks\fixedbank.c" />
-    <ClCompile Include="controller.c" />
     <ClCompile Include="devkit\_sms_manager.c" />
     <ClCompile Include="devkit\_snd_manager.c" />
     <ClCompile Include="engine\asm_manager.c" />
@@ -340,7 +339,6 @@
     <ClInclude Include="banks\bank8.h" />
     <ClInclude Include="banks\bank9.h" />
     <ClInclude Include="banks\fixedbank.h" />
-    <ClInclude Include="controller.h" />
     <ClInclude Include="devkit\_sms_manager.h" />
     <ClInclude Include="devkit\_snd_manager.h" />
     <ClInclude Include="engine\asm_manager.h" />

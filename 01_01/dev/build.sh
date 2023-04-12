@@ -85,7 +85,6 @@ sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 i
 ##sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 title_screen.c
 cd ..
 
-##sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 controller.c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 main.c
 
 
@@ -136,8 +135,8 @@ screen/demo_screen.rel screen/diff_screen.rel \
 screen/func_screen.rel screen/init_screen.rel screen/intro_screen.rel screen/load_screen.rel screen/level_screen.rel \
 screen/none_screen.rel screen/option_screen.rel screen/over_screen.rel screen/pass_screen.rel screen/play_screen.rel \
 screen/ready_screen.rel screen/record_screen.rel screen/repeat_screen.rel \
-screen/splash_screen.rel screen/start_screen.rel screen/test_screen.rel screen/title_screen.rel \
-controller.rel
+screen/splash_screen.rel screen/start_screen.rel screen/test_screen.rel  \
+screen/title_screen.rel
 
 ## Execute
 ihx2sms.exe output.ihx output.sms
