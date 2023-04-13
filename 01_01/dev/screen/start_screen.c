@@ -86,7 +86,7 @@ void screen_start_screen_load()
 
 	devkit_SMS_displayOn();
 
-	space = !go->game_start ? 1 : 10;
+	space = !go->game_start ? 3 : 10;
 	engine_delay_manager_load( NORMAL_DELAY );
 	engine_reset_manager_load( NORMAL_DELAY * space );
 	reset = 0;
