@@ -93,14 +93,14 @@ void screen_repeat_screen_update( unsigned char *screen_type )
 	unsigned char deltaX;
 	signed int deltaY;
 	unsigned char loops;
-	//signed char collision;
+
 	enum_scroll_state scroll_state;
 	enum_player_state player_state;
 
 	unsigned char command = COMMAND_NONE_MASK;
 	player_state = po->player_state;
 
-	// goto options.
+	// Quit out.
 	if( !available )
 	{
 		*screen_type = screen_type_option;

@@ -50,9 +50,7 @@ void screen_play_screen_load()
 
 void screen_play_screen_update( unsigned char *screen_type )
 {
-	// TODO delete
 	struct_frame_object *fo = &global_frame_object;
-
 	struct_scroll_object *so = &global_scroll_object;
 	struct_player_object *po = &global_player_object;
 	struct_command_object *co = &global_command_object;
@@ -80,28 +78,7 @@ void screen_play_screen_update( unsigned char *screen_type )
 	input5 = engine_input_manager_hold( input_type_fire1 );
 	input6 = engine_input_manager_hold( input_type_fire2 );
 
-	//input1 = engine_input_manager_hold( input_type_left );
-	//input2 = engine_input_manager_move( input_type_right );
-	////input1 = 1;		// TODO delete
-	//if( input1 || input2 )
-	//{
-	//	if( 2 == fo->frame_count )
-	//	{
-	//		//command = engine_command_manager_build( po->player_state, 1, 0, 0, 0, 0, 1 );		//Jump index = 1.
-	//		//command = engine_command_manager_build( po->player_state, 0, 0, 0, 0, 0, 1 );		//Jump index = 2.
-	//		//command = engine_command_manager_build( po->player_state, 0, 1, 0, 0, 0, 1 );		//Jump index = 3.
-	//		command = engine_command_manager_build( po->player_state, 0, 1, 1, 0, 0, 1 );		//Jump index = 4.
-	//	}
-	//	else
-	//	{
-	//		command = engine_command_manager_build( po->player_state, 0, 1, 0, 0, 0, 0 );
-	//	}
-	//}
-
 	command = engine_command_manager_build( po->player_state, input1, input2, input3, input4, input5, input6 );
-	//engine_font_manager_data( po->player_state, 31, 1 );
-	//engine_font_manager_data( command, 31, 2 );
-
 	if( command != co->prev_command )
 	{
 		// Store command for future use.
@@ -118,8 +95,6 @@ void screen_play_screen_update( unsigned char *screen_type )
 	{
 		// Get horizontal movement.
 		deltaX = engine_player_manager_get_deltaX( po->player_state, command );
-		//deltaX = 1; // TODO delete
-
 
 		// Get button action.
 		engine_player_manager_set_action( po->player_frame, command );

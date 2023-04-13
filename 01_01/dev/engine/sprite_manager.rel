@@ -108,6 +108,7 @@ S A$sprite_manager$205 Def000095
 S A$sprite_manager$160 Def000064
 S A$sprite_manager$115 Def000047
 S A$sprite_manager$106 Def00003C
+S C$sprite_manager.c$60$2_0$104 Def000132
 S A$sprite_manager$431 Def00017A
 S A$sprite_manager$422 Def000170
 S A$sprite_manager$404 Def00015D
@@ -126,6 +127,7 @@ S A$sprite_manager$143 Def00005A
 S A$sprite_manager$125 Def000050
 S A$sprite_manager$116 Def000048
 S A$sprite_manager$107 Def00003D
+S C$sprite_manager.c$52$2_0$104 Def00012B
 S A$sprite_manager$432 Def00017B
 S A$sprite_manager$423 Def000173
 S A$sprite_manager$414 Def000166
@@ -164,7 +166,7 @@ S A$sprite_manager$190 Def000082
 S A$sprite_manager$154 Def00005D
 S A$sprite_manager$118 Def00004A
 S A$sprite_manager$109 Def00003F
-S C$sprite_manager.c$63$2_0$104 Def000132
+S C$sprite_manager.c$45$2_0$104 Def0000A8
 S A$sprite_manager$434 Def00017D
 S A$sprite_manager$425 Def000175
 S A$sprite_manager$416 Def000168
@@ -187,8 +189,6 @@ S A$sprite_manager$155 Def000061
 S A$sprite_manager$137 Def000056
 S A$sprite_manager$119 Def00004D
 S XG$engine_sprite_manager_zoom$0$0 Def000184
-S C$sprite_manager.c$55$2_0$104 Def00012B
-S C$sprite_manager.c$46$2_0$104 Def0000A8
 S C$sprite_manager.c$37$5_0$101 Def000066
 S A$sprite_manager$435 Def00017E
 S A$sprite_manager$417 Def000169
@@ -209,7 +209,6 @@ S A$sprite_manager$174 Def000073
 S A$sprite_manager$165 Def000066
 S A$sprite_manager$156 Def000063
 S A$sprite_manager$138 Def000058
-S C$sprite_manager.c$70$1_0$109 Def000176
 S _engine_sprite_manager_head Def00005B
 S A$sprite_manager$436 Def00017F
 S A$sprite_manager$418 Def00016A
@@ -227,8 +226,6 @@ S A$sprite_manager$193 Def000087
 S A$sprite_manager$184 Def00007B
 S A$sprite_manager$175 Def000075
 S A$sprite_manager$166 Def000067
-S C$sprite_manager.c$71$1_0$109 Def000184
-S C$sprite_manager.c$60$5_0$107 Def0000EC
 S C$sprite_manager.c$39$5_0$101 Def000077
 S A$sprite_manager$446 Def000184
 S A$sprite_manager$437 Def000182
@@ -245,6 +242,9 @@ S A$sprite_manager$257 Def0000BC
 S A$sprite_manager$194 Def000088
 S A$sprite_manager$185 Def00007C
 S A$sprite_manager$167 Def000069
+S C$sprite_manager.c$62$2_0$109 Def000133
+S C$sprite_manager.c$54$4_0$106 Def000128
+S C$sprite_manager.c$52$5_0$107 Def0000B2
 S A$sprite_manager$438 Def000183
 S A$sprite_manager$429 Def000176
 S A$sprite_manager$393 Def000150
@@ -259,6 +259,7 @@ S A$sprite_manager$267 Def0000C5
 S A$sprite_manager$195 Def000089
 S A$sprite_manager$186 Def00007E
 S A$sprite_manager$168 Def00006B
+S C$sprite_manager.c$64$1_0$109 Def000133
 S A$sprite_manager$394 Def000151
 S A$sprite_manager$385 Def000149
 S A$sprite_manager$376 Def000137
@@ -267,6 +268,8 @@ S A$sprite_manager$259 Def0000BE
 S A$sprite_manager$196 Def00008A
 S A$sprite_manager$187 Def00007F
 S A$sprite_manager$169 Def00006C
+S C$sprite_manager.c$65$1_0$109 Def000150
+S C$sprite_manager.c$54$5_0$107 Def0000C3
 S A$sprite_manager$395 Def000152
 S A$sprite_manager$386 Def00014C
 S A$sprite_manager$377 Def000139
@@ -276,9 +279,7 @@ S A$sprite_manager$269 Def0000C7
 S A$sprite_manager$197 Def00008B
 S A$sprite_manager$188 Def000080
 S A$sprite_manager$179 Def000077
-S C$sprite_manager.c$65$2_0$109 Def000133
-S C$sprite_manager.c$57$4_0$106 Def000128
-S C$sprite_manager.c$55$5_0$107 Def0000B2
+S C$sprite_manager.c$66$1_0$109 Def000166
 S A$sprite_manager$396 Def000153
 S A$sprite_manager$387 Def00014D
 S A$sprite_manager$378 Def00013C
@@ -286,22 +287,21 @@ S A$sprite_manager$288 Def0000E4
 S A$sprite_manager$279 Def0000D8
 S A$sprite_manager$198 Def00008C
 S A$sprite_manager$189 Def000081
-S C$sprite_manager.c$67$1_0$109 Def000133
+S C$sprite_manager.c$67$1_0$109 Def000176
+S C$sprite_manager.c$56$5_0$107 Def0000E8
 S A$sprite_manager$397 Def000154
 S A$sprite_manager$388 Def00014E
 S A$sprite_manager$379 Def00013F
 S A$sprite_manager$298 Def0000EC
 S A$sprite_manager$289 Def0000E6
 S A$sprite_manager$199 Def00008D
-S C$sprite_manager.c$68$1_0$109 Def000150
-S C$sprite_manager.c$57$5_0$107 Def0000C3
+S C$sprite_manager.c$68$1_0$109 Def000184
+S C$sprite_manager.c$57$5_0$107 Def0000EC
 S G$engine_sprite_manager_mode$0$0 Def0000A8
 S A$sprite_manager$398 Def000155
 S A$sprite_manager$389 Def00014F
 S A$sprite_manager$299 Def0000ED
-S C$sprite_manager.c$69$1_0$109 Def000166
 S A$sprite_manager$399 Def000156
-S C$sprite_manager.c$59$5_0$107 Def0000E8
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

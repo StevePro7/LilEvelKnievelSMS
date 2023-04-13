@@ -1,15 +1,13 @@
 M:dead_screen
 F:G$screen_dead_screen_load$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Ldead_screen.screen_dead_screen_load$co$1_0$59({2}DG,STtag_struct_command_object:S),R,0,0,[]
-S:Ldead_screen.screen_dead_screen_load$po$1_0$59({2}DG,STtag_struct_player_object:S),R,0,0,[]
+S:Ldead_screen.screen_dead_screen_load$co$1_0$57({2}DG,STtag_struct_command_object:S),R,0,0,[]
+S:Ldead_screen.screen_dead_screen_load$po$1_0$57({2}DG,STtag_struct_player_object:S),R,0,0,[]
 F:G$screen_dead_screen_update$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Ldead_screen.screen_dead_screen_update$screen_type$1_0$60({2}DG,SC:U),B,1,4
-S:Ldead_screen.screen_dead_screen_update$po$1_0$61({2}DG,STtag_struct_player_object:S),R,0,0,[]
-S:Ldead_screen.screen_dead_screen_update$input1$1_0$61({1}SC:U),R,0,0,[]
-S:Ldead_screen.screen_dead_screen_update$input2$1_0$61({1}SC:U),R,0,0,[]
+S:Ldead_screen.screen_dead_screen_update$screen_type$1_0$58({2}DG,SC:U),B,1,4
+S:Ldead_screen.screen_dead_screen_update$po$1_0$59({2}DG,STtag_struct_player_object:S),R,0,0,[]
 T:Fdead_screen$tag_struct_player_object[({0}S:S$initX$0_0$0({1}SC:U),Z,0,0)({1}S:S$posnX$0_0$0({2}SI:U),Z,0,0)({3}S:S$tileX$0_0$0({2}SI:U),Z,0,0)({5}S:S$lookX$0_0$0({1}SC:U),Z,0,0)({6}S:S$posnY$0_0$0({1}SC:U),Z,0,0)({7}S:S$tileY$0_0$0({1}SC:U),Z,0,0)({8}S:S$leapY$0_0$0({2}SI:U),Z,0,0)({10}S:S$drawX$0_0$0({1}SC:U),Z,0,0)({11}S:S$drawY$0_0$0({1}SC:U),Z,0,0)({12}S:S$player_state$0_0$0({1}SC:U),Z,0,0)({13}S:S$jumper_index$0_0$0({1}SC:U),Z,0,0)({14}S:S$deltaY_index$0_0$0({1}SC:U),Z,0,0)({15}S:S$player_frame$0_0$0({1}SC:U),Z,0,0)({16}S:S$player_lives$0_0$0({1}SC:U),Z,0,0)({17}S:S$motion_count$0_0$0({1}SC:U),Z,0,0)]
 T:Fdead_screen$tag_struct_scroll_object[({0}S:S$scrollLeftX$0_0$0({1}SC:U),Z,0,0)({1}S:S$scrollRight$0_0$0({1}SC:U),Z,0,0)({2}S:S$scrollColumn$0_0$0({2}SI:U),Z,0,0)({4}S:S$scrollChecks$0_0$0({2}SI:U),Z,0,0)({6}S:S$scrollPoints$0_0$0({2}SI:U),Z,0,0)({8}S:S$scrollFinish$0_0$0({2}SI:U),Z,0,0)({10}S:S$scrollLeftX0$0_0$0({1}SC:U),Z,0,0)({11}S:S$scrollLeftX1$0_0$0({1}SC:U),Z,0,0)({12}S:S$scrollLeftX2$0_0$0({1}SC:U),Z,0,0)({13}S:S$scrollLeftX3$0_0$0({1}SC:U),Z,0,0)({14}S:S$scrollLeftX4$0_0$0({1}SC:U),Z,0,0)({15}S:S$scrollLeftX5$0_0$0({1}SC:U),Z,0,0)({16}S:S$scroll_half$0_0$0({1}SC:U),Z,0,0)({17}S:S$lineCnt$0_0$0({1}SC:U),Z,0,0)]
-T:Fdead_screen$tag_struct_command_object[({0}S:S$frame_index$0_0$0({2}SI:U),Z,0,0)({2}S:S$curr_command$0_0$0({1}SC:U),Z,0,0)({3}S:S$prev_command$0_0$0({1}SC:U),Z,0,0)]
+T:Fdead_screen$tag_struct_command_object[({0}S:S$frame_index$0_0$0({2}SI:U),Z,0,0)({2}S:S$prev_command$0_0$0({1}SC:U),Z,0,0)]
 T:Fdead_screen$tag_struct_frame_object[({0}S:S$frame_count$0_0$0({2}SI:U),Z,0,0)]
 T:Fdead_screen$tag_struct_delay_object[({0}S:S$delay_value$0_0$0({2}SI:U),Z,0,0)({2}S:S$delay_timer$0_0$0({2}SI:U),Z,0,0)]
 T:Fdead_screen$tag_struct_audio_object[({0}S:S$music_data$0_0$0({2}DG,SC:U),Z,0,0)({2}S:S$music_bank$0_0$0({1}SC:U),Z,0,0)({3}S:S$sound_data$0_0$0({2}DG,SC:U),Z,0,0)({5}S:S$sound_bank$0_0$0({1}SC:U),Z,0,0)]
@@ -17,7 +15,7 @@ T:Fdead_screen$tag_struct_reset_object[({0}S:S$reset_value$0_0$0({2}SI:U),Z,0,0)
 S:G$global_audio_object$0_0$0({6}STtag_struct_audio_object:S),E,0,0
 S:G$command_frame_index$0_0$0({0}DA0d,SI:U),E,0,0
 S:G$command_this_command$0_0$0({0}DA0d,SC:U),E,0,0
-S:G$global_command_object$0_0$0({4}STtag_struct_command_object:S),E,0,0
+S:G$global_command_object$0_0$0({3}STtag_struct_command_object:S),E,0,0
 S:G$jump_array_ptr$0_0$0({0}DA0d,DG,SI:S),E,0,0
 S:G$flip_array_ptr$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$global_player_object$0_0$0({18}STtag_struct_player_object:S),E,0,0
@@ -32,8 +30,8 @@ S:Fdead_screen$swap$0_0$0({1}SC:U),E,0,0
 S:Fdead_screen$count$0_0$0({1}SC:U),E,0,0
 S:Fdead_screen$value$0_0$0({1}SC:U),E,0,0
 S:Fdead_screen$loops$0_0$0({1}SC:U),E,0,0
-S:Ldead_screen.screen_dead_screen_load$index$1_0$59({1}SC:U),E,0,0
-S:Ldead_screen.screen_dead_screen_load$maxim$1_0$59({1}SC:U),E,0,0
+S:Ldead_screen.screen_dead_screen_load$index$1_0$57({1}SC:U),E,0,0
+S:Ldead_screen.screen_dead_screen_load$maxim$1_0$57({1}SC:U),E,0,0
 S:G$engine_audio_manager_init$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_music_manager_play$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_music_manager_playnorepeat$0_0$0({2}DF,SV:S),C,0,0
@@ -68,8 +66,6 @@ S:G$engine_player_manager_vert$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_bounds$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_animate$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_collision$0_0$0({2}DF,SC:U),C,0,0
-S:G$engine_player_manager_right$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_player_manager_down$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_draw$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_head$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_finish$0_0$0({2}DF,SC:U),C,0,0
@@ -77,7 +73,6 @@ S:G$engine_player_manager_dying$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_pass$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_pass_frame$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_player_manager_dead$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_player_manager_count$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_riff_manager_init$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_riff_manager_loop$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_riff_manager_play$0_0$0({2}DF,SV:S),C,0,0

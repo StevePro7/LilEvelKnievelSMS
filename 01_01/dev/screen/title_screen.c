@@ -19,7 +19,7 @@
 #include "../banks/bank3.h"
 
 #define MAX_SPOTS	9
-#define MAX_FLIPS	7
+#define MAX_FLIPS	8
 
 static void draw_sprite( unsigned char idx, unsigned char mode, unsigned char x, unsigned char y );
 

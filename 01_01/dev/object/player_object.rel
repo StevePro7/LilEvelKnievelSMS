@@ -1,9 +1,9 @@
 XL3
-H 9 areas 2D global symbols
+H 9 areas 2F global symbols
 M player_object
 O -mz80
 S .__.ABS. Def000000
-A _CODE size 400 flags 0 addr 0
+A _CODE size 409 flags 0 addr 0
 S _player_object_starts Def000000
 S G$player_object_starts$0_0$0 Def000000
 S _flip_array_00 Def0003C1
@@ -18,8 +18,10 @@ S _flip_array_05 Def0003EE
 S G$flip_array_03$0_0$0 Def0003DC
 S _flip_array_06 Def0003F7
 S G$flip_array_04$0_0$0 Def0003E5
+S _flip_array_07 Def000400
 S G$flip_array_05$0_0$0 Def0003EE
 S G$flip_array_06$0_0$0 Def0003F7
+S G$flip_array_07$0_0$0 Def000400
 S _player_flying_deltaX Def00001A
 S G$player_flying_deltaX$0_0$0 Def00001A
 S _jump_array_00 Def000022
@@ -43,7 +45,7 @@ S _jump_array_len Def0003BC
 S G$jump_array_len$0_0$0 Def0003BC
 S G$player_lives_headX$0_0$0 Def00001F
 A _DATA size 0 flags 0 addr 0
-A _INITIALIZED size 18 flags 0 addr 0
+A _INITIALIZED size 1A flags 0 addr 0
 S G$flip_array_ptr$0_0$0 Def00000A
 S _jump_array_ptr Def000000
 S G$jump_array_ptr$0_0$0 Def000000
@@ -52,7 +54,7 @@ A _DABS size 0 flags 8 addr 0
 A _HOME size 0 flags 0 addr 0
 A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
-A _INITIALIZER size 18 flags 0 addr 0
+A _INITIALIZER size 1A flags 0 addr 0
 S Fplayer_object$__xinit_flip_array_ptr$0_0$0 Def00000A
 S Fplayer_object$__xinit_jump_array_ptr$0_0$0 Def000000
 A _CABS size 0 flags 8 addr 0
@@ -288,6 +290,10 @@ T F7 03 00
 R 00 00 00 00
 T F7 03 00 02 02 02 03 03 03 04 04 05
 R 00 00 00 00
+T 00 04 00
+R 00 00 00 00
+T 00 04 00 02 02 06 06 02 02 06 06 02
+R 00 00 00 00
 T 00 00 00
 R 00 00 07 00
 T 00 00 00 22 00 44 00 AE 00
@@ -300,5 +306,5 @@ T 0A 00 00 C1 03 CA 03 D3 03
 R 00 00 07 00 00 03 00 00 00 05 00 00 00 07 00 00
 T 10 00 00 DC 03 E5 03 EE 03
 R 00 00 07 00 00 03 00 00 00 05 00 00 00 07 00 00
-T 16 00 00 F7 03
-R 00 00 07 00 00 03 00 00
+T 16 00 00 F7 03 00 04
+R 00 00 07 00 00 03 00 00 00 05 00 00

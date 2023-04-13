@@ -28,17 +28,14 @@ void screen_test_screen_load()
 	engine_frame_manager_load();
 	engine_frame_manager_draw();
 
-	//engine_music_manager_play( 3 );
-	complete = false;
 
+	complete = false;
 	engine_font_manager_text( "TEST SCREEN", 1, 5 );
 }
 
 void screen_test_screen_update( unsigned char *screen_type )
 {
-	// TODO delete
 	struct_frame_object *fo = &global_frame_object;
-
 	struct_scroll_object *so = &global_scroll_object;
 	struct_player_object *po = &global_player_object;
 	struct_level_object *lo = &global_level_object;
@@ -59,26 +56,15 @@ void screen_test_screen_update( unsigned char *screen_type )
 	deltaX = 0;
 	deltaY = 0;
 
-	input3 = engine_input_manager_hold( input_type_up );
-	if( input3 )
-	{
-		engine_font_manager_text( "TEST UPDATE", 1, 7 );
-		//*screen_type = screen_type_beat;
-		//*screen_type = screen_type_cont;
-		return;
-	}
 	input3 = engine_input_manager_hold( input_type_down );
 	if( input3 )
 	{
-		//engine_font_manager_text( "TEST UPDATE", 1, 7 );
-		//*screen_type = screen_type_beat;
 		*screen_type = screen_type_cont;
 		return;
 	}
 
 	input1 = engine_input_manager_hold( input_type_left );
 	input2 = engine_input_manager_move( input_type_right );
-	//input1 = 1;		// TODO delete
 	if( input1 || input2 )
 	{
 		if( 50 == fo->frame_count )//|| 8 == fo->frame_count )
@@ -93,63 +79,8 @@ void screen_test_screen_update( unsigned char *screen_type )
 			command = engine_command_manager_build( po->player_state, 0, 1, 0, 0, 0, 0 );
 		}
 
-		//if( 24 == fo->frame_count )
-		{
-			//command = engine_command_manager_build( po->player_state, 0, 0, 0, 0, 1, 0 );
-		}
-		//else if( 3 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 1, 0, 0, 0, 0 );
-		//}
-
-		//command = engine_command_manager_build( po->player_state, 0, 1, 0, 0, 0, 0 );
-
-		//if( 60 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 1, 0, 0, 1, 0 );
-		//}
-		//if( 96 == fo->frame_count )//|| 6 == fo->frame_count )//|| 8 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 1, 1, 0, 0, 1 );
-		//}
-		//if( 170 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 0, 0, 0, 0, 1 );
-		//}
-		//if( 180 == fo->frame_count )
-		//{
-		////	command = engine_command_manager_build( po->player_state, 1, 0, 0, 0, 0, 1 );
-		//}
-		////if( 5 == fo->frame_count )
-		////{
-		////	//command = engine_command_manager_build( po->player_state, 0, 0, 0, 0, 1, 0 );
-		////}
-
-
-		//command = engine_command_manager_build( po->player_state, 0, 1, 0, 0, 0, 0 );
-
 		engine_frame_manager_update();
 		engine_frame_manager_draw();
-		//if( 60 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 1, 0, 0, 1, 0 );
-		//}
-		//if( 70 == fo->frame_count )//|| 6 == fo->frame_count )//|| 8 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 0, 0, 0, 0, 1 );
-		//}
-		//if( 110 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 0, 0, 0, 0, 1 );
-		//}
-		//if( 180 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 1, 1, 0, 0, 1 );
-		//}
-		//if( 250 == fo->frame_count )
-		//{
-		//	command = engine_command_manager_build( po->player_state, 0, 0, 0, 0, 1, 0 );
-		//}
 	}
 
 	if( COMMAND_NONE_MASK != command )

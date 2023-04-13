@@ -43,6 +43,8 @@
 #define CLEAR_TILE_BLACK	59
 #define CLEAR_TILE_BLUE		0
 
+// Storage
+#define STORAGE_BUFFER		6
 
 // Delay
 #define NORMAL_DELAY		50

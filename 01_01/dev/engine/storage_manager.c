@@ -9,7 +9,6 @@
 
 #define MAGIC			0xACE0B004
 #define FINAL			0xC9
-#define BUFFER			6
 
 // Global variable.
 struct_storage_object global_storage_object;
@@ -54,7 +53,7 @@ void engine_storage_manager_save()
 	so->storage_point = go->game_point;
 	so->storage_saved = go->game_saved;
 
-	for( index = 0; index < BUFFER; index++ )
+	for( index = 0; index < STORAGE_BUFFER; index++ )
 	{
 		so->storage_padding[ index ] = 0;
 	}
@@ -84,7 +83,7 @@ void engine_storage_manager_kill()
 	so->storage_point = 0;
 	so->storage_saved = 0;
 
-	for( index = 0; index < BUFFER; index++ )
+	for( index = 0; index < STORAGE_BUFFER; index++ )
 	{
 		so->storage_padding[ index ] = 0;
 	}
