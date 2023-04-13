@@ -98,7 +98,6 @@ void screen_level_screen_update( unsigned char *screen_type )
 		{
 			engine_sound_manager_stop();
 			devkit_SMS_mapROMBank( bggame_tiles__tiles__psgcompr_bank );
-			//*screen_type = screen_type_option;		// use for testing!	TODO - remove
 			*screen_type = screen_type_init;
 			return;
 		}
@@ -142,7 +141,7 @@ void screen_level_screen_update( unsigned char *screen_type )
 			if( game_world > 0 )
 			{
 				game_world--;
-				game_round = 0;		// TODO - do I want to reset the round on world change?
+				game_round = 0;
 				game_point = 0;
 				game_screen = lo->check_width * game_point;
 			}
@@ -179,7 +178,7 @@ void screen_level_screen_update( unsigned char *screen_type )
 			if( game_world < ( MAX_WOLRDS - 1 ) )
 			{
 				game_world++;
-				game_round = 0;		// TODO - do I want to reset the round on world change?
+				game_round = 0;
 				game_point = 0;
 				game_screen = lo->check_width * game_point;
 			}

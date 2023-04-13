@@ -7,59 +7,59 @@ S .__.ABS. Def000000
 S _global_game_object Ref000000
 S _engine_game_manager_set_level_data Ref000000
 S _engine_player_manager_lives Ref000000
-A _CODE size 3B flags 0 addr 0
+A _CODE size 39 flags 0 addr 0
+S C$debug_manager.c$8$1_0$21 Def000000
 S G$engine_debug_manager_initgame$0$0 Def000000
-S A$debug_manager$110 Def00002C
-S A$debug_manager$111 Def00002F
-S A$debug_manager$102 Def000027
-S A$debug_manager$112 Def000030
-S A$debug_manager$103 Def000028
-S A$debug_manager$113 Def000031
-S A$debug_manager$114 Def000032
-S C$debug_manager.c$21$1_0$116 Def000005
-S C$debug_manager.c$13$0_0$116 Def000000
-S A$debug_manager$115 Def000033
-S C$debug_manager.c$31$1_0$116 Def00001F
-S A$debug_manager$116 Def000034
-S A$debug_manager$107 Def000029
-S C$debug_manager.c$32$1_0$116 Def000024
+S A$debug_manager$110 Def00002A
+S A$debug_manager$111 Def00002D
+S A$debug_manager$102 Def000025
+S A$debug_manager$112 Def00002E
+S A$debug_manager$103 Def000026
+S A$debug_manager$113 Def00002F
+S A$debug_manager$114 Def000030
+S A$debug_manager$115 Def000031
+S A$debug_manager$116 Def000032
+S A$debug_manager$107 Def000027
 S _engine_debug_manager_initgame Def000000
-S A$debug_manager$117 Def000035
-S A$debug_manager$108 Def00002A
-S C$debug_manager.c$33$1_0$116 Def000027
-S A$debug_manager$127 Def00003A
-S A$debug_manager$118 Def000038
-S A$debug_manager$109 Def00002B
-S C$debug_manager.c$34$1_0$116 Def000029
-S C$debug_manager.c$16$1_0$116 Def000000
-S A$debug_manager$119 Def000039
-S C$debug_manager.c$27$1_0$116 Def00000E
-S C$debug_manager.c$55$1_0$116 Def00003A
-S C$debug_manager.c$28$1_0$116 Def000013
-S C$debug_manager.c$19$1_0$116 Def000000
-S C$debug_manager.c$29$1_0$116 Def000019
-S XG$engine_debug_manager_initgame$0$0 Def00003A
+S A$debug_manager$117 Def000033
+S A$debug_manager$108 Def000028
+S A$debug_manager$127 Def000038
+S A$debug_manager$118 Def000036
+S A$debug_manager$109 Def000029
+S A$debug_manager$119 Def000037
+S C$debug_manager.c$20$1_0$21 Def00001D
+S C$debug_manager.c$11$1_0$21 Def000000
+S C$debug_manager.c$21$1_0$21 Def000022
+S C$debug_manager.c$22$1_0$21 Def000025
+S C$debug_manager.c$23$1_0$21 Def000027
+S C$debug_manager.c$14$1_0$21 Def000005
+S XG$engine_debug_manager_initgame$0$0 Def000038
+S C$debug_manager.c$24$1_0$21 Def000038
+S C$debug_manager.c$16$1_0$21 Def00000E
 S A$debug_manager$60 Def000000
+S C$debug_manager.c$17$1_0$21 Def000013
 S A$debug_manager$61 Def000003
-S A$debug_manager$80 Def000018
-S A$debug_manager$90 Def00001F
-S A$debug_manager$91 Def000022
+S C$debug_manager.c$18$1_0$21 Def000018
+S A$debug_manager$80 Def000017
+S A$debug_manager$90 Def00001D
+S A$debug_manager$91 Def000020
 S A$debug_manager$73 Def00000E
-S A$debug_manager$92 Def000023
+S A$debug_manager$92 Def000021
 S A$debug_manager$74 Def000011
 S A$debug_manager$65 Def000005
-S A$debug_manager$84 Def000019
+S A$debug_manager$84 Def000018
 S A$debug_manager$66 Def000008
-S A$debug_manager$85 Def00001C
+S A$debug_manager$85 Def00001B
 S A$debug_manager$67 Def000009
-S A$debug_manager$86 Def00001E
+S A$debug_manager$86 Def00001C
 S A$debug_manager$68 Def00000A
-S A$debug_manager$96 Def000024
+S A$debug_manager$96 Def000022
 S A$debug_manager$78 Def000013
 S A$debug_manager$69 Def00000D
-S A$debug_manager$97 Def000025
+S A$debug_manager$97 Def000023
 S A$debug_manager$79 Def000016
-S A$debug_manager$98 Def000026
+S A$debug_manager$98 Def000024
+S C$debug_manager.c$5$0_0$21 Def000000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -70,13 +70,13 @@ A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
 T 00 00 00
 R 00 00 00 00
-T 00 00 00 21 00 00 36 02 3A 00 00 F5 33 CD 00 00
+T 00 00 00 21 00 00 36 01 3A 00 00 F5 33 CD 00 00
 R 00 00 00 00 02 04 01 00 02 09 01 00 02 0E 03 00
-T 0D 00 00 33 21 01 00 36 01 01 02 00 3E 02 02 11
+T 0D 00 00 33 21 01 00 36 00 01 02 00 AF 02 11
 R 00 00 00 00 02 05 01 00 02 0A 01 00
-T 1A 00 00 04 00 3E 04 12 3A 01 00 3D 77 0A 3D 02
-R 00 00 00 00 02 03 01 00 02 09 01 00
-T 27 00 00 1A 3D 12 5F 0A 21 01 00 4E 63 E5 33 47
-R 00 00 00 00 02 09 01 00
-T 34 00 00 C5 CD 00 00 F1 33 C9
-R 00 00 00 00 02 05 02 00
+T 19 00 00 04 00 AF 12 3A 01 00 3D 77 0A 3D 02 1A
+R 00 00 00 00 02 03 01 00 02 08 01 00
+T 26 00 00 3D 12 5F 0A 21 01 00 4E 63 E5 33 47 C5
+R 00 00 00 00 02 08 01 00
+T 33 00 00 CD 00 00 F1 33 C9
+R 00 00 00 00 02 04 02 00

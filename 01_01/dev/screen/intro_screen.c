@@ -66,7 +66,6 @@ void screen_intro_screen_update( unsigned char *screen_type )
 	if( input1 || delay )
 	{
 		engine_game_manager_set_game_sheet( switch_mode_yes );
-
 		*screen_type = screen_type_diff;
 		return;
 	}

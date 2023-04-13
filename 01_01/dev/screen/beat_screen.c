@@ -84,7 +84,6 @@ void screen_beat_screen_load()
 
 	engine_frame_manager_load();
 
-	// TODO music magic number?
 	engine_game_manager_set_level_data( 0, 0, 0 );
 	engine_music_manager_playnorepeat( music_type_beats );
 }
@@ -147,7 +146,7 @@ void screen_beat_screen_update( unsigned char *screen_type )
 	if( COMMAND_NONE_MASK != command )
 	{
 		// Get horizontal movement - NO X-movement.
-		deltaX = 0; // TODO delete
+		deltaX = 0;
 
 		// Get button action.
 		engine_player_manager_set_action( po->player_frame, command );

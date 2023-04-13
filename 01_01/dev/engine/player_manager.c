@@ -54,9 +54,6 @@ void engine_player_manager_init()
 	flying_deltaX = 1;
 }
 
-// todo - need to re-init player_lives to 3x every game "load"
-// todo - if difficulty == easier || normal then lives += 1 ?
-
 void engine_player_manager_initX( unsigned char difficulty, unsigned char world )
 {
 	struct_player_object *po = &global_player_object;
@@ -128,14 +125,6 @@ unsigned char engine_player_manager_get_deltaX( unsigned char state, unsigned ch
 	deltaX = moving_deltaX;
 	if( ( COMMAND_LEFT_MASK & command ) == COMMAND_LEFT_MASK )
 	{
-		// Back up when facing forward and going slower...
-		if( po->player_frame < player_frame_ground_left_01 )
-		{
-			// Uncomment these lines if ever want to re-impl.
-			//po->player_frame = player_frame_theair_rght_01;
-			//po->player_frame = player_frame_ground_rght_01;
-		}
-
 		deltaX -= ground_deltaX;
 	}
 	if( ( COMMAND_RGHT_MASK & command ) == COMMAND_RGHT_MASK )

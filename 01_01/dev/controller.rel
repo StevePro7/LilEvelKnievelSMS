@@ -6,10 +6,10 @@ O -mz80
 S .__.ABS. Def000000
 A _CODE size 1 flags 0 addr 0
 S _Foo Def000000
+S C$controller.c$3$0_0$2 Def000000
+S C$controller.c$5$0_0$2 Def000000
 S XG$Foo$0$0 Def000000
-S C$controller.c$21$0_0$28 Def000000
 S G$Foo$0$0 Def000000
-S C$controller.c$25$0_0$28 Def000000
 S A$controller$59 Def000000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0

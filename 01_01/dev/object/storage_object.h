@@ -14,7 +14,7 @@ typedef struct tag_struct_storage_object
 	unsigned char storage_level;
 	unsigned char storage_point;
 	unsigned char storage_saved;
-	unsigned char storage_padding[ 6 ];
+	unsigned char storage_padding[ STORAGE_BUFFER ];
 
 	unsigned int storage_frame_index[ MAX_COMMANDS ];
 	unsigned char storage_this_command[ MAX_COMMANDS ];

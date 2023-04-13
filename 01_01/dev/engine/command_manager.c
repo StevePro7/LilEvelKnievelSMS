@@ -17,8 +17,8 @@ void engine_command_manager_init()
 {
 	struct_command_object *co = &global_command_object;
 	unsigned char index;
+
 	co->frame_index = 0;
-	co->curr_command = COMMAND_NONE_MASK;
 	co->prev_command = COMMAND_NONE_MASK;
 
 	for( index = 0; index < MAX_COMMANDS; index++ )

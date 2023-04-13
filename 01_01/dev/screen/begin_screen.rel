@@ -1,46 +1,43 @@
 ;!FILE begin_screen.asm
 XL3
-H 9 areas 25 global symbols
+H 9 areas 22 global symbols
 M begin_screen
 O -mz80
 S _engine_random_manager_next Ref000000
 S .__.ABS. Def000000
-S _engine_debug_manager_initgame Ref000000
 S _engine_graphics_manager_common Ref000000
 S _engine_game_manager_set_cloud_form Ref000000
-A _CODE size 1C flags 0 addr 0
-S A$begin_screen$111 Def00001B
-S A$begin_screen$102 Def000018
-S C$begin_screen.c$25$1_0$100 Def000012
-S A$begin_screen$103 Def000019
-S C$begin_screen.c$26$1_0$100 Def000012
-S C$begin_screen.c$17$1_0$100 Def000000
-S _screen_begin_screen_update Def000015
-S C$begin_screen.c$28$1_0$102 Def000015
-S C$begin_screen.c$48$1_0$102 Def00001B
-S XG$screen_begin_screen_update$0$0 Def00001B
-S A$begin_screen$60 Def000000
+A _CODE size 19 flags 0 addr 0
+S A$begin_screen$106 Def000018
+S _screen_begin_screen_update Def000012
+S C$begin_screen.c$22$1_0$21 Def000012
+S XG$screen_begin_screen_update$0$0 Def000018
+S C$begin_screen.c$24$1_0$21 Def000012
+S C$begin_screen.c$25$1_0$21 Def000018
+S A$begin_screen$60 Def000003
+S A$begin_screen$70 Def00000E
+S A$begin_screen$61 Def000004
+S C$begin_screen.c$20$1_0$19 Def00000F
+S A$begin_screen$62 Def000007
 S G$screen_begin_screen_load$0$0 Def000000
-S A$begin_screen$72 Def00000C
-S A$begin_screen$73 Def00000D
-S A$begin_screen$64 Def000003
-S A$begin_screen$74 Def00000E
-S A$begin_screen$65 Def000006
-S A$begin_screen$75 Def000011
-S A$begin_screen$66 Def000007
-S A$begin_screen$67 Def00000A
-S A$begin_screen$86 Def000012
-S A$begin_screen$68 Def00000B
-S A$begin_screen$99 Def000015
+S A$begin_screen$81 Def00000F
+S A$begin_screen$63 Def000008
+S C$begin_screen.c$16$1_0$19 Def000000
+S A$begin_screen$94 Def000012
+S A$begin_screen$67 Def000009
+S C$begin_screen.c$17$1_0$19 Def000009
+S A$begin_screen$95 Def000013
+S A$begin_screen$68 Def00000A
+S A$begin_screen$59 Def000000
+S A$begin_screen$96 Def000014
+S A$begin_screen$69 Def00000B
+S C$begin_screen.c$19$1_0$19 Def00000F
+S A$begin_screen$97 Def000015
+S A$begin_screen$98 Def000016
 S _screen_begin_screen_load Def000000
-S XG$screen_begin_screen_load$0$0 Def000012
-S G$screen_begin_screen_update$0$0 Def000015
-S C$begin_screen.c$12$0_0$100 Def000000
-S C$begin_screen.c$21$1_0$100 Def000003
-S C$begin_screen.c$22$1_0$100 Def00000C
-S A$begin_screen$100 Def000016
-S C$begin_screen.c$30$1_0$102 Def000015
-S A$begin_screen$101 Def000017
+S C$begin_screen.c$9$0_0$19 Def000000
+S XG$screen_begin_screen_load$0$0 Def00000F
+S G$screen_begin_screen_update$0$0 Def000012
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -51,11 +48,11 @@ A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
 T 00 00 00
 R 00 00 00 00
-T 00 00 00 CD 00 00 21 00 01 E5 CD 00 00 F1 7D F5
-R 00 00 00 00 02 04 02 00 02 0B 00 00
-T 0D 00 00 33 CD 00 00 33 C3 00 00
-R 00 00 00 00 02 05 04 00 02 09 03 00
-T 15 00 00
+T 00 00 00 21 00 01 E5 CD 00 00 F1 7D F5 33 CD
+R 00 00 00 00 02 08 00 00
+T 0C 00 00 00 00 33 C3 00 00
+R 00 00 00 00 02 03 03 00 02 07 02 00
+T 12 00 00
 R 00 00 00 00
-T 15 00 00 C1 E1 E5 C5 36 17 C9
+T 12 00 00 C1 E1 E5 C5 36 08 C9
 R 00 00 00 00

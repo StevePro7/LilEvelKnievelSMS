@@ -4,7 +4,6 @@
 typedef struct tag_struct_command_object
 {
 	unsigned int frame_index;
-	unsigned char curr_command;
 	unsigned char prev_command;
 
 } struct_command_object;

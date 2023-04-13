@@ -1,12 +1,12 @@
 M:splash_screen
 F:G$screen_splash_screen_load$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$screen_splash_screen_update$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lsplash_screen.screen_splash_screen_update$screen_type$1_0$110({2}DG,SC:U),B,1,4
-S:Lsplash_screen.screen_splash_screen_update$input$1_0$111({1}SC:U),R,0,0,[a]
-S:Lsplash_screen.screen_splash_screen_update$loops$1_0$111({1}SC:U),B,1,-1
-S:Lsplash_screen.screen_splash_screen_update$index$1_0$111({1}SC:U),R,0,0,[]
-S:Lsplash_screen.screen_splash_screen_update$count$1_0$111({1}SC:U),B,1,-2
-S:Lsplash_screen.screen_splash_screen_update$value$1_0$111({1}SC:U),B,1,-3
+S:Lsplash_screen.screen_splash_screen_update$screen_type$1_0$109({2}DG,SC:U),B,1,4
+S:Lsplash_screen.screen_splash_screen_update$input$1_0$110({1}SC:U),R,0,0,[a]
+S:Lsplash_screen.screen_splash_screen_update$loops$1_0$110({1}SC:U),B,1,-1
+S:Lsplash_screen.screen_splash_screen_update$index$1_0$110({1}SC:U),R,0,0,[]
+S:Lsplash_screen.screen_splash_screen_update$count$1_0$110({1}SC:U),B,1,-2
+S:Lsplash_screen.screen_splash_screen_update$value$1_0$110({1}SC:U),B,1,-3
 S:Lsplash_screen.screen_splash_screen_update$sloc0$0_1$0({1}SC:U),B,1,-3
 S:Lsplash_screen.screen_splash_screen_update$sloc1$0_1$0({1}SC:U),B,1,-2
 S:Lsplash_screen.screen_splash_screen_update$sloc2$0_1$0({1}SC:U),B,1,-1
@@ -25,6 +25,7 @@ S:G$locale_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$riff_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:Fsplash_screen$check$0_0$0({1}SC:U),E,0,0
 S:Fsplash_screen$erase$0_0$0({1}SC:U),E,0,0
 S:G$engine_asm_manager_clear_VRAM$0_0$0({2}DF,SV:S),C,0,0
@@ -45,7 +46,6 @@ S:G$engine_game_manager_set_game_start$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_game_manager_set_game_music$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_game_manager_set_game_sheet$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_game_manager_inc_checkpoint$0_0$0({2}DF,SV:S),C,0,0
-S:G$engine_game_manager_set_level_test$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_graphics_manager_common$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_graphics_manager_screen$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_graphics_manager_sea$0_0$0({2}DF,SV:S),C,0,0

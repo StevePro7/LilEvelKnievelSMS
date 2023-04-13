@@ -55,8 +55,6 @@ void screen_dead_screen_load()
 void screen_dead_screen_update( unsigned char *screen_type )
 {
 	struct_player_object *po = &global_player_object;
-	//unsigned char input1, input2;
-
 	if( swap )
 	{
 		if( po->posnY >= PLAYER_DEAD )
@@ -78,15 +76,9 @@ void screen_dead_screen_update( unsigned char *screen_type )
 		}
 		else
 		{
-			//input1 = engine_input_manager_hold( input_type_up );
-			//input2 = engine_input_manager_move( input_type_down );
-			//input1 = 1;		// TODO delete
-			//if( input1 || input2 )
-			//{
-				engine_player_manager_dead( player_deadX );
-				engine_player_manager_draw();
-				engine_player_manager_head();
-			//}
+			engine_player_manager_dead( player_deadX );
+			engine_player_manager_draw();
+			engine_player_manager_head();
 		}
 
 		if( stage_mode_inc1 == swap )

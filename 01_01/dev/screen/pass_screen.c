@@ -41,7 +41,7 @@ void screen_pass_screen_load()
 
 	engine_player_manager_draw();
 	engine_player_manager_head();
-	swap = 0;
+	swap = stage_mode_inc0;
 
 	engine_riff_manager_init();
 	//devkit_PSGStop();
@@ -63,7 +63,6 @@ void screen_pass_screen_load()
 	engine_graphics_manager_level_texts();
 	engine_graphics_manager_level_stats( game_world, game_round, game_point );
 
-	// TODO - pause and goto interim screen to increment level until beat_screen...
 	game_round++;
 	if( MAX_ROUNDS == game_round )
 	{
@@ -77,53 +76,12 @@ void screen_pass_screen_load()
 	}
 	game_point = 0;
 	engine_game_manager_set_level_data( game_world, game_round, game_point );
-
-	// TODO remove only used for testing
-	//game_level += 1;
-	//engine_font_manager_data( go->game_level, 20, 15 );
-	//engine_font_manager_data( game_level, 20, 16 );
-	//engine_game_manager_set_level_test( game_level );
-	//engine_font_manager_data( go->game_level, 20, 18 );
-	//engine_font_manager_data( game_level, 20, 19 );
-	// TODO remove only used for testing
 }
 
-// TODO - show the world round point text on screen when pass.
 void screen_pass_screen_update( unsigned char *screen_type )
 {
 	struct_player_object *po = &global_player_object;
 	struct_game_object *go = &global_game_object;
-
-//	unsigned char next_screen;
-	//unsigned char input1, input2;
-	//unsigned char check;
-
-	// TODO - had to comment out for now as was still playing SFX despite the fact told not to...!!
-	//// Player chance to quit out to start screen.
-	//input1 = engine_input_manager_move( input_type_up );
-	//if( input1 )
-	//{
-	//	check = engine_reset_manager_update();
-	//	if( check )
-	//	{
-	//		input2 = engine_input_manager_move( input_type_fire1 );
-	//		//input3 = engine_input_manager_hold( input_type_fire2 );
-	//		if( input2 )
-	//		{
-	//			engine_music_manager_stop();
-	//			engine_sound_manager_stop();
-
-	//			devkit_SMS_mapROMBank( bggame_tiles__tiles__psgcompr_bank );
-	//			*screen_type = screen_type_start;
-	//			return;
-	//		}
-	//	}
-	//}
-	//else
-	//{
-	//	engine_reset_manager_reset();
-	//}
-
 
 	if( swap )
 	{
@@ -136,17 +94,15 @@ void screen_pass_screen_update( unsigned char *screen_type )
 
 				// A bit sucks but we MUST go back to tiles bank for further graphics...
 				devkit_SMS_mapROMBank( bggame_tiles__tiles__psgcompr_bank );
-				//*screen_type = screen_type_pass;
-				//*screen_type = screen_type_init;
 				*screen_type = next_screen;
 				return;
 			}
 			else
 			{
-				if( 2 == swap )
+				if( stage_mode_inc2 == swap )
 				{
 					engine_player_manager_pass_frame();
-					swap = 3;
+					swap = stage_mode_inc3;
 				}
 
 				// Continue invoke function in case player still in air.
@@ -158,7 +114,7 @@ void screen_pass_screen_update( unsigned char *screen_type )
 		else
 		{
 			// Wrap to block movement on riff play.
-			if( 2 == swap )
+			if( stage_mode_inc2 == swap )
 			{
 				engine_player_manager_pass( player_passX, player_endY );
 			}
@@ -167,7 +123,7 @@ void screen_pass_screen_update( unsigned char *screen_type )
 			engine_player_manager_head();
 		}
 
-		if( 1 == swap )
+		if( stage_mode_inc1 == swap )
 		{
 			if( loops < count )
 			{
@@ -176,19 +132,20 @@ void screen_pass_screen_update( unsigned char *screen_type )
 			}
 			else
 			{
-				swap = 2;
+				swap = stage_mode_inc2;
+
 				// Play SFX
-				engine_sound_manager_play( 1 );
+				engine_sound_manager_play( sound_type_level );
 			}
 		}
 	}
 	else
 	{
 		engine_player_manager_pass( player_passX, player_endY );
-		swap = 1;
+		swap = stage_mode_inc1;
 	}
 
-	// don't draw player here as "blinks"
+	// Don't draw player here as "blinks"
 	//engine_player_manager_draw();
 	engine_player_manager_head();
 	*screen_type = screen_type_pass;

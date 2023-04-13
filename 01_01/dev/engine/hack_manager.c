@@ -37,13 +37,13 @@ void engine_hack_manager_load()
 
 #ifndef _CONSOLE
 
-	ho->hack_delay = PEEK( HACKER_START - 1 );			// 0x004F
-	ho->hack_isgod = PEEK( HACKER_START + 0 );			// 0x0050
-	ho->hack_inair = PEEK( HACKER_START + 1 );			// 0x0051
-	ho->hack_ultra = PEEK( HACKER_START + 2 );			// 0x0052
-	ho->hack_music = PEEK( HACKER_START + 3 );			// 0x0053
-	ho->hack_sound = PEEK( HACKER_START + 4 );			// 0x0054
-	ho->hack_riffs = PEEK( HACKER_START + 5 );			// 0x0055
+	ho->hack_delay = PEEK( HACKER_START - 1 );			// 0x004F		// Used to speed through any game delay.
+	ho->hack_isgod = PEEK( HACKER_START + 0 );			// 0x0050		// Non-zero value enables invincibility.
+	ho->hack_inair = PEEK( HACKER_START + 1 );			// 0x0051		// Jump once while falling from gravity.
+	ho->hack_ultra = PEEK( HACKER_START + 2 );			// 0x0052		// Tougher platform collision detection.
+	ho->hack_music = PEEK( HACKER_START + 3 );			// 0x0053		// Set 0=Music to play otherwise silent.
+	ho->hack_sound = PEEK( HACKER_START + 4 );			// 0x0054		// Set 0=Sound to play otherwise silent.
+	ho->hack_riffs = PEEK( HACKER_START + 5 );			// 0x0055		// Set 0=Riffs to play otherwise silent.
 
 #endif
 
@@ -55,14 +55,14 @@ void engine_hack_manager_load()
 
 	// Tester values
 	//ho->hack_delay = 0;
-	//ho->hack_inair = 1;
-	//ho->hack_ultra = 0;		// more aggressive collision detection
+	//ho->hack_inair = 1;								// User can jump once while falling from gravity.
+	//ho->hack_ultra = 0;								// User has more aggressive collision detections.
 
 	//ho->hack_music = 1;
 	//ho->hack_sound = 1;
 	//ho->hack_riffs = 1;
 	// Tester values
 
-	// TODO - fix this up!
+	// Late setting: to fix this up!
 	go->game_isgod = ho->hack_isgod;
 }

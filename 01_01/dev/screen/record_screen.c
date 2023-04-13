@@ -34,7 +34,7 @@ void screen_record_screen_load()
 	unsigned char checkScreen;
 	unsigned char cloud_formation = engine_random_manager_next( SPRITE_TILES );
 
-	// init_screen	clone
+	// init_screen
 	engine_level_manager_init( go->game_level );
 	engine_player_manager_initX( go->game_difficulty, go->game_world );
 	engine_collision_manager_init( go->game_difficulty );

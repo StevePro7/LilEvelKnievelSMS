@@ -80,7 +80,6 @@ void screen_cont_screen_load()
 	printCursor();
 	devkit_SMS_displayOn();
 
-	//TODO magic number
 	engine_music_manager_playnorepeat( music_type_conts );
 	cursorIdx = 0;
 }
