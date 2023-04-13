@@ -252,9 +252,6 @@
     <ClCompile Include="object\timer_object.c">
       <Filter>Source Files\object</Filter>
     </ClCompile>
-    <ClCompile Include="controller.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="engine\game_manager.c">
       <Filter>Source Files\engine</Filter>
     </ClCompile>
@@ -645,9 +642,6 @@
     </ClInclude>
     <ClInclude Include="object\timer_object.h">
       <Filter>Header Files\object</Filter>
-    </ClInclude>
-    <ClInclude Include="controller.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="screen\demo_screen.h">
       <Filter>Header Files\screen</Filter>

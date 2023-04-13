@@ -11,6 +11,8 @@
 #include "../engine/level_manager.h"
 #include "../engine/player_manager.h"
 #include "../engine/scroll_manager.h"
+
+
 #include "../engine/timer_manager.h"
 #include "../devkit/_sms_manager.h"
 #include "../banks/fixedbank.h"
@@ -113,6 +115,10 @@ void screen_demo_screen_update( unsigned char *screen_type )
 	if( input1 || input2 )
 	{
 		engine_scroll_manager_demo_update( 0 );
+
+		// We have seen the start screen at least once = save.
+		engine_game_manager_set_game_saved( switch_mode_yes );
+
 		*screen_type = screen_type_start;
 		return;
 	}
@@ -213,6 +219,10 @@ void screen_demo_screen_update( unsigned char *screen_type )
 		if( complete )
 		{
 			engine_scroll_manager_demo_update( 0 );
+
+			// We have seen the start screen at least once = save.
+			engine_game_manager_set_game_saved( switch_mode_yes );
+
 			*screen_type = screen_type_start;
 			return;
 		}

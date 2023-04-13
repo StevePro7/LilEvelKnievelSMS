@@ -11,6 +11,7 @@
 #include "../engine/riff_manager.h"
 #include "../engine/player_manager.h"
 #include "../engine/scroll_manager.h"
+#include "../engine/storage_manager.h"
 #include "../engine/timer_manager.h"
 #include "../engine/util_manager.h"
 #include "../devkit/_sms_manager.h"
@@ -114,7 +115,6 @@ void screen_start_screen_update( unsigned char *screen_type )
 
 			// We have seen the start screen at least once = save.
 			engine_game_manager_set_game_saved( switch_mode_yes );
-			engine_storage_manager_save();
 
 			// Read cheat sheet first time around.
 			if( !go->game_sheet )
