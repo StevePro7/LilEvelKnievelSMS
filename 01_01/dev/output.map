@@ -11844,17 +11844,17 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00003FE1  _screen_dead_screen_update         dead_screen
      00003FE3  A$dead_screen$212                  dead_screen
      00003FE3  C$dead_screen.c$57$1_0$59          dead_screen
-     00003FE3  C$dead_screen.c$69$1_0$59          dead_screen
+     00003FE3  C$dead_screen.c$67$1_0$59          dead_screen
      00003FE6  A$dead_screen$213                  dead_screen
      00003FE7  A$dead_screen$214                  dead_screen
      00003FE8  A$dead_screen$215                  dead_screen
      00003FE9  A$dead_screen$216                  dead_screen
      00003FEA  A$dead_screen$220                  dead_screen
-     00003FEA  C$dead_screen.c$60$1_0$59          dead_screen
+     00003FEA  C$dead_screen.c$58$1_0$59          dead_screen
      00003FED  A$dead_screen$221                  dead_screen
      00003FEE  A$dead_screen$222                  dead_screen
      00003FF0  A$dead_screen$226                  dead_screen
-     00003FF0  C$dead_screen.c$62$2_0$60          dead_screen
+     00003FF0  C$dead_screen.c$60$2_0$60          dead_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 199.
 Hexadecimal  [32-Bits]
 
@@ -11867,28 +11867,28 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00003FF3  A$dead_screen$227                  dead_screen
      00003FF5  A$dead_screen$228                  dead_screen
      00003FF7  A$dead_screen$232                  dead_screen
-     00003FF7  C$dead_screen.c$65$3_0$61          dead_screen
+     00003FF7  C$dead_screen.c$63$3_0$61          dead_screen
      00003FF8  A$dead_screen$233                  dead_screen
      00003FFB  A$dead_screen$234                  dead_screen
      00003FFC  A$dead_screen$235                  dead_screen
      00003FFD  A$dead_screen$236                  dead_screen
      00003FFE  A$dead_screen$237                  dead_screen
      00004000  A$dead_screen$241                  dead_screen
-     00004000  C$dead_screen.c$67$4_0$62          dead_screen
+     00004000  C$dead_screen.c$65$4_0$62          dead_screen
      00004003  A$dead_screen$242                  dead_screen
      00004004  A$dead_screen$243                  dead_screen
      00004006  A$dead_screen$247                  dead_screen
-     00004006  C$dead_screen.c$69$5_0$63          dead_screen
+     00004006  C$dead_screen.c$67$5_0$63          dead_screen
      00004008  A$dead_screen$248                  dead_screen
      00004009  A$dead_screen$252                  dead_screen
-     00004009  C$dead_screen.c$70$5_0$63          dead_screen
+     00004009  C$dead_screen.c$68$5_0$63          dead_screen
      0000400B  A$dead_screen$257                  dead_screen
-     0000400B  C$dead_screen.c$74$5_0$64          dead_screen
+     0000400B  C$dead_screen.c$72$5_0$64          dead_screen
      0000400D  A$dead_screen$258                  dead_screen
      0000400E  A$dead_screen$262                  dead_screen
-     0000400E  C$dead_screen.c$75$5_0$64          dead_screen
+     0000400E  C$dead_screen.c$73$5_0$64          dead_screen
      00004010  A$dead_screen$267                  dead_screen
-     00004010  C$dead_screen.c$86$3_0$65          dead_screen
+     00004010  C$dead_screen.c$79$3_0$65          dead_screen
      00004011  A$dead_screen$268                  dead_screen
      00004014  A$dead_screen$269                  dead_screen
      00004015  A$dead_screen$270                  dead_screen
@@ -11898,17 +11898,17 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      0000401D  A$dead_screen$274                  dead_screen
      00004020  A$dead_screen$275                  dead_screen
      00004021  A$dead_screen$280                  dead_screen
-     00004021  C$dead_screen.c$92$2_0$60          dead_screen
+     00004021  C$dead_screen.c$84$2_0$60          dead_screen
      00004024  A$dead_screen$281                  dead_screen
      00004025  A$dead_screen$282                  dead_screen
      00004027  A$dead_screen$286                  dead_screen
-     00004027  C$dead_screen.c$94$3_0$66          dead_screen
+     00004027  C$dead_screen.c$86$3_0$66          dead_screen
      0000402A  A$dead_screen$287                  dead_screen
      0000402E  A$dead_screen$288                  dead_screen
      00004031  A$dead_screen$289                  dead_screen
      00004032  A$dead_screen$290                  dead_screen
      00004034  A$dead_screen$294                  dead_screen
-     00004034  C$dead_screen.c$96$4_0$67          dead_screen
+     00004034  C$dead_screen.c$88$4_0$67          dead_screen
      00004037  A$dead_screen$295                  dead_screen
      0000403A  A$dead_screen$296                  dead_screen
      0000403B  A$dead_screen$297                  dead_screen
@@ -11927,14 +11927,14 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004041  A$dead_screen$301                  dead_screen
      00004042  A$dead_screen$302                  dead_screen
      00004043  A$dead_screen$306                  dead_screen
-     00004043  C$dead_screen.c$97$4_0$67          dead_screen
+     00004043  C$dead_screen.c$89$4_0$67          dead_screen
      00004046  A$dead_screen$307                  dead_screen
      00004047  A$dead_screen$308                  dead_screen
      00004049  A$dead_screen$313                  dead_screen
-     00004049  C$dead_screen.c$101$4_0$68         dead_screen
+     00004049  C$dead_screen.c$93$4_0$68          dead_screen
      0000404C  A$dead_screen$314                  dead_screen
      0000404E  A$dead_screen$318                  dead_screen
-     0000404E  C$dead_screen.c$104$4_0$68         dead_screen
+     0000404E  C$dead_screen.c$96$4_0$68          dead_screen
      0000404F  A$dead_screen$319                  dead_screen
      00004050  A$dead_screen$320                  dead_screen
      00004051  A$dead_screen$321                  dead_screen
@@ -11942,11 +11942,11 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004055  A$dead_screen$323                  dead_screen
      00004056  A$dead_screen$324                  dead_screen
      00004057  A$dead_screen$329                  dead_screen
-     00004057  C$dead_screen.c$109$1_0$59         dead_screen
+     00004057  C$dead_screen.c$101$1_0$59         dead_screen
      0000405A  A$dead_screen$330                  dead_screen
      0000405B  A$dead_screen$331                  dead_screen
      0000405D  A$dead_screen$335                  dead_screen
-     0000405D  C$dead_screen.c$111$2_0$69         dead_screen
+     0000405D  C$dead_screen.c$103$2_0$69         dead_screen
      0000405E  A$dead_screen$336                  dead_screen
      00004061  A$dead_screen$337                  dead_screen
      00004062  A$dead_screen$338                  dead_screen
@@ -11954,18 +11954,18 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004066  A$dead_screen$340                  dead_screen
      00004067  A$dead_screen$341                  dead_screen
      00004068  A$dead_screen$345                  dead_screen
-     00004068  C$dead_screen.c$112$2_0$69         dead_screen
+     00004068  C$dead_screen.c$104$2_0$69         dead_screen
      0000406B  A$dead_screen$346                  dead_screen
      0000406D  A$dead_screen$351                  dead_screen
-     0000406D  C$dead_screen.c$117$1_0$59         dead_screen
+     0000406D  C$dead_screen.c$109$1_0$59         dead_screen
      0000406E  A$dead_screen$352                  dead_screen
      00004071  A$dead_screen$353                  dead_screen
      00004072  A$dead_screen$357                  dead_screen
-     00004072  C$dead_screen.c$118$1_0$59         dead_screen
+     00004072  C$dead_screen.c$110$1_0$59         dead_screen
      00004074  A$dead_screen$358                  dead_screen
      00004075  A$dead_screen$363                  dead_screen
      00004077  A$dead_screen$368                  dead_screen
-     00004077  C$dead_screen.c$119$1_0$59         dead_screen
+     00004077  C$dead_screen.c$111$1_0$59         dead_screen
      00004077  XG$screen_dead_screen_update$0$0   dead_screen
      00004078  A$demo_screen$105                  demo_screen
      00004078  C$demo_screen.c$29$0_0$134         demo_screen
@@ -14122,13 +14122,13 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004C8E  A$level_screen$400                 level_screen
      00004C91  A$level_screen$401                 level_screen
      00004C92  A$level_screen$405                 level_screen
-     00004C92  C$level_screen.c$102$3_0$152       level_screen
+     00004C92  C$level_screen.c$101$3_0$152       level_screen
      00004C95  A$level_screen$406                 level_screen
      00004C98  A$level_screen$407                 level_screen
      00004C9A  A$level_screen$411                 level_screen
-     00004C9A  C$level_screen.c$103$3_0$152       level_screen
+     00004C9A  C$level_screen.c$102$3_0$152       level_screen
      00004C9D  A$level_screen$416                 level_screen
-     00004C9D  C$level_screen.c$107$1_0$150       level_screen
+     00004C9D  C$level_screen.c$106$1_0$150       level_screen
      00004C9F  A$level_screen$417                 level_screen
      00004CA0  A$level_screen$418                 level_screen
      00004CA1  A$level_screen$419                 level_screen
@@ -14144,13 +14144,13 @@ _CODE                               00000200    00007733 =       30515. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00004CA6  C$level_screen.c$108$1_0$150       level_screen
+     00004CA6  C$level_screen.c$107$1_0$150       level_screen
      00004CA7  A$level_screen$426                 level_screen
      00004CA9  A$level_screen$427                 level_screen
      00004CAC  A$level_screen$428                 level_screen
      00004CAD  A$level_screen$429                 level_screen
      00004CAF  A$level_screen$433                 level_screen
-     00004CAF  C$level_screen.c$110$2_0$153       level_screen
+     00004CAF  C$level_screen.c$109$2_0$153       level_screen
      00004CB1  A$level_screen$434                 level_screen
      00004CB4  A$level_screen$435                 level_screen
      00004CB5  A$level_screen$436                 level_screen
@@ -14168,10 +14168,10 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004CC7  A$level_screen$448                 level_screen
      00004CC8  A$level_screen$449                 level_screen
      00004CC9  A$level_screen$453                 level_screen
-     00004CC9  C$level_screen.c$111$2_0$153       level_screen
+     00004CC9  C$level_screen.c$110$2_0$153       level_screen
      00004CCC  A$level_screen$454                 level_screen
      00004CCD  A$level_screen$458                 level_screen
-     00004CCD  C$level_screen.c$112$2_0$153       level_screen
+     00004CCD  C$level_screen.c$111$2_0$153       level_screen
      00004CCF  A$level_screen$459                 level_screen
      00004CD2  A$level_screen$460                 level_screen
      00004CD3  A$level_screen$461                 level_screen
@@ -14189,12 +14189,12 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004CE5  A$level_screen$473                 level_screen
      00004CE6  A$level_screen$474                 level_screen
      00004CE7  A$level_screen$479                 level_screen
-     00004CE7  C$level_screen.c$116$1_0$150       level_screen
+     00004CE7  C$level_screen.c$115$1_0$150       level_screen
      00004CE9  A$level_screen$480                 level_screen
      00004CEA  A$level_screen$481                 level_screen
      00004CEB  A$level_screen$482                 level_screen
      00004CEE  A$level_screen$486                 level_screen
-     00004CEE  C$level_screen.c$117$1_0$150       level_screen
+     00004CEE  C$level_screen.c$116$1_0$150       level_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 238.
 Hexadecimal  [32-Bits]
 
@@ -14208,24 +14208,24 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004CF0  A$level_screen$488                 level_screen
      00004CF1  A$level_screen$489                 level_screen
      00004CF3  A$level_screen$493                 level_screen
-     00004CF3  C$level_screen.c$119$2_0$154       level_screen
+     00004CF3  C$level_screen.c$118$2_0$154       level_screen
      00004CF6  A$level_screen$494                 level_screen
      00004CF8  A$level_screen$495                 level_screen
      00004CFA  A$level_screen$499                 level_screen
-     00004CFA  C$level_screen.c$121$3_0$155       level_screen
+     00004CFA  C$level_screen.c$120$3_0$155       level_screen
      00004CFE  A$level_screen$503                 level_screen
-     00004CFE  C$level_screen.c$122$3_0$155       level_screen
+     00004CFE  C$level_screen.c$121$3_0$155       level_screen
      00004D02  A$level_screen$504                 level_screen
      00004D03  A$level_screen$505                 level_screen
      00004D06  A$level_screen$506                 level_screen
      00004D07  A$level_screen$507                 level_screen
      00004D09  A$level_screen$508                 level_screen
      00004D0B  A$level_screen$512                 level_screen
-     00004D0B  C$level_screen.c$124$4_0$156       level_screen
+     00004D0B  C$level_screen.c$123$4_0$156       level_screen
      00004D0E  A$level_screen$513                 level_screen
      00004D0F  A$level_screen$514                 level_screen
      00004D12  A$level_screen$518                 level_screen
-     00004D12  C$level_screen.c$125$4_0$156       level_screen
+     00004D12  C$level_screen.c$124$4_0$156       level_screen
      00004D15  A$level_screen$519                 level_screen
      00004D16  A$level_screen$520                 level_screen
      00004D18  A$level_screen$521                 level_screen
@@ -14238,7 +14238,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004D23  A$level_screen$528                 level_screen
      00004D26  A$level_screen$529                 level_screen
      00004D28  A$level_screen$534                 level_screen
-     00004D28  C$level_screen.c$130$3_0$157       level_screen
+     00004D28  C$level_screen.c$129$3_0$157       level_screen
      00004D2B  A$level_screen$535                 level_screen
      00004D2E  A$level_screen$536                 level_screen
      00004D30  A$level_screen$537                 level_screen
@@ -14264,10 +14264,10 @@ _CODE                               00000200    00007733 =       30515. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00004D41  C$level_screen.c$131$3_0$157       level_screen
+     00004D41  C$level_screen.c$130$3_0$157       level_screen
      00004D44  A$level_screen$554                 level_screen
      00004D45  A$level_screen$558                 level_screen
-     00004D45  C$level_screen.c$132$3_0$157       level_screen
+     00004D45  C$level_screen.c$131$3_0$157       level_screen
      00004D48  A$level_screen$559                 level_screen
      00004D4A  A$level_screen$560                 level_screen
      00004D4B  A$level_screen$561                 level_screen
@@ -14281,40 +14281,40 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004D57  A$level_screen$569                 level_screen
      00004D58  A$level_screen$570                 level_screen
      00004D59  A$level_screen$575                 level_screen
-     00004D59  C$level_screen.c$136$1_0$150       level_screen
+     00004D59  C$level_screen.c$135$1_0$150       level_screen
      00004D5B  A$level_screen$576                 level_screen
      00004D5C  A$level_screen$577                 level_screen
      00004D5D  A$level_screen$578                 level_screen
      00004D60  A$level_screen$579                 level_screen
      00004D61  A$level_screen$580                 level_screen
      00004D62  A$level_screen$584                 level_screen
-     00004D62  C$level_screen.c$137$1_0$150       level_screen
+     00004D62  C$level_screen.c$136$1_0$150       level_screen
      00004D63  A$level_screen$585                 level_screen
      00004D65  A$level_screen$589                 level_screen
-     00004D65  C$level_screen.c$139$2_0$158       level_screen
+     00004D65  C$level_screen.c$138$2_0$158       level_screen
      00004D69  A$level_screen$593                 level_screen
-     00004D69  C$level_screen.c$140$2_0$158       level_screen
+     00004D69  C$level_screen.c$139$2_0$158       level_screen
      00004D6C  A$level_screen$594                 level_screen
      00004D6D  A$level_screen$595                 level_screen
      00004D6F  A$level_screen$599                 level_screen
-     00004D6F  C$level_screen.c$142$3_0$159       level_screen
+     00004D6F  C$level_screen.c$141$3_0$159       level_screen
      00004D73  A$level_screen$600                 level_screen
      00004D76  A$level_screen$601                 level_screen
      00004D77  A$level_screen$602                 level_screen
      00004D79  A$level_screen$606                 level_screen
-     00004D79  C$level_screen.c$144$4_0$160       level_screen
+     00004D79  C$level_screen.c$143$4_0$160       level_screen
      00004D7C  A$level_screen$610                 level_screen
-     00004D7C  C$level_screen.c$145$4_0$160       level_screen
+     00004D7C  C$level_screen.c$144$4_0$160       level_screen
      00004D7F  A$level_screen$611                 level_screen
      00004D81  A$level_screen$615                 level_screen
-     00004D81  C$level_screen.c$146$4_0$160       level_screen
+     00004D81  C$level_screen.c$145$4_0$160       level_screen
      00004D84  A$level_screen$616                 level_screen
      00004D86  A$level_screen$620                 level_screen
-     00004D86  C$level_screen.c$147$4_0$160       level_screen
+     00004D86  C$level_screen.c$146$4_0$160       level_screen
      00004D89  A$level_screen$621                 level_screen
      00004D8C  A$level_screen$622                 level_screen
      00004D8E  A$level_screen$627                 level_screen
-     00004D8E  C$level_screen.c$150$2_0$158       level_screen
+     00004D8E  C$level_screen.c$149$2_0$158       level_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 240.
 Hexadecimal  [32-Bits]
 
@@ -14327,28 +14327,28 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004D91  A$level_screen$628                 level_screen
      00004D92  A$level_screen$629                 level_screen
      00004D94  A$level_screen$633                 level_screen
-     00004D94  C$level_screen.c$152$3_0$161       level_screen
+     00004D94  C$level_screen.c$151$3_0$161       level_screen
      00004D98  A$level_screen$634                 level_screen
      00004D9B  A$level_screen$635                 level_screen
      00004D9C  A$level_screen$636                 level_screen
      00004D9E  A$level_screen$640                 level_screen
-     00004D9E  C$level_screen.c$154$4_0$162       level_screen
+     00004D9E  C$level_screen.c$153$4_0$162       level_screen
      00004DA1  A$level_screen$644                 level_screen
-     00004DA1  C$level_screen.c$155$4_0$162       level_screen
+     00004DA1  C$level_screen.c$154$4_0$162       level_screen
      00004DA4  A$level_screen$645                 level_screen
      00004DA6  A$level_screen$649                 level_screen
-     00004DA6  C$level_screen.c$156$4_0$162       level_screen
+     00004DA6  C$level_screen.c$155$4_0$162       level_screen
      00004DA9  A$level_screen$650                 level_screen
      00004DAC  A$level_screen$651                 level_screen
      00004DAE  A$level_screen$656                 level_screen
-     00004DAE  C$level_screen.c$161$3_0$163       level_screen
+     00004DAE  C$level_screen.c$160$3_0$163       level_screen
      00004DB2  A$level_screen$657                 level_screen
      00004DB5  A$level_screen$658                 level_screen
      00004DB6  A$level_screen$659                 level_screen
      00004DB8  A$level_screen$663                 level_screen
-     00004DB8  C$level_screen.c$163$4_0$164       level_screen
+     00004DB8  C$level_screen.c$162$4_0$164       level_screen
      00004DBB  A$level_screen$667                 level_screen
-     00004DBB  C$level_screen.c$164$4_0$164       level_screen
+     00004DBB  C$level_screen.c$163$4_0$164       level_screen
      00004DBE  A$level_screen$668                 level_screen
      00004DBF  A$level_screen$669                 level_screen
      00004DC2  A$level_screen$670                 level_screen
@@ -14361,20 +14361,20 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004DCD  A$level_screen$679                 level_screen
      00004DD0  A$level_screen$680                 level_screen
      00004DD2  A$level_screen$685                 level_screen
-     00004DD2  C$level_screen.c$168$4_0$165       level_screen
+     00004DD2  C$level_screen.c$167$4_0$165       level_screen
      00004DD5  A$level_screen$686                 level_screen
      00004DD7  A$level_screen$690                 level_screen
-     00004DD7  C$level_screen.c$169$4_0$165       level_screen
+     00004DD7  C$level_screen.c$168$4_0$165       level_screen
      00004DDA  A$level_screen$691                 level_screen
      00004DDD  A$level_screen$696                 level_screen
-     00004DDD  C$level_screen.c$173$1_0$150       level_screen
+     00004DDD  C$level_screen.c$172$1_0$150       level_screen
      00004DDF  A$level_screen$697                 level_screen
      00004DE0  A$level_screen$698                 level_screen
      00004DE1  A$level_screen$699                 level_screen
      00004DE4  A$level_screen$700                 level_screen
      00004DE5  A$level_screen$701                 level_screen
      00004DE6  A$level_screen$705                 level_screen
-     00004DE6  C$level_screen.c$174$1_0$150       level_screen
+     00004DE6  C$level_screen.c$173$1_0$150       level_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 241.
 Hexadecimal  [32-Bits]
 
@@ -14386,55 +14386,55 @@ _CODE                               00000200    00007733 =       30515. bytes (R
       -----  --------------------------------   ------------------------
      00004DE7  A$level_screen$706                 level_screen
      00004DE9  A$level_screen$710                 level_screen
-     00004DE9  C$level_screen.c$176$2_0$166       level_screen
+     00004DE9  C$level_screen.c$175$2_0$166       level_screen
      00004DED  A$level_screen$714                 level_screen
-     00004DED  C$level_screen.c$177$2_0$166       level_screen
+     00004DED  C$level_screen.c$176$2_0$166       level_screen
      00004DF0  A$level_screen$715                 level_screen
      00004DF1  A$level_screen$716                 level_screen
      00004DF3  A$level_screen$720                 level_screen
-     00004DF3  C$level_screen.c$179$3_0$167       level_screen
+     00004DF3  C$level_screen.c$178$3_0$167       level_screen
      00004DF7  A$level_screen$721                 level_screen
      00004DFA  A$level_screen$722                 level_screen
      00004DFC  A$level_screen$723                 level_screen
      00004DFE  A$level_screen$727                 level_screen
-     00004DFE  C$level_screen.c$181$4_0$168       level_screen
+     00004DFE  C$level_screen.c$180$4_0$168       level_screen
      00004E01  A$level_screen$731                 level_screen
-     00004E01  C$level_screen.c$182$4_0$168       level_screen
+     00004E01  C$level_screen.c$181$4_0$168       level_screen
      00004E04  A$level_screen$732                 level_screen
      00004E06  A$level_screen$736                 level_screen
-     00004E06  C$level_screen.c$183$4_0$168       level_screen
+     00004E06  C$level_screen.c$182$4_0$168       level_screen
      00004E09  A$level_screen$737                 level_screen
      00004E0B  A$level_screen$741                 level_screen
-     00004E0B  C$level_screen.c$184$4_0$168       level_screen
+     00004E0B  C$level_screen.c$183$4_0$168       level_screen
      00004E0E  A$level_screen$742                 level_screen
      00004E11  A$level_screen$743                 level_screen
      00004E13  A$level_screen$748                 level_screen
-     00004E13  C$level_screen.c$187$2_0$166       level_screen
+     00004E13  C$level_screen.c$186$2_0$166       level_screen
      00004E16  A$level_screen$749                 level_screen
      00004E17  A$level_screen$750                 level_screen
      00004E19  A$level_screen$754                 level_screen
-     00004E19  C$level_screen.c$189$3_0$169       level_screen
+     00004E19  C$level_screen.c$188$3_0$169       level_screen
      00004E1D  A$level_screen$755                 level_screen
      00004E20  A$level_screen$756                 level_screen
      00004E21  A$level_screen$757                 level_screen
      00004E23  A$level_screen$758                 level_screen
      00004E25  A$level_screen$759                 level_screen
      00004E27  A$level_screen$763                 level_screen
-     00004E27  C$level_screen.c$191$4_0$170       level_screen
+     00004E27  C$level_screen.c$190$4_0$170       level_screen
      00004E2A  A$level_screen$767                 level_screen
-     00004E2A  C$level_screen.c$192$4_0$170       level_screen
+     00004E2A  C$level_screen.c$191$4_0$170       level_screen
      00004E2D  A$level_screen$768                 level_screen
      00004E2F  A$level_screen$772                 level_screen
-     00004E2F  C$level_screen.c$193$4_0$170       level_screen
+     00004E2F  C$level_screen.c$192$4_0$170       level_screen
      00004E32  A$level_screen$773                 level_screen
      00004E35  A$level_screen$774                 level_screen
      00004E37  A$level_screen$779                 level_screen
-     00004E37  C$level_screen.c$198$3_0$171       level_screen
+     00004E37  C$level_screen.c$197$3_0$171       level_screen
      00004E3B  A$level_screen$780                 level_screen
      00004E3E  A$level_screen$781                 level_screen
      00004E40  A$level_screen$782                 level_screen
      00004E42  A$level_screen$786                 level_screen
-     00004E42  C$level_screen.c$200$4_0$172       level_screen
+     00004E42  C$level_screen.c$199$4_0$172       level_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 242.
 Hexadecimal  [32-Bits]
 
@@ -14445,7 +14445,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00004E45  A$level_screen$790                 level_screen
-     00004E45  C$level_screen.c$201$4_0$172       level_screen
+     00004E45  C$level_screen.c$200$4_0$172       level_screen
      00004E48  A$level_screen$791                 level_screen
      00004E49  A$level_screen$792                 level_screen
      00004E4C  A$level_screen$793                 level_screen
@@ -14457,18 +14457,18 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004E55  A$level_screen$801                 level_screen
      00004E57  A$level_screen$802                 level_screen
      00004E5A  A$level_screen$807                 level_screen
-     00004E5A  C$level_screen.c$206$1_0$150       level_screen
+     00004E5A  C$level_screen.c$205$1_0$150       level_screen
      00004E5E  A$level_screen$808                 level_screen
      00004E60  A$level_screen$812                 level_screen
-     00004E60  C$level_screen.c$208$2_0$173       level_screen
+     00004E60  C$level_screen.c$207$2_0$173       level_screen
      00004E63  A$level_screen$816                 level_screen
-     00004E63  C$level_screen.c$210$2_0$173       level_screen
+     00004E63  C$level_screen.c$209$2_0$173       level_screen
      00004E66  A$level_screen$817                 level_screen
      00004E67  A$level_screen$818                 level_screen
      00004E68  A$level_screen$819                 level_screen
      00004E6B  A$level_screen$820                 level_screen
      00004E6C  A$level_screen$824                 level_screen
-     00004E6C  C$level_screen.c$211$2_0$173       level_screen
+     00004E6C  C$level_screen.c$210$2_0$173       level_screen
      00004E6F  A$level_screen$825                 level_screen
      00004E72  A$level_screen$826                 level_screen
      00004E73  A$level_screen$827                 level_screen
@@ -14476,13 +14476,13 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004E76  A$level_screen$829                 level_screen
      00004E77  A$level_screen$830                 level_screen
      00004E7A  A$level_screen$834                 level_screen
-     00004E7A  C$level_screen.c$212$2_0$173       level_screen
+     00004E7A  C$level_screen.c$211$2_0$173       level_screen
      00004E7D  A$level_screen$835                 level_screen
      00004E7E  A$level_screen$836                 level_screen
      00004E7F  A$level_screen$837                 level_screen
      00004E82  A$level_screen$838                 level_screen
      00004E83  A$level_screen$842                 level_screen
-     00004E83  C$level_screen.c$214$2_0$173       level_screen
+     00004E83  C$level_screen.c$213$2_0$173       level_screen
      00004E86  A$level_screen$843                 level_screen
      00004E87  A$level_screen$844                 level_screen
      00004E88  A$level_screen$845                 level_screen
@@ -14504,18 +14504,18 @@ _CODE                               00000200    00007733 =       30515. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00004E97  C$level_screen.c$217$1_0$150       level_screen
-     00004E97  C$level_screen.c$221$1_0$150       level_screen
+     00004E97  C$level_screen.c$216$1_0$150       level_screen
+     00004E97  C$level_screen.c$220$1_0$150       level_screen
      00004E99  A$level_screen$862                 level_screen
      00004E9A  A$level_screen$863                 level_screen
      00004E9B  A$level_screen$864                 level_screen
      00004E9E  A$level_screen$865                 level_screen
      00004E9F  A$level_screen$866                 level_screen
      00004EA0  A$level_screen$870                 level_screen
-     00004EA0  C$level_screen.c$222$1_0$150       level_screen
+     00004EA0  C$level_screen.c$221$1_0$150       level_screen
      00004EA1  A$level_screen$871                 level_screen
      00004EA3  A$level_screen$875                 level_screen
-     00004EA3  C$level_screen.c$224$2_0$175       level_screen
+     00004EA3  C$level_screen.c$223$2_0$175       level_screen
      00004EA6  A$level_screen$876                 level_screen
      00004EA7  A$level_screen$877                 level_screen
      00004EA8  A$level_screen$878                 level_screen
@@ -14528,31 +14528,31 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004EB5  A$level_screen$885                 level_screen
      00004EB6  A$level_screen$886                 level_screen
      00004EB7  A$level_screen$890                 level_screen
-     00004EB7  C$level_screen.c$225$2_0$175       level_screen
+     00004EB7  C$level_screen.c$224$2_0$175       level_screen
      00004EBA  A$level_screen$894                 level_screen
-     00004EBA  C$level_screen.c$227$2_0$175       level_screen
+     00004EBA  C$level_screen.c$226$2_0$175       level_screen
      00004EBC  A$level_screen$895                 level_screen
      00004EBD  A$level_screen$896                 level_screen
      00004EBE  A$level_screen$897                 level_screen
      00004EC1  A$level_screen$898                 level_screen
      00004EC2  A$level_screen$902                 level_screen
-     00004EC2  C$level_screen.c$228$2_0$175       level_screen
+     00004EC2  C$level_screen.c$227$2_0$175       level_screen
      00004EC5  A$level_screen$906                 level_screen
-     00004EC5  C$level_screen.c$229$2_0$175       level_screen
+     00004EC5  C$level_screen.c$228$2_0$175       level_screen
      00004EC7  A$level_screen$907                 level_screen
      00004ECA  A$level_screen$911                 level_screen
-     00004ECA  C$level_screen.c$230$2_0$175       level_screen
+     00004ECA  C$level_screen.c$229$2_0$175       level_screen
      00004ECC  A$level_screen$916                 level_screen
-     00004ECC  C$level_screen.c$233$1_0$150       level_screen
+     00004ECC  C$level_screen.c$232$1_0$150       level_screen
      00004ECE  A$level_screen$917                 level_screen
      00004ECF  A$level_screen$918                 level_screen
      00004ED0  A$level_screen$919                 level_screen
      00004ED3  A$level_screen$920                 level_screen
      00004ED4  A$level_screen$924                 level_screen
-     00004ED4  C$level_screen.c$102$1_0$150       level_screen
+     00004ED4  C$level_screen.c$101$1_0$150       level_screen
      00004ED7  A$level_screen$925                 level_screen
      00004EDA  A$level_screen$929                 level_screen
-     00004EDA  C$level_screen.c$234$1_0$150       level_screen
+     00004EDA  C$level_screen.c$233$1_0$150       level_screen
      00004EDB  A$level_screen$930                 level_screen
      00004EDC  A$level_screen$931                 level_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 244.
@@ -14565,7 +14565,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00004EDE  A$level_screen$935                 level_screen
-     00004EDE  C$level_screen.c$236$2_0$176       level_screen
+     00004EDE  C$level_screen.c$235$2_0$176       level_screen
      00004EDF  A$level_screen$936                 level_screen
      00004EE2  A$level_screen$937                 level_screen
      00004EE3  A$level_screen$938                 level_screen
@@ -14581,27 +14581,27 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004EF3  A$level_screen$948                 level_screen
      00004EF6  A$level_screen$949                 level_screen
      00004EF7  A$level_screen$953                 level_screen
-     00004EF7  C$level_screen.c$239$2_0$176       level_screen
+     00004EF7  C$level_screen.c$238$2_0$176       level_screen
      00004EF9  A$level_screen$954                 level_screen
      00004EFA  A$level_screen$958                 level_screen
-     00004EFA  C$level_screen.c$240$2_0$176       level_screen
+     00004EFA  C$level_screen.c$239$2_0$176       level_screen
      00004EFC  A$level_screen$963                 level_screen
-     00004EFC  C$level_screen.c$243$1_0$150       level_screen
+     00004EFC  C$level_screen.c$242$1_0$150       level_screen
      00004EFD  A$level_screen$964                 level_screen
      00004F00  A$level_screen$965                 level_screen
      00004F01  A$level_screen$969                 level_screen
-     00004F01  C$level_screen.c$244$1_0$150       level_screen
+     00004F01  C$level_screen.c$243$1_0$150       level_screen
      00004F03  A$level_screen$970                 level_screen
      00004F04  A$level_screen$975                 level_screen
      00004F05  A$level_screen$976                 level_screen
      00004F07  A$level_screen$981                 level_screen
-     00004F07  C$level_screen.c$245$1_0$150       level_screen
+     00004F07  C$level_screen.c$244$1_0$150       level_screen
      00004F07  XG$screen_level_screen_update$0$   level_screen
      00004F08  A$level_screen$1000                level_screen
-     00004F08  C$level_screen.c$247$1_0$177       level_screen
+     00004F08  C$level_screen.c$246$1_0$177       level_screen
+     00004F08  C$level_screen.c$248$1_0$177       level_screen
      00004F08  C$level_screen.c$249$1_0$177       level_screen
      00004F08  C$level_screen.c$250$1_0$177       level_screen
-     00004F08  C$level_screen.c$251$1_0$177       level_screen
      00004F08  Flevel_screen$updateCheck$0$0      level_screen
      00004F0B  A$level_screen$1001                level_screen
      00004F0C  A$level_screen$1002                level_screen
@@ -14624,17 +14624,17 @@ _CODE                               00000200    00007733 =       30515. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00004F1C  C$level_screen.c$253$1_0$177       level_screen
+     00004F1C  C$level_screen.c$252$1_0$177       level_screen
      00004F1F  A$level_screen$1016                level_screen
      00004F20  A$level_screen$1017                level_screen
      00004F23  A$level_screen$1021                level_screen
-     00004F23  C$level_screen.c$254$1_0$177       level_screen
+     00004F23  C$level_screen.c$253$1_0$177       level_screen
      00004F26  A$level_screen$1022                level_screen
      00004F27  A$level_screen$1023                level_screen
      00004F28  A$level_screen$1024                level_screen
      00004F2B  A$level_screen$1025                level_screen
      00004F2C  A$level_screen$1029                level_screen
-     00004F2C  C$level_screen.c$255$1_0$177       level_screen
+     00004F2C  C$level_screen.c$254$1_0$177       level_screen
      00004F2F  A$level_screen$1030                level_screen
      00004F32  A$level_screen$1031                level_screen
      00004F36  A$level_screen$1032                level_screen
@@ -14644,17 +14644,17 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004F46  A$level_screen$1036                level_screen
      00004F4A  A$level_screen$1037                level_screen
      00004F4E  A$level_screen$1041                level_screen
-     00004F4E  C$level_screen.c$256$1_0$177       level_screen
+     00004F4E  C$level_screen.c$255$1_0$177       level_screen
      00004F51  A$level_screen$1042                level_screen
      00004F52  A$level_screen$1043                level_screen
      00004F53  A$level_screen$1044                level_screen
      00004F56  A$level_screen$1045                level_screen
      00004F57  A$level_screen$1053                level_screen
-     00004F57  C$level_screen.c$257$1_0$177       level_screen
+     00004F57  C$level_screen.c$256$1_0$177       level_screen
      00004F57  XFlevel_screen$updateCheck$0$0     level_screen
      00004F58  A$level_screen$1066                level_screen
-     00004F58  C$level_screen.c$260$1_0$178       level_screen
-     00004F58  C$level_screen.c$265$1_0$178       level_screen
+     00004F58  C$level_screen.c$259$1_0$178       level_screen
+     00004F58  C$level_screen.c$264$1_0$178       level_screen
      00004F58  Flevel_screen$printStats$0$0       level_screen
      00004F5B  A$level_screen$1067                level_screen
      00004F5C  A$level_screen$1068                level_screen
@@ -14663,7 +14663,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004F63  A$level_screen$1071                level_screen
      00004F64  A$level_screen$1072                level_screen
      00004F65  A$level_screen$1076                level_screen
-     00004F65  C$level_screen.c$266$1_0$178       level_screen
+     00004F65  C$level_screen.c$265$1_0$178       level_screen
      00004F68  A$level_screen$1077                level_screen
      00004F69  A$level_screen$1078                level_screen
      00004F6C  A$level_screen$1079                level_screen
@@ -14671,7 +14671,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004F70  A$level_screen$1081                level_screen
      00004F71  A$level_screen$1082                level_screen
      00004F72  A$level_screen$1086                level_screen
-     00004F72  C$level_screen.c$267$1_0$178       level_screen
+     00004F72  C$level_screen.c$266$1_0$178       level_screen
      00004F75  A$level_screen$1087                level_screen
      00004F76  A$level_screen$1088                level_screen
      00004F79  A$level_screen$1089                level_screen
@@ -14688,7 +14688,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004F7D  A$level_screen$1091                level_screen
      00004F7E  A$level_screen$1092                level_screen
      00004F7F  A$level_screen$1096                level_screen
-     00004F7F  C$level_screen.c$269$1_0$178       level_screen
+     00004F7F  C$level_screen.c$268$1_0$178       level_screen
      00004F82  A$level_screen$1097                level_screen
      00004F83  A$level_screen$1098                level_screen
      00004F85  A$level_screen$1099                level_screen
@@ -14699,7 +14699,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004F8E  A$level_screen$1104                level_screen
      00004F8F  A$level_screen$1105                level_screen
      00004F90  A$level_screen$1109                level_screen
-     00004F90  C$level_screen.c$270$1_0$178       level_screen
+     00004F90  C$level_screen.c$269$1_0$178       level_screen
      00004F93  A$level_screen$1110                level_screen
      00004F94  A$level_screen$1111                level_screen
      00004F97  A$level_screen$1112                level_screen
@@ -14707,7 +14707,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004F9B  A$level_screen$1114                level_screen
      00004F9C  A$level_screen$1115                level_screen
      00004F9D  A$level_screen$1119                level_screen
-     00004F9D  C$level_screen.c$271$1_0$178       level_screen
+     00004F9D  C$level_screen.c$270$1_0$178       level_screen
      00004FA0  A$level_screen$1120                level_screen
      00004FA1  A$level_screen$1121                level_screen
      00004FA4  A$level_screen$1122                level_screen
@@ -14716,7 +14716,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00004FA9  A$level_screen$1125                level_screen
      00004FAA  A$level_screen$1126                level_screen
      00004FAB  A$level_screen$1134                level_screen
-     00004FAB  C$level_screen.c$272$1_0$178       level_screen
+     00004FAB  C$level_screen.c$271$1_0$178       level_screen
      00004FAB  XFlevel_screen$printStats$0$0      level_screen
      00004FAC  Flevel_screen$__str_0$0_0$0        level_screen
      00004FB9  Flevel_screen$__str_1$0_0$0        level_screen
@@ -17847,14 +17847,14 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00005FCD  A$repeat_screen$398                repeat_screen
      00005FD0  A$repeat_screen$399                repeat_screen
      00005FD1  A$repeat_screen$403                repeat_screen
-     00005FD1  C$repeat_screen.c$115$2_0$144      repeat_screen
+     00005FD1  C$repeat_screen.c$114$2_0$144      repeat_screen
      00005FD4  A$repeat_screen$404                repeat_screen
      00005FD5  A$repeat_screen$405                repeat_screen
      00005FD7  A$repeat_screen$406                repeat_screen
      00005FDA  A$repeat_screen$407                repeat_screen
      00005FDB  A$repeat_screen$408                repeat_screen
      00005FDE  A$repeat_screen$413                repeat_screen
-     00005FDE  C$repeat_screen.c$117$3_0$145      repeat_screen
+     00005FDE  C$repeat_screen.c$116$3_0$145      repeat_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 299.
 Hexadecimal  [32-Bits]
 
@@ -17898,7 +17898,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00006032  A$repeat_screen$445                repeat_screen
      00006035  A$repeat_screen$446                repeat_screen
      00006037  A$repeat_screen$450                repeat_screen
-     00006037  C$repeat_screen.c$119$4_0$146      repeat_screen
+     00006037  C$repeat_screen.c$118$4_0$146      repeat_screen
      00006039  A$repeat_screen$451                repeat_screen
      0000603C  A$repeat_screen$452                repeat_screen
      0000603D  A$repeat_screen$453                repeat_screen
@@ -17909,10 +17909,10 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      0000604A  A$repeat_screen$458                repeat_screen
      0000604D  A$repeat_screen$459                repeat_screen
      0000604E  A$repeat_screen$463                repeat_screen
-     0000604E  C$repeat_screen.c$120$4_0$146      repeat_screen
+     0000604E  C$repeat_screen.c$119$4_0$146      repeat_screen
      00006051  A$repeat_screen$464                repeat_screen
      00006054  A$repeat_screen$468                repeat_screen
-     00006054  C$repeat_screen.c$121$4_0$146      repeat_screen
+     00006054  C$repeat_screen.c$120$4_0$146      repeat_screen
      00006057  A$repeat_screen$469                repeat_screen
      00006058  A$repeat_screen$470                repeat_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 300.
@@ -17925,16 +17925,16 @@ _CODE                               00000200    00007733 =       30515. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      0000605A  A$repeat_screen$475                repeat_screen
-     0000605A  C$repeat_screen.c$125$4_0$147      repeat_screen
+     0000605A  C$repeat_screen.c$124$4_0$147      repeat_screen
      0000605D  A$repeat_screen$476                repeat_screen
      00006060  A$repeat_screen$481                repeat_screen
-     00006060  C$repeat_screen.c$128$3_0$145      repeat_screen
+     00006060  C$repeat_screen.c$127$3_0$145      repeat_screen
      00006063  A$repeat_screen$486                repeat_screen
-     00006063  C$repeat_screen.c$132$2_0$144      repeat_screen
+     00006063  C$repeat_screen.c$131$2_0$144      repeat_screen
      00006066  A$repeat_screen$487                repeat_screen
      00006067  A$repeat_screen$488                repeat_screen
      0000606A  A$repeat_screen$492                repeat_screen
-     0000606A  C$repeat_screen.c$135$3_0$148      repeat_screen
+     0000606A  C$repeat_screen.c$134$3_0$148      repeat_screen
      0000606D  A$repeat_screen$493                repeat_screen
      00006070  A$repeat_screen$494                repeat_screen
      00006071  A$repeat_screen$495                repeat_screen
@@ -17944,7 +17944,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00006077  A$repeat_screen$499                repeat_screen
      00006078  A$repeat_screen$500                repeat_screen
      0000607B  A$repeat_screen$504                repeat_screen
-     0000607B  C$repeat_screen.c$138$3_0$148      repeat_screen
+     0000607B  C$repeat_screen.c$137$3_0$148      repeat_screen
      0000607E  A$repeat_screen$505                repeat_screen
      00006081  A$repeat_screen$506                repeat_screen
      00006082  A$repeat_screen$507                repeat_screen
@@ -17953,12 +17953,12 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00006085  A$repeat_screen$510                repeat_screen
      00006088  A$repeat_screen$511                repeat_screen
      00006089  A$repeat_screen$515                repeat_screen
-     00006089  C$repeat_screen.c$140$6_0$151      repeat_screen
+     00006089  C$repeat_screen.c$139$6_0$151      repeat_screen
      0000608B  A$repeat_screen$517                repeat_screen
      0000608C  A$repeat_screen$518                repeat_screen
      0000608F  A$repeat_screen$519                repeat_screen
      00006091  A$repeat_screen$523                repeat_screen
-     00006091  C$repeat_screen.c$142$5_0$150      repeat_screen
+     00006091  C$repeat_screen.c$141$5_0$150      repeat_screen
      00006092  A$repeat_screen$524                repeat_screen
      00006094  A$repeat_screen$525                repeat_screen
      00006095  A$repeat_screen$526                repeat_screen
@@ -17967,10 +17967,10 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      0000609A  A$repeat_screen$529                repeat_screen
      0000609B  A$repeat_screen$530                repeat_screen
      0000609C  A$repeat_screen$534                repeat_screen
-     0000609C  C$repeat_screen.c$143$5_0$150      repeat_screen
+     0000609C  C$repeat_screen.c$142$5_0$150      repeat_screen
      0000609E  A$repeat_screen$535                repeat_screen
      000060A0  A$repeat_screen$539                repeat_screen
-     000060A0  C$repeat_screen.c$145$6_0$151      repeat_screen
+     000060A0  C$repeat_screen.c$144$6_0$151      repeat_screen
      000060A3  A$repeat_screen$540                repeat_screen
      000060A4  A$repeat_screen$541                repeat_screen
      000060A5  A$repeat_screen$542                repeat_screen
@@ -17987,49 +17987,49 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      000060A9  A$repeat_screen$544                repeat_screen
      000060AA  A$repeat_screen$545                repeat_screen
      000060AC  A$repeat_screen$550                repeat_screen
-     000060AC  C$repeat_screen.c$152$1_0$142      repeat_screen
+     000060AC  C$repeat_screen.c$151$1_0$142      repeat_screen
      000060AE  A$repeat_screen$551                repeat_screen
      000060B0  A$repeat_screen$552                repeat_screen
      000060B2  A$repeat_screen$553                repeat_screen
      000060B3  A$repeat_screen$555                repeat_screen
      000060B4  A$repeat_screen$556                repeat_screen
      000060B6  A$repeat_screen$560                repeat_screen
-     000060B6  C$repeat_screen.c$154$6_0$152      repeat_screen
+     000060B6  C$repeat_screen.c$153$6_0$152      repeat_screen
      000060B9  A$repeat_screen$564                repeat_screen
-     000060B9  C$repeat_screen.c$155$6_0$152      repeat_screen
+     000060B9  C$repeat_screen.c$154$6_0$152      repeat_screen
      000060BC  A$repeat_screen$565                repeat_screen
      000060BE  A$repeat_screen$566                repeat_screen
      000060C0  A$repeat_screen$574                repeat_screen
-     000060C0  C$repeat_screen.c$140$4_0$149      repeat_screen
-     000060C0  C$repeat_screen.c$157$5_0$150      repeat_screen
+     000060C0  C$repeat_screen.c$139$4_0$149      repeat_screen
+     000060C0  C$repeat_screen.c$156$5_0$150      repeat_screen
      000060C1  A$repeat_screen$575                repeat_screen
      000060C3  A$repeat_screen$580                repeat_screen
-     000060C3  C$repeat_screen.c$163$3_0$148      repeat_screen
+     000060C3  C$repeat_screen.c$162$3_0$148      repeat_screen
      000060C6  A$repeat_screen$581                repeat_screen
      000060C7  A$repeat_screen$582                repeat_screen
      000060C8  A$repeat_screen$583                repeat_screen
      000060CB  A$repeat_screen$584                repeat_screen
      000060CC  A$repeat_screen$588                repeat_screen
-     000060CC  C$repeat_screen.c$166$3_0$148      repeat_screen
+     000060CC  C$repeat_screen.c$165$3_0$148      repeat_screen
      000060CF  A$repeat_screen$592                repeat_screen
      000060D2  A$repeat_screen$593                repeat_screen
      000060D3  A$repeat_screen$600                repeat_screen
-     000060D3  C$repeat_screen.c$167$3_0$148      repeat_screen
-     000060D3  C$repeat_screen.c$171$1_0$142      repeat_screen
+     000060D3  C$repeat_screen.c$166$3_0$148      repeat_screen
+     000060D3  C$repeat_screen.c$170$1_0$142      repeat_screen
      000060D4  A$repeat_screen$601                repeat_screen
      000060D5  A$repeat_screen$602                repeat_screen
      000060D7  A$repeat_screen$606                repeat_screen
-     000060D7  C$repeat_screen.c$169$4_0$154      repeat_screen
+     000060D7  C$repeat_screen.c$168$4_0$154      repeat_screen
      000060DA  A$repeat_screen$607                repeat_screen
      000060DB  A$repeat_screen$608                repeat_screen
      000060DC  A$repeat_screen$612                repeat_screen
-     000060DC  C$repeat_screen.c$170$4_0$154      repeat_screen
+     000060DC  C$repeat_screen.c$169$4_0$154      repeat_screen
      000060DD  A$repeat_screen$613                repeat_screen
      000060DE  A$repeat_screen$614                repeat_screen
      000060E1  A$repeat_screen$615                repeat_screen
      000060E2  A$repeat_screen$616                repeat_screen
      000060E3  A$repeat_screen$620                repeat_screen
-     000060E3  C$repeat_screen.c$171$4_0$154      repeat_screen
+     000060E3  C$repeat_screen.c$170$4_0$154      repeat_screen
      000060E6  A$repeat_screen$621                repeat_screen
      000060E7  A$repeat_screen$622                repeat_screen
      000060EA  A$repeat_screen$623                repeat_screen
@@ -18053,11 +18053,11 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      000060F5  A$repeat_screen$632                repeat_screen
      000060F6  A$repeat_screen$633                repeat_screen
      000060F8  A$repeat_screen$638                repeat_screen
-     000060F8  C$repeat_screen.c$173$3_0$148      repeat_screen
+     000060F8  C$repeat_screen.c$172$3_0$148      repeat_screen
      000060F9  A$repeat_screen$639                repeat_screen
      000060FA  A$repeat_screen$640                repeat_screen
      000060FC  A$repeat_screen$644                repeat_screen
-     000060FC  C$repeat_screen.c$175$4_0$155      repeat_screen
+     000060FC  C$repeat_screen.c$174$4_0$155      repeat_screen
      000060FF  A$repeat_screen$645                repeat_screen
      00006100  A$repeat_screen$646                repeat_screen
      00006101  A$repeat_screen$647                repeat_screen
@@ -18065,7 +18065,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00006105  A$repeat_screen$649                repeat_screen
      00006106  A$repeat_screen$650                repeat_screen
      00006107  A$repeat_screen$655                repeat_screen
-     00006107  C$repeat_screen.c$179$3_0$148      repeat_screen
+     00006107  C$repeat_screen.c$178$3_0$148      repeat_screen
      0000610A  A$repeat_screen$656                repeat_screen
      0000610B  A$repeat_screen$657                repeat_screen
      0000610E  A$repeat_screen$658                repeat_screen
@@ -18105,35 +18105,35 @@ _CODE                               00000200    00007733 =       30515. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00006137  A$repeat_screen$688                repeat_screen
-     00006137  C$repeat_screen.c$182$3_0$148      repeat_screen
+     00006137  C$repeat_screen.c$181$3_0$148      repeat_screen
      0000613A  A$repeat_screen$689                repeat_screen
      0000613B  A$repeat_screen$690                repeat_screen
      0000613D  A$repeat_screen$694                repeat_screen
-     0000613D  C$repeat_screen.c$185$4_0$156      repeat_screen
+     0000613D  C$repeat_screen.c$184$4_0$156      repeat_screen
      00006140  A$repeat_screen$695                repeat_screen
      00006142  A$repeat_screen$696                repeat_screen
      00006144  A$repeat_screen$697                repeat_screen
      00006146  A$repeat_screen$698                repeat_screen
      00006147  A$repeat_screen$699                repeat_screen
      00006149  A$repeat_screen$703                repeat_screen
-     00006149  C$repeat_screen.c$187$5_0$157      repeat_screen
+     00006149  C$repeat_screen.c$186$5_0$157      repeat_screen
      0000614A  A$repeat_screen$704                repeat_screen
      0000614B  A$repeat_screen$705                repeat_screen
      0000614C  A$repeat_screen$706                repeat_screen
      0000614F  A$repeat_screen$707                repeat_screen
      00006151  A$repeat_screen$709                repeat_screen
      00006154  A$repeat_screen$713                repeat_screen
-     00006154  C$repeat_screen.c$189$6_0$158      repeat_screen
+     00006154  C$repeat_screen.c$188$6_0$158      repeat_screen
      00006157  A$repeat_screen$714                repeat_screen
      00006158  A$repeat_screen$715                repeat_screen
      00006159  A$repeat_screen$719                repeat_screen
-     00006159  C$repeat_screen.c$190$6_0$158      repeat_screen
+     00006159  C$repeat_screen.c$189$6_0$158      repeat_screen
      0000615A  A$repeat_screen$720                repeat_screen
      0000615B  A$repeat_screen$721                repeat_screen
      0000615E  A$repeat_screen$722                repeat_screen
      0000615F  A$repeat_screen$723                repeat_screen
      00006160  A$repeat_screen$727                repeat_screen
-     00006160  C$repeat_screen.c$191$6_0$158      repeat_screen
+     00006160  C$repeat_screen.c$190$6_0$158      repeat_screen
      00006163  A$repeat_screen$728                repeat_screen
      00006164  A$repeat_screen$729                repeat_screen
      00006167  A$repeat_screen$730                repeat_screen
@@ -18147,7 +18147,7 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      00006171  A$repeat_screen$738                repeat_screen
      00006172  A$repeat_screen$739                repeat_screen
      00006173  A$repeat_screen$744                repeat_screen
-     00006173  C$repeat_screen.c$196$4_0$156      repeat_screen
+     00006173  C$repeat_screen.c$195$4_0$156      repeat_screen
      00006176  A$repeat_screen$745                repeat_screen
      00006179  A$repeat_screen$746                repeat_screen
      0000617C  A$repeat_screen$747                repeat_screen
@@ -18183,38 +18183,38 @@ _CODE                               00000200    00007733 =       30515. bytes (R
      0000619B  A$repeat_screen$768                repeat_screen
      0000619E  A$repeat_screen$769                repeat_screen
      0000619F  A$repeat_screen$774                repeat_screen
-     0000619F  C$repeat_screen.c$200$2_0$144      repeat_screen
+     0000619F  C$repeat_screen.c$199$2_0$144      repeat_screen
      000061A2  A$repeat_screen$778                repeat_screen
      000061A2  C$repeat_screen.c$106$1_0$142      repeat_screen
      000061A5  A$repeat_screen$779                repeat_screen
      000061A8  A$repeat_screen$783                repeat_screen
-     000061A8  C$repeat_screen.c$203$2_0$144      repeat_screen
+     000061A8  C$repeat_screen.c$202$2_0$144      repeat_screen
      000061AC  A$repeat_screen$784                repeat_screen
      000061B0  A$repeat_screen$785                repeat_screen
      000061B2  A$repeat_screen$789                repeat_screen
-     000061B2  C$repeat_screen.c$205$3_0$159      repeat_screen
+     000061B2  C$repeat_screen.c$204$3_0$159      repeat_screen
      000061B4  A$repeat_screen$790                repeat_screen
      000061B5  A$repeat_screen$794                repeat_screen
-     000061B5  C$repeat_screen.c$206$3_0$159      repeat_screen
+     000061B5  C$repeat_screen.c$205$3_0$159      repeat_screen
      000061B7  A$repeat_screen$799                repeat_screen
-     000061B7  C$repeat_screen.c$210$2_0$144      repeat_screen
+     000061B7  C$repeat_screen.c$209$2_0$144      repeat_screen
      000061BA  A$repeat_screen$800                repeat_screen
      000061BC  A$repeat_screen$801                repeat_screen
      000061BE  A$repeat_screen$805                repeat_screen
-     000061BE  C$repeat_screen.c$212$3_0$160      repeat_screen
+     000061BE  C$repeat_screen.c$211$3_0$160      repeat_screen
      000061C0  A$repeat_screen$806                repeat_screen
      000061C1  A$repeat_screen$810                repeat_screen
-     000061C1  C$repeat_screen.c$213$3_0$160      repeat_screen
+     000061C1  C$repeat_screen.c$212$3_0$160      repeat_screen
      000061C3  A$repeat_screen$815                repeat_screen
-     000061C3  C$repeat_screen.c$217$1_0$142      repeat_screen
+     000061C3  C$repeat_screen.c$216$1_0$142      repeat_screen
      000061C6  A$repeat_screen$819                repeat_screen
-     000061C6  C$repeat_screen.c$218$1_0$142      repeat_screen
+     000061C6  C$repeat_screen.c$217$1_0$142      repeat_screen
      000061C9  A$repeat_screen$820                repeat_screen
      000061CC  A$repeat_screen$821                repeat_screen
      000061CE  A$repeat_screen$826                repeat_screen
      000061D0  A$repeat_screen$827                repeat_screen
      000061D2  A$repeat_screen$832                repeat_screen
-     000061D2  C$repeat_screen.c$219$1_0$142      repeat_screen
+     000061D2  C$repeat_screen.c$218$1_0$142      repeat_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 305.
 Hexadecimal  [32-Bits]
 

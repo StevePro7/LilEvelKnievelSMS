@@ -86,7 +86,7 @@ void screen_start_screen_load()
 
 	devkit_SMS_displayOn();
 
-	space = !go->game_start ? 3 : 10;
+	space = !go->game_saved ? 2 : 10;
 	engine_delay_manager_load( NORMAL_DELAY );
 	engine_reset_manager_load( NORMAL_DELAY * space );
 	reset = 0;
@@ -111,6 +111,10 @@ void screen_start_screen_update( unsigned char *screen_type )
 		{
 			engine_sound_manager_stop();
 			devkit_SMS_mapROMBank( bggame_tiles__tiles__psgcompr_bank );
+
+			// We have seen the start screen at least once = save.
+			engine_game_manager_set_game_saved( switch_mode_yes );
+			engine_storage_manager_save();
 
 			// Read cheat sheet first time around.
 			if( !go->game_sheet )

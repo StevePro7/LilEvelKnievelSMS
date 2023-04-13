@@ -54,14 +54,9 @@ void screen_title_screen_load()
 	index = 0;
 	check = stage_mode_inc0;
 
-	// If we have never saved [played] game before then always play first animation.
+	// If we have never saved [played] game before then always play first animation i.e. index=0.
 	flips = 0;
-	if( !go->game_saved )
-	{
-		engine_game_manager_set_game_saved( switch_mode_yes );
-		engine_storage_manager_save();
-	}
-	else
+	if( go->game_saved )
 	{
 		// Otherwise choose random animation on subsequent attempts.
 		flips = engine_random_manager_next( MAX_FLIPS );

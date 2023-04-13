@@ -39,7 +39,7 @@ void screen_option_screen_update( unsigned char *screen_type )
 	unsigned char input1, input2, input3;
 	input1 = engine_input_manager_hold( input_type_up );
 	input2 = engine_input_manager_hold( input_type_down );
-	//unsigned char available;
+
 	if( input1 || input2 )
 	{
 		engine_font_manager_char( ' ', 10, cursorY );
