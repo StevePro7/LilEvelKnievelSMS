@@ -11,6 +11,8 @@ const unsigned char *locale_object_texts[] =
 	"POINT",
 	"CONTINUE",
 	" YES  NO",
+	"GAME",
+	"OVER"
 };
 
 extern const unsigned char *locale_object_blank[] =

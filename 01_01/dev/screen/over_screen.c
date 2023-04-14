@@ -11,6 +11,7 @@
 #include "../engine/scroll_manager.h"
 #include "../engine/riff_manager.h"
 #include "../engine/tile_manager.h"
+#include "../engine/util_manager.h"
 #include "../devkit/_sms_manager.h"
 #include "../devkit/_snd_manager.h"
 #include "../banks/bank2.h"
@@ -36,9 +37,8 @@ static void printGameOver()
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 12 + d, y, 4, 3 );
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 16 + d, y - 1, 4, 3 );
 
-	// TODO - localize
-	engine_font_manager_text( "GAME", x + 10, 3 );
-	engine_font_manager_text( "OVER", x + 10, 4 );
+	engine_util_manager_locale_texts( 11, x + 10, 3 );
+	engine_util_manager_locale_texts( 12, x + 10, 4 );
 }
 
 void screen_over_screen_load()
