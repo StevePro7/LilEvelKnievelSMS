@@ -113,6 +113,7 @@ S A$diff_screen$250 Def000095
 S A$diff_screen$151 Def000047
 S A$diff_screen$142 Def000039
 S A$diff_screen$133 Def00002A
+S C$diff_screen.c$41$3_0$140 Def000027
 S _screen_diff_screen_update Def00008D
 S A$diff_screen$602 Def0001C0
 S A$diff_screen$521 Def000179
@@ -124,7 +125,6 @@ S A$diff_screen$170 Def000059
 S A$diff_screen$143 Def00003A
 S A$diff_screen$134 Def00002C
 S A$diff_screen$116 Def00001A
-S C$diff_screen.c$42$3_0$140 Def000027
 S A$diff_screen$603 Def0001C1
 S A$diff_screen$450 Def000146
 S A$diff_screen$441 Def000140
@@ -142,6 +142,7 @@ S A$diff_screen$144 Def00003B
 S A$diff_screen$135 Def00002F
 S A$diff_screen$117 Def00001D
 S A$diff_screen$108 Def000014
+S C$diff_screen.c$43$3_0$140 Def000029
 S A$diff_screen$604 Def0001C2
 S A$diff_screen$514 Def00016C
 S A$diff_screen$460 Def000152
@@ -166,7 +167,6 @@ S A$diff_screen$127 Def000027
 S A$diff_screen$118 Def00001E
 S C$diff_screen.c$80$1_0$142 Def000140
 S C$diff_screen.c$71$1_0$142 Def00008D
-S C$diff_screen.c$44$3_0$140 Def000029
 S C$diff_screen.c$30$1_0$138 Def000009
 S A$diff_screen$614 Def0001C7
 S A$diff_screen$605 Def0001C5
@@ -193,6 +193,7 @@ S A$diff_screen$155 Def000048
 S A$diff_screen$146 Def000040
 S A$diff_screen$137 Def000032
 S A$diff_screen$119 Def000020
+S C$diff_screen.c$40$1_0$138 Def00001A
 S A$diff_screen$606 Def0001C6
 S A$diff_screen$543 Def000191
 S A$diff_screen$534 Def000186
@@ -219,7 +220,6 @@ S A$diff_screen$156 Def000049
 S A$diff_screen$147 Def000041
 S A$diff_screen$138 Def000033
 S C$diff_screen.c$73$1_0$142 Def00008F
-S C$diff_screen.c$41$1_0$138 Def00001A
 S A$diff_screen$580 Def0001A7
 S A$diff_screen$544 Def000194
 S A$diff_screen$535 Def000189
@@ -269,6 +269,7 @@ S A$diff_screen$158 Def00004C
 S A$diff_screen$149 Def000045
 S C$diff_screen.c$80$3_0$144 Def0000AC
 S C$diff_screen.c$61$1_0$138 Def00007E
+S C$diff_screen.c$41$2_0$139 Def000048
 S C$diff_screen.c$34$1_0$138 Def000009
 S C$diff_screen.c$26$0_0$138 Def000000
 S A$diff_screen$591 Def0001B1
@@ -294,7 +295,6 @@ S C$diff_screen.c$85$1_0$142 Def0000B3
 S C$diff_screen.c$81$3_0$144 Def0000B2
 S C$diff_screen.c$67$1_0$142 Def00008D
 S C$diff_screen.c$53$1_0$138 Def00004E
-S C$diff_screen.c$42$2_0$139 Def000048
 S C$diff_screen.c$35$1_0$138 Def00000C
 S A$diff_screen$592 Def0001B3
 S A$diff_screen$583 Def0001AC

@@ -11673,7 +11673,7 @@ L:C$begin_screen.c$19$1_0$19:3BE3
 L:C$begin_screen.c$20$1_0$19:3BE3
 L:XG$screen_begin_screen_load$0$0:3BE3
 L:C$begin_screen.c$22$1_0$21:3BE6
-L:C$begin_screen.c$25$1_0$21:3BE6
+L:C$begin_screen.c$24$1_0$21:3BE6
 L:G$screen_begin_screen_update$0$0:3BE6
 L:C$begin_screen.c$26$1_0$21:3BEC
 L:XG$screen_begin_screen_update$0$0:3BEC
@@ -11943,10 +11943,10 @@ L:C$diff_screen.c$34$1_0$138:43DD
 L:C$diff_screen.c$35$1_0$138:43E0
 L:C$diff_screen.c$36$1_0$138:43E8
 L:C$diff_screen.c$37$1_0$138:43EB
-L:C$diff_screen.c$41$1_0$138:43EE
-L:C$diff_screen.c$42$3_0$140:43FB
-L:C$diff_screen.c$44$3_0$140:43FD
-L:C$diff_screen.c$42$2_0$139:441C
+L:C$diff_screen.c$40$1_0$138:43EE
+L:C$diff_screen.c$41$3_0$140:43FB
+L:C$diff_screen.c$43$3_0$140:43FD
+L:C$diff_screen.c$41$2_0$139:441C
 L:C$diff_screen.c$53$1_0$138:4422
 L:C$diff_screen.c$55$1_0$138:4429
 L:C$diff_screen.c$56$1_0$138:4432

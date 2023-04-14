@@ -11030,7 +11030,7 @@ _CODE                               00000200    00007708 =       30472. bytes (R
      00003BE3  XG$screen_begin_screen_load$0$0    begin_screen
      00003BE6  A$begin_screen$94                  begin_screen
      00003BE6  C$begin_screen.c$22$1_0$21         begin_screen
-     00003BE6  C$begin_screen.c$25$1_0$21         begin_screen
+     00003BE6  C$begin_screen.c$24$1_0$21         begin_screen
      00003BE6  G$screen_begin_screen_update$0$0   begin_screen
      00003BE6  _screen_begin_screen_update        begin_screen
      00003BE7  A$begin_screen$95                  begin_screen
@@ -12616,7 +12616,7 @@ _CODE                               00000200    00007708 =       30472. bytes (R
      000043EB  A$diff_screen$112                  diff_screen
      000043EB  C$diff_screen.c$37$1_0$138         diff_screen
      000043EE  A$diff_screen$116                  diff_screen
-     000043EE  C$diff_screen.c$41$1_0$138         diff_screen
+     000043EE  C$diff_screen.c$40$1_0$138         diff_screen
      000043F1  A$diff_screen$117                  diff_screen
      000043F2  A$diff_screen$118                  diff_screen
      000043F4  A$diff_screen$119                  diff_screen
@@ -12625,9 +12625,9 @@ _CODE                               00000200    00007708 =       30472. bytes (R
      000043F9  A$diff_screen$122                  diff_screen
      000043FA  A$diff_screen$123                  diff_screen
      000043FB  A$diff_screen$127                  diff_screen
-     000043FB  C$diff_screen.c$42$3_0$140         diff_screen
+     000043FB  C$diff_screen.c$41$3_0$140         diff_screen
      000043FD  A$diff_screen$132                  diff_screen
-     000043FD  C$diff_screen.c$44$3_0$140         diff_screen
+     000043FD  C$diff_screen.c$43$3_0$140         diff_screen
      000043FE  A$diff_screen$133                  diff_screen
      00004400  A$diff_screen$134                  diff_screen
      00004403  A$diff_screen$135                  diff_screen
@@ -12657,7 +12657,7 @@ _CODE                               00000200    00007708 =       30472. bytes (R
      0000441A  A$diff_screen$150                  diff_screen
      0000441B  A$diff_screen$151                  diff_screen
      0000441C  A$diff_screen$155                  diff_screen
-     0000441C  C$diff_screen.c$42$2_0$139         diff_screen
+     0000441C  C$diff_screen.c$41$2_0$139         diff_screen
      0000441D  A$diff_screen$156                  diff_screen
      0000441E  A$diff_screen$157                  diff_screen
      00004420  A$diff_screen$158                  diff_screen
