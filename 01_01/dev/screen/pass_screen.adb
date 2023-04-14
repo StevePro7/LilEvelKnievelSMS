@@ -3,6 +3,7 @@ F:G$screen_pass_screen_load$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lpass_screen.screen_pass_screen_load$go$1_0$153({2}DG,STtag_struct_game_object:S),R,0,0,[]
 S:Lpass_screen.screen_pass_screen_load$co$1_0$153({2}DG,STtag_struct_command_object:S),R,0,0,[]
 S:Lpass_screen.screen_pass_screen_load$po$1_0$153({2}DG,STtag_struct_player_object:S),R,0,0,[]
+S:Lpass_screen.screen_pass_screen_load$index$1_0$153({1}SC:U),R,0,0,[e]
 S:Lpass_screen.screen_pass_screen_load$game_world$1_0$153({1}SC:U),R,0,0,[c]
 S:Lpass_screen.screen_pass_screen_load$game_round$1_0$153({1}SC:U),R,0,0,[b]
 S:Lpass_screen.screen_pass_screen_load$game_point$1_0$153({1}SC:U),R,0,0,[e]
@@ -47,8 +48,6 @@ S:Fpass_screen$count$0_0$0({1}SC:U),E,0,0
 S:Fpass_screen$value$0_0$0({1}SC:U),E,0,0
 S:Fpass_screen$loops$0_0$0({1}SC:U),E,0,0
 S:Fpass_screen$next_screen$0_0$0({1}SC:U),E,0,0
-S:Lpass_screen.screen_pass_screen_load$index$1_0$153({1}SC:U),E,0,0
-S:Lpass_screen.screen_pass_screen_load$maxim$1_0$153({1}SC:U),E,0,0
 S:G$engine_asm_manager_clear_VRAM$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_audio_manager_init$0_0$0({2}DF,SV:S),C,0,0
 S:G$engine_music_manager_play$0_0$0({2}DF,SV:S),C,0,0
