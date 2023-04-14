@@ -15,7 +15,7 @@ S:G$level1103_txt$0_0$0({64}DA64d,SC:U),D,0,0
 S:G$level1104_txt$0_0$0({64}DA64d,SC:U),D,0,0
 S:G$level1105_txt$0_0$0({384}DA384d,SC:U),D,0,0
 S:G$level1106_txt$0_0$0({384}DA384d,SC:U),D,0,0
-S:G$level1107_txt$0_0$0({3840}DA3840d,SC:U),D,0,0
+S:G$level1107_txt$0_0$0({384}DA384d,SC:U),D,0,0
 S:G$level1108_txt$0_0$0({128}DA128d,SC:U),D,0,0
 S:G$level1109_txt$0_0$0({384}DA384d,SC:U),D,0,0
 S:G$level1110_txt$0_0$0({384}DA384d,SC:U),D,0,0

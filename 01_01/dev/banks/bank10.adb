@@ -1,7 +1,7 @@
 M:bank10
 S:G$level_0401_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
 S:G$level_0402_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
-S:G$level_0403_txt$0_0$0({2048}DA2048d,SC:U),D,0,0
+S:G$level_0403_txt$0_0$0({256}DA256d,SC:U),D,0,0
 S:G$level_0404_txt$0_0$0({256}DA256d,SC:U),D,0,0
 S:G$level_0405_txt$0_0$0({256}DA256d,SC:U),D,0,0
 S:G$level_0406_txt$0_0$0({256}DA256d,SC:U),D,0,0
