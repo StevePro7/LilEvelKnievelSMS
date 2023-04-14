@@ -35,6 +35,12 @@ const unsigned char *locale_object_intro[] =
 	"[SKIP[SMALLEST[[[LEFT+FIRE1[",
 	"[JUMP[STANDARD[[[LEFT+FIRE2[",
 	"[[[[[[[[[[[[[[[[[OR[[[FIRE1[",
+	"[LEAP[SIZEABLE[[RIGHT+FIRE1[",
+	"[[[[[[[[[[[[[[[[OR[[[[FIRE2[",
+	"[HURL[COLOSSAL[[RIGHT+FIRE2[",
+	"[JUMP[ACTIVITIES[[AIRBORNE![",
+	"[SWAP[DIRECTION[[[[[[[FIRE1[",
+	"[FLIP[SOMERSAULT[[[[[[FIRE2[",
 };
 
 const unsigned char *song_object_texts[] =

@@ -48,11 +48,14 @@ void screen_intro_screen_load()
 	print( 5, col - 0, row + 5 );
 	//engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 6 );
 	print( 0, col - 0, row + 6 );
-	engine_font_manager_text( "[LEAP[SIZEABLE[[RIGHT+FIRE1[", col - 0, row + 7 );
-	engine_font_manager_text( "[[[[[[[[[[[[[[[[OR[[[[FIRE2[", col - 0, row + 8 );
+	//engine_font_manager_text( "[LEAP[SIZEABLE[[RIGHT+FIRE1[", col - 0, row + 7 );
+	print( 6, col - 0, row + 7 );
+	//engine_font_manager_text( "[[[[[[[[[[[[[[[[OR[[[[FIRE2[", col - 0, row + 8 );
+	print( 7, col - 0, row + 8 );
 	//engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 9 );
 	print( 0, col - 0, row + 9 );
-	engine_font_manager_text( "[HURL[COLOSSAL[[RIGHT+FIRE2[", col - 0, row + 10 );
+	//engine_font_manager_text( "[HURL[COLOSSAL[[RIGHT+FIRE2[", col - 0, row + 10 );
+	print( 8, col - 0, row + 10 );
 
 	//engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 11 );
 	//engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, row + 12 );
@@ -62,9 +65,12 @@ void screen_intro_screen_load()
 	print( 0, col - 0, row + 13 );
 
 	row += 13;
-	engine_font_manager_text( "[JUMP[ACTIVITIES[[AIRBORNE![", col - 0, row + 0 );
-	engine_font_manager_text( "[SWAP[DIRECTION[[[[[[[FIRE1[", col - 0, row + 1 );
-	engine_font_manager_text( "[FLIP[SOMERSAULT[[[[[[FIRE2[", col - 0, row + 2 );
+	//engine_font_manager_text( "[JUMP[ACTIVITIES[[AIRBORNE![", col - 0, row + 0 );
+	print( 9, col - 0, row + 0 );
+	//engine_font_manager_text( "[SWAP[DIRECTION[[[[[[[FIRE1[", col - 0, row + 1 );
+	print( 10, col - 0, row + 1 );
+	//engine_font_manager_text( "[FLIP[SOMERSAULT[[[[[[FIRE2[", col - 0, row + 2 );
+	print( 11, col - 0, row + 2 );
 	//engine_font_manager_text( "[[[[[[[[[[[[[[[[[[[[[[[[[[[[", col - 0, 22 );
 	print( 0, col - 0, 22 );
 
