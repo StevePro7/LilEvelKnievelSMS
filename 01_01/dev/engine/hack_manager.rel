@@ -1,11 +1,11 @@
 ;!FILE hack_manager.asm
 XL3
-H 9 areas 69 global symbols
+H 9 areas 72 global symbols
 M hack_manager
 O -mz80
 S .__.ABS. Def000000
 S _global_game_object Ref000000
-A _CODE size 94 flags 0 addr 0
+A _CODE size A3 flags 0 addr 0
 S A$hack_manager$63 Def000000
 S A$hack_manager$73 Def00000A
 S A$hack_manager$64 Def000003
@@ -23,7 +23,7 @@ S A$hack_manager$79 Def000012
 S A$hack_manager$89 Def00001C
 S G$engine_hack_manager_init$0$0 Def000000
 S C$hack_manager.c$20$0_0$8 Def000000
-S XG$engine_hack_manager_load$0$0 Def000093
+S XG$engine_hack_manager_load$0$0 Def0000A2
 S C$hack_manager.c$30$1_0$8 Def00001E
 S C$hack_manager.c$31$1_0$8 Def000023
 S C$hack_manager.c$22$1_0$8 Def000000
@@ -34,13 +34,16 @@ S C$hack_manager.c$51$1_0$9 Def000066
 S C$hack_manager.c$42$1_0$9 Def00003B
 S C$hack_manager.c$33$1_0$9 Def000024
 S C$hack_manager.c$25$1_0$8 Def000005
+S C$hack_manager.c$61$1_0$9 Def00008C
 S C$hack_manager.c$52$1_0$9 Def00006F
 S C$hack_manager.c$43$1_0$9 Def000043
 S C$hack_manager.c$26$1_0$8 Def00000A
+S C$hack_manager.c$62$1_0$9 Def000091
 S C$hack_manager.c$53$1_0$9 Def00007A
 S C$hack_manager.c$44$1_0$9 Def000049
 S C$hack_manager.c$35$1_0$9 Def00002D
 S C$hack_manager.c$27$1_0$8 Def00000F
+S C$hack_manager.c$63$1_0$9 Def000096
 S C$hack_manager.c$54$1_0$9 Def000083
 S C$hack_manager.c$45$1_0$9 Def000056
 S C$hack_manager.c$36$1_0$9 Def00002D
@@ -48,8 +51,8 @@ S C$hack_manager.c$28$1_0$8 Def000014
 S C$hack_manager.c$46$1_0$9 Def00005E
 S C$hack_manager.c$29$1_0$8 Def000019
 S _engine_hack_manager_init Def000000
-S C$hack_manager.c$67$1_0$9 Def00008C
-S C$hack_manager.c$68$1_0$9 Def000093
+S C$hack_manager.c$67$1_0$9 Def00009B
+S C$hack_manager.c$68$1_0$9 Def0000A2
 S XG$engine_hack_manager_init$0$0 Def000023
 S A$hack_manager$102 Def000023
 S A$hack_manager$130 Def000033
@@ -58,15 +61,18 @@ S A$hack_manager$203 Def00008C
 S A$hack_manager$140 Def000042
 S A$hack_manager$131 Def000036
 S A$hack_manager$113 Def000026
+S A$hack_manager$213 Def000096
 S A$hack_manager$204 Def00008F
 S A$hack_manager$150 Def00004C
 S A$hack_manager$132 Def000037
 S A$hack_manager$114 Def00002A
-S A$hack_manager$214 Def000093
+S A$hack_manager$223 Def00009F
+S A$hack_manager$214 Def000099
 S A$hack_manager$160 Def00005D
 S A$hack_manager$151 Def00004F
 S A$hack_manager$133 Def00003A
 S A$hack_manager$115 Def00002C
+S A$hack_manager$224 Def0000A0
 S A$hack_manager$152 Def000052
 S A$hack_manager$125 Def00002D
 S A$hack_manager$180 Def000072
@@ -74,21 +80,24 @@ S A$hack_manager$171 Def000066
 S A$hack_manager$153 Def000055
 S A$hack_manager$144 Def000043
 S A$hack_manager$126 Def000030
-S A$hack_manager$208 Def000090
+S A$hack_manager$208 Def000091
 S A$hack_manager$190 Def00007F
 S A$hack_manager$181 Def000074
 S A$hack_manager$172 Def000067
 S A$hack_manager$145 Def000046
-S A$hack_manager$209 Def000091
+S A$hack_manager$218 Def00009B
+S A$hack_manager$209 Def000094
 S A$hack_manager$191 Def000080
 S A$hack_manager$182 Def000076
 S A$hack_manager$173 Def000069
 S A$hack_manager$164 Def00005E
 S A$hack_manager$137 Def00003B
+S A$hack_manager$219 Def00009E
 S A$hack_manager$183 Def000077
 S A$hack_manager$174 Def00006B
 S A$hack_manager$165 Def000061
 S A$hack_manager$138 Def00003E
+S A$hack_manager$229 Def0000A2
 S A$hack_manager$175 Def00006C
 S A$hack_manager$166 Def000062
 S A$hack_manager$157 Def000056
@@ -147,5 +156,7 @@ T 70 00 00 7E FF D6 01 3E 00 17 32 04 00 7B D6 01
 R 00 00 00 00 00 0B 01 00
 T 7D 00 00 3E 00 17 32 05 00 78 D6 01 3E 00 17 32
 R 00 00 00 00 00 07 01 00
-T 8A 00 00 06 00 21 09 00 71 33 DD E1 C9
-R 00 00 00 00 00 03 01 00 02 06 01 00
+T 8A 00 00 06 00 21 04 00 36 01 21 05 00 36 01 21
+R 00 00 00 00 00 03 01 00 00 06 01 00 00 0B 01 00
+T 97 00 00 06 00 36 01 21 09 00 71 33 DD E1 C9
+R 00 00 00 00 00 03 01 00 02 08 01 00

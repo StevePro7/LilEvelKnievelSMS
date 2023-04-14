@@ -58,9 +58,9 @@ void engine_hack_manager_load()
 	//ho->hack_inair = 1;								// User can jump once while falling from gravity.
 	//ho->hack_ultra = 0;								// User has more aggressive collision detections.
 
-	//ho->hack_music = 1;
-	//ho->hack_sound = 1;
-	//ho->hack_riffs = 1;
+	ho->hack_music = 1;
+	ho->hack_sound = 1;
+	ho->hack_riffs = 1;
 	// Tester values
 
 	// Late setting: to fix this up!
