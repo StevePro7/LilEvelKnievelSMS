@@ -6,7 +6,7 @@ const unsigned char *locale_object_texts[] =
 	"GREATEST DAREDEVIL",
 	"INSERT COIN(S)",		// Start?
 	"SELECT  DIFFICULTY",	// Difficulty
-	"WORLD",
+	"WORLD",				// Level
 	"ROUND",
 	"POINT",
 };
@@ -25,6 +25,16 @@ const unsigned char *locale_object_difficulty[] =
 	"NORMAL",
 	"HARDER",
 	"INSANE",
+};
+
+const unsigned char *locale_object_intro[] =
+{
+	"[[[[[[[[[[[[[[[[[[[[[[[[[[[[",
+	"[=====[CHEAT[SHEET[======[[[",
+	"[JUMP[CATEGORIES[[ON[GROUND[",
+	"[SKIP[SMALLEST[[[LEFT+FIRE1[",
+	"[JUMP[STANDARD[[[LEFT+FIRE2[",
+	"[[[[[[[[[[[[[[[[[OR[[[FIRE1[",
 };
 
 const unsigned char *song_object_texts[] =

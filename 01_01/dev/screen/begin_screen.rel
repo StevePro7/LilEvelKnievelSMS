@@ -12,11 +12,11 @@ S A$begin_screen$106 Def000018
 S _screen_begin_screen_update Def000012
 S C$begin_screen.c$22$1_0$21 Def000012
 S XG$screen_begin_screen_update$0$0 Def000018
-S C$begin_screen.c$24$1_0$21 Def000012
 S A$begin_screen$60 Def000003
-S C$begin_screen.c$26$1_0$21 Def000018
+S C$begin_screen.c$26$1_0$21 Def000012
 S A$begin_screen$70 Def00000E
 S A$begin_screen$61 Def000004
+S C$begin_screen.c$27$1_0$21 Def000018
 S C$begin_screen.c$20$1_0$19 Def00000F
 S A$begin_screen$62 Def000007
 S G$screen_begin_screen_load$0$0 Def000000
@@ -54,5 +54,5 @@ T 0C 00 00 00 00 33 C3 00 00
 R 00 00 00 00 02 03 03 00 02 07 02 00
 T 12 00 00
 R 00 00 00 00
-T 12 00 00 C1 E1 E5 C5 36 08 C9
+T 12 00 00 C1 E1 E5 C5 36 03 C9
 R 00 00 00 00

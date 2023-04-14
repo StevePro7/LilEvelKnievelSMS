@@ -1,6 +1,7 @@
 extern const unsigned char *locale_object_texts[];
 extern const unsigned char *locale_object_blank[];
 extern const unsigned char *locale_object_difficulty[];
+extern const unsigned char *locale_object_intro[];
 extern const unsigned char *song_object_texts[];
 extern const unsigned char *riff_object_texts[];
 
