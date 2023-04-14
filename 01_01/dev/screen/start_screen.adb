@@ -52,6 +52,7 @@ S:G$extra_object_data$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$locale_object_intro$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$riff_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:Fstart_screen$reset$0_0$0({1}SC:U),E,0,0

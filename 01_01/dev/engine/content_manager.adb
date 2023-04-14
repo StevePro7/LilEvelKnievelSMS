@@ -11,6 +11,7 @@ S:Lcontent_manager.load_tile$palette$1_0$87({2}DG,SC:U),B,1,8
 S:G$locale_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_blank$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$locale_object_difficulty$0_0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$locale_object_intro$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$song_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$riff_object_texts$0_0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$devkit_SMS_init$0_0$0({2}DF,SV:S),C,0,0
