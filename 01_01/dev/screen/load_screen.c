@@ -19,13 +19,15 @@
 #include "../engine/util_manager.h"
 #include "../devkit/_sms_manager.h"
 
-static unsigned char check;
-static unsigned char delay;
+#define MAX_RIFF_LOAD	3
 
 #ifdef _CONSOLE
 #else
 #pragma disable_warning 261
 #endif
+
+static unsigned char check;
+static unsigned char delay;
 
 void screen_load_screen_load()
 {
@@ -71,7 +73,7 @@ void screen_load_screen_update( unsigned char *screen_type )
 {
 	struct_game_object *go = &global_game_object;
 	struct_hack_object *ho = &global_hack_object;
-	unsigned char index, maxim;
+	unsigned char index;
 	unsigned char input;
 
 	if( !check )
@@ -86,9 +88,7 @@ void screen_load_screen_update( unsigned char *screen_type )
 		engine_player_manager_head();
 		if( go->game_start && ho->hack_riffs )
 		{
-			// TODO - update magic number?
-			maxim = 3;
-			index = engine_random_manager_next( maxim );
+			index = engine_random_manager_next( MAX_RIFF_LOAD );
 			index += RIFF_START_LOAD;
 
 			engine_riff_manager_loop( index );

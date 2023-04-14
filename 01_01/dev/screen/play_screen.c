@@ -19,6 +19,8 @@
 #include "../devkit/_snd_manager.h"
 #include <stdbool.h>
 
+#define MAX_RIFF_PLAY	9
+
 #ifdef _CONSOLE
 #else
 #pragma disable_warning 110
@@ -184,12 +186,9 @@ static void play_checkpoint_riff()
 {
 	struct_game_object *go = &global_game_object;
 	struct_hack_object *ho = &global_hack_object;
-	unsigned char index, maxim;
+	unsigned char index;
 
-	// TODO magic number
-	maxim = 9;
-	index = engine_random_manager_next( maxim );
-
+	index = engine_random_manager_next( MAX_RIFF_PLAY );
 	devkit_PSGStop();
 	if( ho->hack_riffs )
 	{

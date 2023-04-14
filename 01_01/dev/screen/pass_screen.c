@@ -17,6 +17,8 @@
 #include "../devkit/_snd_manager.h"
 #include "../banks/bank2.h"
 
+#define MAX_RIFF_PASS	3
+
 static unsigned char player_passX;
 static unsigned char player_endY;
 static unsigned char swap;
@@ -31,7 +33,7 @@ void screen_pass_screen_load()
 
 	struct_command_object *co = &global_command_object;
 	struct_player_object *po = &global_player_object;
-	static unsigned char index, maxim;
+	unsigned char index;
 	unsigned char game_world, game_round, game_point;
 	unsigned char game_level;
 
@@ -44,12 +46,9 @@ void screen_pass_screen_load()
 	swap = stage_mode_inc0;
 
 	engine_riff_manager_init();
-	//devkit_PSGStop();
 	engine_music_manager_stop();
 
-	// TODO - update magic number?
-	maxim = 3;
-	index = engine_random_manager_next( maxim );
+	index = engine_random_manager_next( MAX_RIFF_PASS );
 	index += RIFF_START_PASS;
 	value = riff_indexs[ index ];
 	count = riff_counts[ index ];

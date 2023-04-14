@@ -36,7 +36,7 @@ void screen_diff_screen_load()
 	engine_graphics_manager_sea();
 
 
-	//	TODO - refactor and still work??
+	//	TODO - localize	TODO - refactor and still work??
 	engine_font_manager_text( "SELECT  DIFFICULTY", 7, SHARE_TEXT_ROW + 0 );
 	engine_font_manager_text( "EASIER", CURSOR_X + 3, SHARE_TEXT_ROW + 1 );
 	engine_font_manager_text( "NORMAL", CURSOR_X + 3, SHARE_TEXT_ROW + 2 );
