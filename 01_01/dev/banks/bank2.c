@@ -12,7 +12,9 @@ const unsigned char *locale_object_texts[] =
 	"CONTINUE",
 	" YES  NO",
 	"GAME",
-	"OVER"
+	"OVER",
+	"CONGLATURATION",
+	"AWINNER IS YOU",
 };
 
 extern const unsigned char *locale_object_blank[] =

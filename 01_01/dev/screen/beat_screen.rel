@@ -6,12 +6,12 @@ O -mz80
 S _engine_music_manager_playnorepeat Ref000000
 S _engine_player_manager_set_action Ref000000
 S _engine_player_manager_draw Ref000000
-S _engine_font_manager_text Ref000000
 S _devkit_SMS_displayOn Ref000000
 S _engine_collision_manager_init Ref000000
 S _global_frame_object Ref000000
 S _global_player_object Ref000000
 S _engine_player_manager_loadX Ref000000
+S _engine_util_manager_locale_texts Ref000000
 S _engine_player_manager_loadY Ref000000
 S _devkit_PSGGetStatus Ref000000
 S _engine_graphics_manager_sea Ref000000
@@ -41,9 +41,7 @@ S _engine_player_manager_animate Ref000000
 S _engine_sound_manager_stop Ref000000
 S _engine_command_manager_build Ref000000
 S _devkit_SMS_mapROMBank Ref000000
-A _CODE size 3AB flags 0 addr 0
-S Fbeat_screen$__str_0$0_0$0 Def00038D
-S Fbeat_screen$__str_1$0_0$0 Def00039C
+A _CODE size 38D flags 0 addr 0
 S XG$screen_beat_screen_load$0$0 Def000086
 S XFbeat_screen$printBeatGame$0$0 Def00038C
 S C$beat_screen.c$110$1_0$165 Def000092
@@ -58,17 +56,17 @@ S C$beat_screen.c$143$2_0$171 Def0001A7
 S C$beat_screen.c$141$1_0$165 Def00019C
 S C$beat_screen.c$135$2_0$170 Def00017D
 S C$beat_screen.c$123$1_0$165 Def0000E5
+S C$beat_screen.c$204$1_0$175 Def000372
 S C$beat_screen.c$152$2_0$172 Def0001B2
-S C$beat_screen.c$205$1_0$175 Def000372
+S C$beat_screen.c$205$1_0$175 Def00037F
 S C$beat_screen.c$171$2_0$172 Def000218
 S C$beat_screen.c$125$1_0$165 Def00010F
 S C$beat_screen.c$114$2_0$166 Def0000C4
-S C$beat_screen.c$206$1_0$175 Def00037F
+S C$beat_screen.c$206$1_0$175 Def00038C
 S C$beat_screen.c$161$3_0$173 Def0001D6
 S C$beat_screen.c$123$2_0$167 Def0000F3
 S C$beat_screen.c$115$2_0$166 Def0000CC
 S C$beat_screen.c$117$1_0$165 Def0000AD
-S C$beat_screen.c$207$1_0$175 Def00038C
 S C$beat_screen.c$162$3_0$173 Def0001E1
 S C$beat_screen.c$163$1_0$165 Def0001D2
 S C$beat_screen.c$131$2_0$169 Def000160
@@ -231,7 +229,6 @@ S A$beat_screen$136 Def000010
 S A$beat_screen$127 Def000007
 S C$beat_screen.c$198$1_0$175 Def000301
 S C$beat_screen.c$189$1_0$175 Def00025C
-S A$beat_screen$920 Def00037F
 S A$beat_screen$911 Def000375
 S A$beat_screen$902 Def000369
 S A$beat_screen$821 Def0002F3
@@ -275,7 +272,7 @@ S A$beat_screen$146 Def00001A
 S A$beat_screen$137 Def000012
 S A$beat_screen$128 Def000008
 S C$beat_screen.c$199$1_0$175 Def000318
-S A$beat_screen$921 Def000382
+S A$beat_screen$921 Def00037F
 S A$beat_screen$912 Def000376
 S A$beat_screen$903 Def00036A
 S A$beat_screen$840 Def00030F
@@ -318,8 +315,8 @@ S A$beat_screen$147 Def00001C
 S A$beat_screen$138 Def000013
 S A$beat_screen$129 Def00000A
 S C$beat_screen.c$61$1_0$163 Def000004
-S A$beat_screen$922 Def000383
-S A$beat_screen$913 Def000379
+S A$beat_screen$922 Def000382
+S A$beat_screen$913 Def000378
 S A$beat_screen$904 Def00036D
 S A$beat_screen$850 Def00031C
 S A$beat_screen$841 Def000312
@@ -362,8 +359,8 @@ S A$beat_screen$148 Def00001D
 S A$beat_screen$139 Def000014
 S C$beat_screen.c$80$1_0$163 Def000064
 S C$beat_screen.c$44$1_0$163 Def000000
-S A$beat_screen$923 Def000386
-S A$beat_screen$914 Def00037A
+S A$beat_screen$923 Def000383
+S A$beat_screen$914 Def000379
 S A$beat_screen$905 Def000370
 S A$beat_screen$860 Def00032E
 S A$beat_screen$851 Def00031D
@@ -407,8 +404,8 @@ S A$beat_screen$158 Def000026
 S A$beat_screen$149 Def00001E
 S C$beat_screen.c$81$1_0$163 Def000067
 S C$beat_screen.c$63$1_0$163 Def00000F
-S A$beat_screen$924 Def000387
-S A$beat_screen$915 Def00037D
+S A$beat_screen$924 Def000385
+S A$beat_screen$915 Def00037A
 S A$beat_screen$906 Def000371
 S A$beat_screen$870 Def00033B
 S A$beat_screen$852 Def000320
@@ -455,9 +452,8 @@ S A$beat_screen$168 Def000038
 S A$beat_screen$159 Def000027
 S C$beat_screen.c$64$1_0$163 Def000019
 S C$beat_screen.c$46$1_0$163 Def000000
-S A$beat_screen$934 Def00038C
-S A$beat_screen$925 Def00038A
-S A$beat_screen$916 Def00037E
+S A$beat_screen$925 Def000386
+S A$beat_screen$916 Def00037D
 S A$beat_screen$880 Def000346
 S A$beat_screen$871 Def00033C
 S A$beat_screen$853 Def000321
@@ -502,7 +498,8 @@ S C$beat_screen.c$83$1_0$163 Def00006A
 S C$beat_screen.c$74$1_0$163 Def00003F
 S C$beat_screen.c$65$1_0$163 Def000025
 S C$beat_screen.c$56$1_0$163 Def000000
-S A$beat_screen$926 Def00038B
+S A$beat_screen$926 Def000387
+S A$beat_screen$917 Def00037E
 S A$beat_screen$890 Def00035A
 S A$beat_screen$881 Def000347
 S A$beat_screen$872 Def00033D
@@ -543,6 +540,8 @@ S A$beat_screen$188 Def00004B
 S A$beat_screen$179 Def000043
 S C$beat_screen.c$91$1_0$165 Def000087
 S C$beat_screen.c$75$1_0$163 Def000049
+S A$beat_screen$936 Def00038C
+S A$beat_screen$927 Def00038A
 S A$beat_screen$891 Def00035B
 S A$beat_screen$882 Def00034A
 S A$beat_screen$873 Def000340
@@ -578,6 +577,7 @@ S A$beat_screen$198 Def000059
 S A$beat_screen$189 Def00004C
 S C$beat_screen.c$85$1_0$163 Def00006D
 S C$beat_screen.c$76$1_0$163 Def000050
+S A$beat_screen$928 Def00038B
 S A$beat_screen$892 Def00035C
 S A$beat_screen$883 Def00034B
 S A$beat_screen$874 Def000343
@@ -742,17 +742,17 @@ R 00 00 00 00 00 03 01 00 02 0B 0C 00
 T 1A 00 00 3E 04 F5 33 C5 33 CD 00 00 F1 C1 C5 C5
 R 00 00 00 00 02 0A 19 00
 T 27 00 00 33 CD 00 00 33 CD 00 00 21 00 00 E5 CD
-R 00 00 00 00 02 05 05 00 02 09 1B 00
+R 00 00 00 00 02 05 04 00 02 09 1B 00
 T 34 00 00 00 00 F1 AF F5 33 CD 00 00 33 C1 3E 04
 R 00 00 00 00 02 03 11 00 02 0A 1F 00
 T 41 00 00 F5 33 C5 33 CD 00 00 F1 AF F5 33 CD
 R 00 00 00 00 02 08 19 00
 T 4D 00 00 00 00 33 01 00 00 3A 05 00 6F 26 00 09
-R 00 00 00 00 02 03 08 00 02 07 1D 00 02 0A 07 00
+R 00 00 00 00 02 03 07 00 02 07 1D 00 02 0A 06 00
 T 5A 00 00 7E F5 33 CD 00 00 33 CD 00 00 CD 00 00
 R 00 00 00 00 02 07 09 00 02 0B 02 00 02 0E 0B 00
 T 67 00 00 CD 59 02 CD 00 00 CD 00 00 AF F5 33 AF
-R 00 00 00 00 00 04 00 00 02 07 04 00 02 0A 21 00
+R 00 00 00 00 00 04 00 00 02 07 03 00 02 0A 21 00
 T 74 00 00 F5 33 AF F5 33 CD 00 00 F1 33 3E 06 F5
 R 00 00 00 00 02 09 16 00
 T 81 00 00 33 CD 00 00 33 C9
@@ -778,9 +778,9 @@ R 00 00 00 00 02 03 23 00 00 0A 00 00
 T D9 00 00
 R 00 00 00 00
 T D9 00 00 21 00 00 7E DD 77 FE 23 7E DD 77 FF 21
-R 00 00 00 00 02 04 06 00
+R 00 00 00 00 02 04 05 00
 T E6 00 00 0C 00 4E DD 7E FE D6 3C DD B6 FF 20 1C
-R 00 00 00 00 02 03 07 00
+R 00 00 00 00 02 03 06 00
 T F3 00 00 AF 57 1E 01 D5 AF F5 33 AF F5 33 AF F5
 R 00 00 00 00
 T 00 01 00 33 AF 47 C5 CD 00 00 F1 F1 F1 4D 33 C3
@@ -822,23 +822,23 @@ R 00 00 00 00 02 09 24 00
 T 97 01 00
 R 00 00 00 00
 T 97 01 00 C5 CD 00 00 C1 2A 00 00 7D D6 96 7C DE
-R 00 00 00 00 02 05 0E 00 02 09 06 00
+R 00 00 00 00 02 05 0E 00 02 09 05 00
 T A4 01 00 00 38 06 21 00 00 22 00 00
-R 00 00 00 00 02 0A 06 00
+R 00 00 00 00 02 0A 05 00
 T AD 01 00
 R 00 00 00 00
 T AD 01 00 79 B7 CA 46 02 3A 0F 00 C5 61 E5 33 F5
-R 00 00 00 00 00 06 00 00 02 09 07 00
+R 00 00 00 00 00 06 00 00 02 09 06 00
 T BA 01 00 33 CD 00 00 F1 AF F5 33 CD 00 00 33 C1
 R 00 00 00 00 02 05 01 00 02 0C 10 00
 T C7 01 00 AF DD 77 FD DD 77 FE 21 0C 00 46 78 3D
-R 00 00 00 00 02 0B 07 00
+R 00 00 00 00 02 0B 06 00
 T D4 01 00 20 33 C5 CD 00 00 C1 DD 75 FD DD 74 FE
 R 00 00 00 00 02 07 0F 00
 T E1 01 00 C5 DD 6E FD DD 66 FE E5 CD 00 00 F1 C1
 R 00 00 00 00 02 0C 0D 00
 T EE 01 00 21 09 00 46 3A 06 00 C5 C5 33 F5 33 DD
-R 00 00 00 00 02 04 13 00 02 08 07 00
+R 00 00 00 00 02 04 13 00 02 08 06 00
 T FB 01 00 6E FD DD 66 FE E5 CD 00 00 F1 F1 C1 18
 R 00 00 00 00 02 0A 18 00
 T 08 02 00 0F
@@ -846,15 +846,15 @@ R 00 00 00 00
 T 09 02 00
 R 00 00 00 00
 T 09 02 00 78 B7 20 0B 3A 0F 00 C5 F5 33 CD 00 00
-R 00 00 00 00 02 08 07 00 02 0E 22 00
+R 00 00 00 00 02 08 06 00 02 0E 22 00
 T 16 02 00 33 C1
 R 00 00 00 00
 T 18 02 00
 R 00 00 00 00
 T 18 02 00 3A 09 00 DD 77 FF 21 06 00 46 3A 07 00
-R 00 00 00 00 02 04 13 00 02 0A 07 00 02 0E 07 00
+R 00 00 00 00 02 04 13 00 02 0A 06 00 02 0E 06 00
 T 25 02 00 21 0C 00 5E C5 DD 66 FF 68 E5 DD 6E FD
-R 00 00 00 00 02 04 07 00
+R 00 00 00 00 02 04 06 00
 T 32 02 00 DD 66 FE E5 F5 33 3A 06 00 57 D5 CD
 R 00 00 00 00 00 0A 01 00
 T 3E 02 00 00 00 21 07 00 39 F9 C1
@@ -915,23 +915,11 @@ T 58 03 00 08 00 39 F9 C1 11 04 03 D5 11 18 04 D5
 R 00 00 00 00
 T 65 03 00 21 E8 06 E5 C5 CD 00 00 21 08 00 39 F9
 R 00 00 00 00 02 09 1C 00
-T 72 03 00 11 09 03 D5 21 8D 03 E5 CD 00 00 F1 F1
-R 00 00 00 00 00 08 00 00 02 0C 03 00
-T 7F 03 00 11 09 04 D5 21 9C 03 E5 CD 00 00 F1 F1
-R 00 00 00 00 00 08 00 00 02 0C 03 00
+T 72 03 00 11 09 03 D5 3E 0D F5 33 CD 00 00 F1 33
+R 00 00 00 00 02 0C 08 00
+T 7F 03 00 11 09 04 D5 3E 0E F5 33 CD 00 00 F1 33
+R 00 00 00 00 02 0C 08 00
 T 8C 03 00 C9
-R 00 00 00 00
-T 8D 03 00
-R 00 00 00 00
-T 8D 03 00 43 4F 4E 47 4C 41 54 55 52 41 54 49 4F
-R 00 00 00 00
-T 9A 03 00 4E 00
-R 00 00 00 00
-T 9C 03 00
-R 00 00 00 00
-T 9C 03 00 41 57 49 4E 4E 45 52 20 49 53 20 59 4F
-R 00 00 00 00
-T A9 03 00 55 00
 R 00 00 00 00
 T 00 00 00
 R 00 00 07 00

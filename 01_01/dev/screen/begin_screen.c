@@ -21,9 +21,5 @@ void screen_begin_screen_load()
 
 void screen_begin_screen_update( unsigned char *screen_type )
 {
-	//*screen_type = screen_type_start;
-	//*screen_type = screen_type_diff;
-	*screen_type = screen_type_intro;
-	*screen_type = screen_type_cont;
-	//*screen_type = screen_type_over;
+	*screen_type = screen_type_start;
 }
