@@ -9,6 +9,8 @@ const unsigned char *locale_object_texts[] =
 	"WORLD",				// Level
 	"ROUND",
 	"POINT",
+	"CONTINUE",
+	" YES  NO",
 };
 
 extern const unsigned char *locale_object_blank[] =

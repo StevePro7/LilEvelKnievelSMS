@@ -10,6 +10,7 @@
 #include "../engine/player_manager.h"
 #include "../engine/scroll_manager.h"
 #include "../engine/tile_manager.h"
+#include "../engine/util_manager.h"
 #include "../devkit/_sms_manager.h"
 #include "../devkit/_snd_manager.h"
 #include "../banks/bank2.h"
@@ -45,8 +46,10 @@ static void printContinue()
 	engine_graphics_manager_image_flip( tiles, TILE_TURTLE_FLIP, x + 16 + d, y - 1, 4, 3 );
 
 	// TODO - localize
-	engine_font_manager_text( "CONTINUE", x + 8, 3 );
-	engine_font_manager_text( " YES  NO", x + 8, 4 );
+//	engine_font_manager_text( "CONTINUE", x + 8, 3 );
+//	engine_font_manager_text( " YES  NO", x + 8, 4 );
+	engine_util_manager_locale_texts( 9, x + 8, 3 );
+	engine_util_manager_locale_texts( 10, x + 8, 4 );
 }
 
 void screen_cont_screen_load()
