@@ -12634,7 +12634,7 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      000043BB  A$diff_screen$112                  diff_screen
      000043BB  C$diff_screen.c$37$1_0$138         diff_screen
      000043BE  A$diff_screen$116                  diff_screen
-     000043BE  C$diff_screen.c$40$1_0$138         diff_screen
+     000043BE  C$diff_screen.c$39$1_0$138         diff_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 212.
 Hexadecimal  [32-Bits]
 
@@ -12652,9 +12652,9 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      000043C9  A$diff_screen$122                  diff_screen
      000043CA  A$diff_screen$123                  diff_screen
      000043CB  A$diff_screen$127                  diff_screen
-     000043CB  C$diff_screen.c$41$3_0$140         diff_screen
+     000043CB  C$diff_screen.c$40$3_0$140         diff_screen
      000043CD  A$diff_screen$132                  diff_screen
-     000043CD  C$diff_screen.c$43$3_0$140         diff_screen
+     000043CD  C$diff_screen.c$42$3_0$140         diff_screen
      000043CE  A$diff_screen$133                  diff_screen
      000043D0  A$diff_screen$134                  diff_screen
      000043D3  A$diff_screen$135                  diff_screen
@@ -12675,22 +12675,22 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      000043EA  A$diff_screen$150                  diff_screen
      000043EB  A$diff_screen$151                  diff_screen
      000043EC  A$diff_screen$155                  diff_screen
-     000043EC  C$diff_screen.c$41$2_0$139         diff_screen
+     000043EC  C$diff_screen.c$40$2_0$139         diff_screen
      000043ED  A$diff_screen$156                  diff_screen
      000043EE  A$diff_screen$157                  diff_screen
      000043F0  A$diff_screen$158                  diff_screen
      000043F2  A$diff_screen$162                  diff_screen
-     000043F2  C$diff_screen.c$53$1_0$138         diff_screen
+     000043F2  C$diff_screen.c$45$1_0$138         diff_screen
      000043F5  A$diff_screen$163                  diff_screen
      000043F6  A$diff_screen$164                  diff_screen
      000043F9  A$diff_screen$168                  diff_screen
-     000043F9  C$diff_screen.c$55$1_0$138         diff_screen
+     000043F9  C$diff_screen.c$47$1_0$138         diff_screen
      000043FC  A$diff_screen$169                  diff_screen
      000043FD  A$diff_screen$170                  diff_screen
      000043FE  A$diff_screen$171                  diff_screen
      00004401  A$diff_screen$172                  diff_screen
      00004402  A$diff_screen$176                  diff_screen
-     00004402  C$diff_screen.c$56$1_0$138         diff_screen
+     00004402  C$diff_screen.c$48$1_0$138         diff_screen
      00004405  A$diff_screen$177                  diff_screen
      00004406  A$diff_screen$178                  diff_screen
      00004409  A$diff_screen$179                  diff_screen
@@ -12712,37 +12712,37 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004413  A$diff_screen$188                  diff_screen
      00004415  A$diff_screen$189                  diff_screen
      00004416  A$diff_screen$193                  diff_screen
-     00004416  C$diff_screen.c$57$1_0$138         diff_screen
+     00004416  C$diff_screen.c$49$1_0$138         diff_screen
      00004417  A$diff_screen$194                  diff_screen
      00004418  A$diff_screen$195                  diff_screen
      0000441B  A$diff_screen$196                  diff_screen
      0000441C  A$diff_screen$200                  diff_screen
-     0000441C  C$diff_screen.c$59$1_0$138         diff_screen
+     0000441C  C$diff_screen.c$51$1_0$138         diff_screen
      0000441F  A$diff_screen$204                  diff_screen
-     0000441F  C$diff_screen.c$60$1_0$138         diff_screen
+     0000441F  C$diff_screen.c$52$1_0$138         diff_screen
      00004422  A$diff_screen$208                  diff_screen
-     00004422  C$diff_screen.c$61$1_0$138         diff_screen
+     00004422  C$diff_screen.c$53$1_0$138         diff_screen
      00004425  A$diff_screen$212                  diff_screen
-     00004425  C$diff_screen.c$63$1_0$138         diff_screen
+     00004425  C$diff_screen.c$55$1_0$138         diff_screen
      00004428  A$diff_screen$216                  diff_screen
-     00004428  C$diff_screen.c$64$1_0$138         diff_screen
+     00004428  C$diff_screen.c$56$1_0$138         diff_screen
      0000442A  A$diff_screen$217                  diff_screen
      0000442D  A$diff_screen$221                  diff_screen
      0000442E  A$diff_screen$222                  diff_screen
      00004430  A$diff_screen$227                  diff_screen
-     00004430  C$diff_screen.c$65$1_0$138         diff_screen
+     00004430  C$diff_screen.c$57$1_0$138         diff_screen
      00004430  XG$screen_diff_screen_load$0$0     diff_screen
      00004431  A$diff_screen$240                  diff_screen
-     00004431  C$diff_screen.c$67$1_0$142         diff_screen
-     00004431  C$diff_screen.c$71$1_0$142         diff_screen
+     00004431  C$diff_screen.c$59$1_0$142         diff_screen
+     00004431  C$diff_screen.c$63$1_0$142         diff_screen
      00004431  G$screen_diff_screen_update$0$0    diff_screen
      00004431  _screen_diff_screen_update         diff_screen
      00004433  A$diff_screen$244                  diff_screen
-     00004433  C$diff_screen.c$73$1_0$142         diff_screen
+     00004433  C$diff_screen.c$65$1_0$142         diff_screen
      00004436  A$diff_screen$245                  diff_screen
      00004437  A$diff_screen$246                  diff_screen
      00004439  A$diff_screen$250                  diff_screen
-     00004439  C$diff_screen.c$75$2_0$143         diff_screen
+     00004439  C$diff_screen.c$67$2_0$143         diff_screen
      0000443A  A$diff_screen$251                  diff_screen
      0000443D  A$diff_screen$252                  diff_screen
      00004440  A$diff_screen$253                  diff_screen
@@ -12750,9 +12750,9 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004442  A$diff_screen$255                  diff_screen
      00004443  A$diff_screen$256                  diff_screen
      00004445  A$diff_screen$260                  diff_screen
-     00004445  C$diff_screen.c$78$3_0$144         diff_screen
+     00004445  C$diff_screen.c$70$3_0$144         diff_screen
      00004448  A$diff_screen$264                  diff_screen
-     00004448  C$diff_screen.c$79$3_0$144         diff_screen
+     00004448  C$diff_screen.c$71$3_0$144         diff_screen
      0000444A  A$diff_screen$265                  diff_screen
      0000444B  A$diff_screen$266                  diff_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 214.
@@ -12767,15 +12767,15 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      0000444C  A$diff_screen$267                  diff_screen
      0000444F  A$diff_screen$268                  diff_screen
      00004450  A$diff_screen$272                  diff_screen
-     00004450  C$diff_screen.c$80$3_0$144         diff_screen
+     00004450  C$diff_screen.c$72$3_0$144         diff_screen
      00004451  A$diff_screen$273                  diff_screen
      00004452  A$diff_screen$274                  diff_screen
      00004453  A$diff_screen$275                  diff_screen
      00004454  A$diff_screen$276                  diff_screen
      00004456  A$diff_screen$280                  diff_screen
-     00004456  C$diff_screen.c$81$3_0$144         diff_screen
+     00004456  C$diff_screen.c$73$3_0$144         diff_screen
      00004457  A$diff_screen$285                  diff_screen
-     00004457  C$diff_screen.c$85$1_0$142         diff_screen
+     00004457  C$diff_screen.c$77$1_0$142         diff_screen
      00004458  A$diff_screen$286                  diff_screen
      0000445A  A$diff_screen$287                  diff_screen
      0000445B  A$diff_screen$288                  diff_screen
@@ -12784,23 +12784,23 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004460  A$diff_screen$291                  diff_screen
      00004461  A$diff_screen$292                  diff_screen
      00004462  A$diff_screen$296                  diff_screen
-     00004462  C$diff_screen.c$86$1_0$142         diff_screen
+     00004462  C$diff_screen.c$78$1_0$142         diff_screen
      00004463  A$diff_screen$297                  diff_screen
      00004465  A$diff_screen$301                  diff_screen
-     00004465  C$diff_screen.c$88$2_0$145         diff_screen
+     00004465  C$diff_screen.c$80$2_0$145         diff_screen
      00004467  A$diff_screen$305                  diff_screen
-     00004467  C$diff_screen.c$89$2_0$145         diff_screen
+     00004467  C$diff_screen.c$81$2_0$145         diff_screen
      0000446B  A$diff_screen$306                  diff_screen
      0000446E  A$diff_screen$307                  diff_screen
      0000446F  A$diff_screen$308                  diff_screen
      00004471  A$diff_screen$312                  diff_screen
-     00004471  C$diff_screen.c$91$3_0$146         diff_screen
+     00004471  C$diff_screen.c$83$3_0$146         diff_screen
      00004475  A$diff_screen$313                  diff_screen
      00004477  A$diff_screen$318                  diff_screen
-     00004477  C$diff_screen.c$95$3_0$147         diff_screen
+     00004477  C$diff_screen.c$87$3_0$147         diff_screen
      0000447A  A$diff_screen$319                  diff_screen
      0000447B  A$diff_screen$324                  diff_screen
-     0000447B  C$diff_screen.c$99$1_0$142         diff_screen
+     0000447B  C$diff_screen.c$91$1_0$142         diff_screen
      0000447C  A$diff_screen$325                  diff_screen
      0000447E  A$diff_screen$326                  diff_screen
      0000447F  A$diff_screen$327                  diff_screen
@@ -12809,12 +12809,12 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004484  A$diff_screen$330                  diff_screen
      00004485  A$diff_screen$331                  diff_screen
      00004486  A$diff_screen$335                  diff_screen
-     00004486  C$diff_screen.c$100$1_0$142        diff_screen
+     00004486  C$diff_screen.c$92$1_0$142         diff_screen
      00004487  A$diff_screen$336                  diff_screen
      00004489  A$diff_screen$340                  diff_screen
-     00004489  C$diff_screen.c$102$2_0$148        diff_screen
+     00004489  C$diff_screen.c$94$2_0$148         diff_screen
      0000448B  A$diff_screen$344                  diff_screen
-     0000448B  C$diff_screen.c$103$2_0$148        diff_screen
+     0000448B  C$diff_screen.c$95$2_0$148         diff_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 215.
 Hexadecimal  [32-Bits]
 
@@ -12828,52 +12828,52 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004492  A$diff_screen$346                  diff_screen
      00004494  A$diff_screen$347                  diff_screen
      00004496  A$diff_screen$351                  diff_screen
-     00004496  C$diff_screen.c$105$3_0$149        diff_screen
+     00004496  C$diff_screen.c$97$3_0$149         diff_screen
      0000449A  A$diff_screen$352                  diff_screen
      0000449C  A$diff_screen$357                  diff_screen
-     0000449C  C$diff_screen.c$109$3_0$150        diff_screen
+     0000449C  C$diff_screen.c$101$3_0$150        diff_screen
      0000449F  A$diff_screen$358                  diff_screen
      000044A0  A$diff_screen$363                  diff_screen
-     000044A0  C$diff_screen.c$113$1_0$142        diff_screen
+     000044A0  C$diff_screen.c$105$1_0$142        diff_screen
      000044A2  A$diff_screen$364                  diff_screen
      000044A4  A$diff_screen$368                  diff_screen
-     000044A4  C$diff_screen.c$115$2_0$151        diff_screen
+     000044A4  C$diff_screen.c$107$2_0$151        diff_screen
      000044A7  A$diff_screen$372                  diff_screen
-     000044A7  C$diff_screen.c$116$2_0$151        diff_screen
+     000044A7  C$diff_screen.c$108$2_0$151        diff_screen
      000044AA  A$diff_screen$377                  diff_screen
-     000044AA  C$diff_screen.c$119$1_0$142        diff_screen
+     000044AA  C$diff_screen.c$111$1_0$142        diff_screen
      000044AC  A$diff_screen$378                  diff_screen
      000044AD  A$diff_screen$379                  diff_screen
      000044AE  A$diff_screen$380                  diff_screen
      000044B1  A$diff_screen$381                  diff_screen
      000044B2  A$diff_screen$382                  diff_screen
      000044B3  A$diff_screen$386                  diff_screen
-     000044B3  C$diff_screen.c$120$1_0$142        diff_screen
+     000044B3  C$diff_screen.c$112$1_0$142        diff_screen
      000044B4  A$diff_screen$387                  diff_screen
      000044B6  A$diff_screen$391                  diff_screen
-     000044B6  C$diff_screen.c$122$2_0$152        diff_screen
+     000044B6  C$diff_screen.c$114$2_0$152        diff_screen
      000044B9  A$diff_screen$392                  diff_screen
      000044BA  A$diff_screen$393                  diff_screen
      000044BB  A$diff_screen$394                  diff_screen
      000044BE  A$diff_screen$395                  diff_screen
      000044BF  A$diff_screen$399                  diff_screen
-     000044BF  C$diff_screen.c$123$2_0$152        diff_screen
+     000044BF  C$diff_screen.c$115$2_0$152        diff_screen
      000044C2  A$diff_screen$400                  diff_screen
      000044C3  A$diff_screen$401                  diff_screen
      000044C4  A$diff_screen$402                  diff_screen
      000044C7  A$diff_screen$403                  diff_screen
      000044C8  A$diff_screen$407                  diff_screen
-     000044C8  C$diff_screen.c$124$2_0$152        diff_screen
+     000044C8  C$diff_screen.c$116$2_0$152        diff_screen
      000044CB  A$diff_screen$411                  diff_screen
-     000044CB  C$diff_screen.c$126$2_0$152        diff_screen
+     000044CB  C$diff_screen.c$118$2_0$152        diff_screen
      000044CD  A$diff_screen$412                  diff_screen
      000044CE  A$diff_screen$413                  diff_screen
      000044CF  A$diff_screen$414                  diff_screen
      000044D2  A$diff_screen$415                  diff_screen
      000044D3  A$diff_screen$419                  diff_screen
-     000044D3  C$diff_screen.c$127$2_0$152        diff_screen
+     000044D3  C$diff_screen.c$119$2_0$152        diff_screen
      000044D6  A$diff_screen$423                  diff_screen
-     000044D6  C$diff_screen.c$128$2_0$152        diff_screen
+     000044D6  C$diff_screen.c$120$2_0$152        diff_screen
      000044D8  A$diff_screen$424                  diff_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 216.
 Hexadecimal  [32-Bits]
@@ -12885,24 +12885,24 @@ _CODE                               00000200    0000758D =       30093. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      000044DB  A$diff_screen$428                  diff_screen
-     000044DB  C$diff_screen.c$129$2_0$152        diff_screen
+     000044DB  C$diff_screen.c$121$2_0$152        diff_screen
      000044DC  A$diff_screen$433                  diff_screen
-     000044DC  C$diff_screen.c$132$1_0$142        diff_screen
+     000044DC  C$diff_screen.c$124$1_0$142        diff_screen
      000044DE  A$diff_screen$434                  diff_screen
      000044DF  A$diff_screen$435                  diff_screen
      000044E0  A$diff_screen$436                  diff_screen
      000044E3  A$diff_screen$437                  diff_screen
      000044E4  A$diff_screen$441                  diff_screen
-     000044E4  C$diff_screen.c$80$1_0$142         diff_screen
+     000044E4  C$diff_screen.c$72$1_0$142         diff_screen
      000044E5  A$diff_screen$442                  diff_screen
      000044E6  A$diff_screen$443                  diff_screen
      000044E7  A$diff_screen$444                  diff_screen
      000044E8  A$diff_screen$448                  diff_screen
-     000044E8  C$diff_screen.c$133$1_0$142        diff_screen
+     000044E8  C$diff_screen.c$125$1_0$142        diff_screen
      000044E9  A$diff_screen$449                  diff_screen
      000044EA  A$diff_screen$450                  diff_screen
      000044EC  A$diff_screen$454                  diff_screen
-     000044EC  C$diff_screen.c$135$2_0$153        diff_screen
+     000044EC  C$diff_screen.c$127$2_0$153        diff_screen
      000044ED  A$diff_screen$455                  diff_screen
      000044F0  A$diff_screen$456                  diff_screen
      000044F1  A$diff_screen$457                  diff_screen
@@ -12916,25 +12916,25 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      000044FF  A$diff_screen$465                  diff_screen
      00004502  A$diff_screen$466                  diff_screen
      00004503  A$diff_screen$470                  diff_screen
-     00004503  C$diff_screen.c$139$2_0$153        diff_screen
+     00004503  C$diff_screen.c$131$2_0$153        diff_screen
      00004505  A$diff_screen$471                  diff_screen
      00004506  A$diff_screen$475                  diff_screen
-     00004506  C$diff_screen.c$140$2_0$153        diff_screen
+     00004506  C$diff_screen.c$132$2_0$153        diff_screen
      00004507  A$diff_screen$480                  diff_screen
-     00004507  C$diff_screen.c$143$1_0$142        diff_screen
+     00004507  C$diff_screen.c$135$1_0$142        diff_screen
      00004508  A$diff_screen$481                  diff_screen
      0000450B  A$diff_screen$482                  diff_screen
      0000450C  A$diff_screen$486                  diff_screen
-     0000450C  C$diff_screen.c$144$1_0$142        diff_screen
+     0000450C  C$diff_screen.c$136$1_0$142        diff_screen
      0000450E  A$diff_screen$487                  diff_screen
      0000450F  A$diff_screen$495                  diff_screen
-     0000450F  C$diff_screen.c$145$1_0$142        diff_screen
+     0000450F  C$diff_screen.c$137$1_0$142        diff_screen
      0000450F  XG$screen_diff_screen_update$0$0   diff_screen
      00004510  A$diff_screen$514                  diff_screen
-     00004510  C$diff_screen.c$147$1_0$154        diff_screen
-     00004510  C$diff_screen.c$149$1_0$154        diff_screen
-     00004510  C$diff_screen.c$150$1_0$154        diff_screen
-     00004510  C$diff_screen.c$152$1_0$154        diff_screen
+     00004510  C$diff_screen.c$139$1_0$154        diff_screen
+     00004510  C$diff_screen.c$141$1_0$154        diff_screen
+     00004510  C$diff_screen.c$142$1_0$154        diff_screen
+     00004510  C$diff_screen.c$144$1_0$154        diff_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 217.
 Hexadecimal  [32-Bits]
 
@@ -12953,13 +12953,13 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      0000451A  A$diff_screen$520                  diff_screen
      0000451D  A$diff_screen$521                  diff_screen
      0000451E  A$diff_screen$525                  diff_screen
-     0000451E  C$diff_screen.c$153$1_0$154        diff_screen
+     0000451E  C$diff_screen.c$145$1_0$154        diff_screen
      00004521  A$diff_screen$526                  diff_screen
      00004522  A$diff_screen$527                  diff_screen
      00004523  A$diff_screen$528                  diff_screen
      00004526  A$diff_screen$529                  diff_screen
      00004527  A$diff_screen$533                  diff_screen
-     00004527  C$diff_screen.c$154$1_0$154        diff_screen
+     00004527  C$diff_screen.c$146$1_0$154        diff_screen
      0000452A  A$diff_screen$534                  diff_screen
      0000452D  A$diff_screen$535                  diff_screen
      0000452E  A$diff_screen$536                  diff_screen
@@ -12967,20 +12967,20 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004531  A$diff_screen$538                  diff_screen
      00004532  A$diff_screen$539                  diff_screen
      00004535  A$diff_screen$543                  diff_screen
-     00004535  C$diff_screen.c$155$1_0$154        diff_screen
+     00004535  C$diff_screen.c$147$1_0$154        diff_screen
      00004538  A$diff_screen$544                  diff_screen
      00004539  A$diff_screen$545                  diff_screen
      0000453A  A$diff_screen$546                  diff_screen
      0000453D  A$diff_screen$547                  diff_screen
      0000453E  A$diff_screen$555                  diff_screen
-     0000453E  C$diff_screen.c$156$1_0$154        diff_screen
+     0000453E  C$diff_screen.c$148$1_0$154        diff_screen
      0000453E  XFdiff_screen$setupPlayer$0$0      diff_screen
      0000453F  A$diff_screen$568                  diff_screen
-     0000453F  C$diff_screen.c$158$1_0$155        diff_screen
-     0000453F  C$diff_screen.c$161$1_0$155        diff_screen
+     0000453F  C$diff_screen.c$150$1_0$155        diff_screen
+     0000453F  C$diff_screen.c$153$1_0$155        diff_screen
      0000453F  Fdiff_screen$printCursor$0$0       diff_screen
      00004541  A$diff_screen$573                  diff_screen
-     00004541  C$diff_screen.c$163$3_0$157        diff_screen
+     00004541  C$diff_screen.c$155$3_0$157        diff_screen
      00004542  A$diff_screen$574                  diff_screen
      00004544  A$diff_screen$575                  diff_screen
      00004545  A$diff_screen$576                  diff_screen
@@ -12994,7 +12994,7 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004551  A$diff_screen$584                  diff_screen
      00004552  A$diff_screen$585                  diff_screen
      00004553  A$diff_screen$589                  diff_screen
-     00004553  C$diff_screen.c$161$2_0$156        diff_screen
+     00004553  C$diff_screen.c$153$2_0$156        diff_screen
 ASxxxx Linker V03.00 + NoICE + sdld,  page 218.
 Hexadecimal  [32-Bits]
 
@@ -13008,7 +13008,7 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004555  A$diff_screen$591                  diff_screen
      00004557  A$diff_screen$592                  diff_screen
      00004559  A$diff_screen$596                  diff_screen
-     00004559  C$diff_screen.c$166$1_0$155        diff_screen
+     00004559  C$diff_screen.c$158$1_0$155        diff_screen
      0000455C  A$diff_screen$597                  diff_screen
      0000455E  A$diff_screen$598                  diff_screen
      0000455F  A$diff_screen$599                  diff_screen
@@ -13020,7 +13020,7 @@ _CODE                               00000200    0000758D =       30093. bytes (R
      00004569  A$diff_screen$605                  diff_screen
      0000456A  A$diff_screen$606                  diff_screen
      0000456B  A$diff_screen$614                  diff_screen
-     0000456B  C$diff_screen.c$167$1_0$155        diff_screen
+     0000456B  C$diff_screen.c$159$1_0$155        diff_screen
      0000456B  XFdiff_screen$printCursor$0$0      diff_screen
      0000456C  A$func_screen$66                   func_screen
      0000456C  C$func_screen.c$16$0_0$96          func_screen

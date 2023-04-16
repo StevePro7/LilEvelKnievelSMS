@@ -36,19 +36,11 @@ void screen_diff_screen_load()
 	engine_graphics_manager_title();
 	engine_graphics_manager_sea();
 
-
 	engine_util_manager_locale_texts( 5, 7, SHARE_TEXT_ROW + 0 );
 	for( index = 0; index < MAX_DIFFICULTY; index++ )
 	{
 		engine_font_manager_text( ( unsigned char * ) locale_object_difficulty[ index ], CURSOR_X + 3, SHARE_TEXT_ROW + index + 1 );
 	}
-	//	TODO - localize	TODO - refactor and still work??
-	//engine_font_manager_text( "SELECT  DIFFICULTY", 7, SHARE_TEXT_ROW + 0 );
-	//engine_font_manager_text( "EASIER", CURSOR_X + 13, SHARE_TEXT_ROW + 1 );
-	//engine_font_manager_text( "NORMAL", CURSOR_X + 13, SHARE_TEXT_ROW + 2 );
-	//engine_font_manager_text( "HARDER", CURSOR_X + 13, SHARE_TEXT_ROW + 3 );
-	//engine_font_manager_text( "INSANE", CURSOR_X + 13, SHARE_TEXT_ROW + 4 );
-
 
 	game_difficulty = go->game_difficulty;
 
