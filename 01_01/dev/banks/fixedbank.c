@@ -336,11 +336,11 @@ const unsigned char *level_object_data[] =
 	level_0101_txt,
 	level_0102_txt,
 	// World 02.
-	level_0103_txt,
-	level_0201_txt,
+	level_0201_txt,		//level_0103_txt,		//level_0201_txt,
+	level_0202_txt,		//level_0201_txt,		//level_0202_txt,
 	// World 03.
-	level_0203_txt,
-	level_0202_txt,
+	level_0301_txt,		//level_0203_txt,		//level_0301_txt,
+	level_0302_txt,		//level_0202_txt,		//level_0302_txt,
 	// World 04.
 	level_0401_txt,
 	level_0402_txt,
@@ -354,11 +354,11 @@ const unsigned int level_object_size[] =
 	level_0101_txt_size,
 	level_0102_txt_size,
 	// World 02.
-	level_0103_txt_size,
-	level_0201_txt_size,
+	level_0201_txt_size,		//level_0103_txt_size,
+	level_0202_txt_size,		//level_0201_txt_size,
 	// World 03.
-	level_0203_txt_size,
-	level_0402_txt_size,
+	level_0301_txt_size,		//level_0203_txt_size,
+	level_0302_txt_size,		//level_0402_txt_size,
 	// World 04.
 	level_0401_txt_size,
 	level_0202_txt_size,
@@ -372,11 +372,11 @@ const unsigned char level_object_bank[] =
 	level_0101_txt_bank,
 	level_0102_txt_bank,
 	// World 02.
-	level_0103_txt_bank,
-	level_0201_txt_bank,
+	level_0201_txt_bank,		//level_0103_txt_bank,
+	level_0202_txt_bank,		//level_0201_txt_bank,
 	// World 03.
-	level_0203_txt_bank,
-	level_0202_txt_bank,
+	level_0301_txt_bank,		//level_0203_txt_bank,
+	level_0302_txt_bank,		//level_0202_txt_bank,
 	// World 04.
 	level_0401_txt_bank,
 	level_0402_txt_bank,

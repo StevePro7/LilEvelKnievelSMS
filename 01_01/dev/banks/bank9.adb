@@ -1,6 +1,6 @@
 M:bank9
-S:G$level_0301_txt$0_0$0({256}DA256d,SC:U),D,0,0
-S:G$level_0302_txt$0_0$0({256}DA256d,SC:U),D,0,0
+S:G$level_0301_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
+S:G$level_0302_txt$0_0$0({1024}DA1024d,SC:U),D,0,0
 S:G$level_0303_txt$0_0$0({256}DA256d,SC:U),D,0,0
 S:G$level_0304_txt$0_0$0({256}DA256d,SC:U),D,0,0
 S:G$level_0305_txt$0_0$0({256}DA256d,SC:U),D,0,0

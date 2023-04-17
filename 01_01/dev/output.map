@@ -49,9 +49,9 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000302  l__DATA                         
      00000321  l__INITIALIZED                  
      00000321  l__INITIALIZER                  
-     00000800  l__BANK9                        
      00000E00  l__BANK10                       
      00000E00  l__BANK11                       
+     00000E00  l__BANK9                        
      00001B60  l__BANK13                       
      00001BC0  l__BANK12                       
      00002200  l__BANK8                        
@@ -20478,26 +20478,26 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK9                              00008000    00000800 =        2048. bytes (REL,CON)
+_BANK9                              00008000    00000E00 =        3584. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00008000  G$level_0301_txt$0_0$0             bank9
      00008000  _level_0301_txt                    bank9
-     00008100  G$level_0302_txt$0_0$0             bank9
-     00008100  _level_0302_txt                    bank9
-     00008200  G$level_0303_txt$0_0$0             bank9
-     00008200  _level_0303_txt                    bank9
-     00008300  G$level_0304_txt$0_0$0             bank9
-     00008300  _level_0304_txt                    bank9
-     00008400  G$level_0305_txt$0_0$0             bank9
-     00008400  _level_0305_txt                    bank9
-     00008500  G$level_0306_txt$0_0$0             bank9
-     00008500  _level_0306_txt                    bank9
-     00008600  G$level_0307_txt$0_0$0             bank9
-     00008600  _level_0307_txt                    bank9
-     00008700  G$level_0308_txt$0_0$0             bank9
-     00008700  _level_0308_txt                    bank9
+     00008400  G$level_0302_txt$0_0$0             bank9
+     00008400  _level_0302_txt                    bank9
+     00008800  G$level_0303_txt$0_0$0             bank9
+     00008800  _level_0303_txt                    bank9
+     00008900  G$level_0304_txt$0_0$0             bank9
+     00008900  _level_0304_txt                    bank9
+     00008A00  G$level_0305_txt$0_0$0             bank9
+     00008A00  _level_0305_txt                    bank9
+     00008B00  G$level_0306_txt$0_0$0             bank9
+     00008B00  _level_0306_txt                    bank9
+     00008C00  G$level_0307_txt$0_0$0             bank9
+     00008C00  _level_0307_txt                    bank9
+     00008D00  G$level_0308_txt$0_0$0             bank9
+     00008D00  _level_0308_txt                    bank9
 
 ASxxxx Linker V03.00 + NoICE + sdld,  page 356.
 Hexadecimal  [32-Bits]
