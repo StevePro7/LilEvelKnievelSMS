@@ -1,6 +1,8 @@
 # Lil Evel Knievel SMS
 Lil Evel Knievel game for the SMS Power! 2023 Competition.
 
+![LilEvelKnievel](https://github.com/StevePro7/LilEvelKnievelSMS/tree/main/01_01/img/LilEvelKnievelSMS.png)
+
 ###### RELEASE
 Monday, 27th March 2023
 
